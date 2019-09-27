@@ -1,0 +1,39 @@
+ 
+ FLASSI.  ECHO stream rerouted to file: BRing-echo
+ 
+ 
+ ENUSE.   New beam line expanded: RING
+ 
+ 
+ ENFIX.   ## Warning ## Zero value of SIGT replaced by 1.
+ 
+ 
+ ENFIX.   ## Warning ## Zero value of SIGE replaced by 1/1000.
+ 
+ 
+ TMCLOR.  Searching for closed orbit, beam line: "RING            ", range: #S/#E                                   
+          Delta(p)/p =    0.000000, symmetry = F
+ Iteration     x           px          y           py          t           deltap      error
+         0  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00
+         1  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00    0.000000E+00
+ 
+ TWBTSV.  Lattice functions saved in table: TWISS
+ 
+ 
+ ZEND.        2 Warning messages,
+              0 Error messages.
+                MAD terminated on 21/04/16 at 12.12.35
+ 
+
+ MZEND.   Usage statistics for  1 dynamic stores.
+
+   Map of store  0 / /     
+   ------------------------
+
+   Division                                        Number of times
+              Kind                Max-size                Garb-coll.
+            Mode    Position      used   allowed   Wiped  user  auto Pushd Redcd
+
+    1 QDIV1    0 1         9      6443  32000006       2     0     0     0     0
+    2 QDIV2    1 1  31999606    171189  32000006       0     0     0     0     0
+   20 system   1 8  32000006       111  32000006       0     0     0     0     0

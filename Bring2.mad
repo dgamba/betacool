@@ -1,0 +1,119 @@
+
+ TITLE "BRing"
+!!  OPTION, -INTER, -ECHO
+!!  ASSIGN, PRINT="BRing-print"
+!!  ASSIGN, ECHO="BRing-echo"
+
+!-----BRing-34-arc1 Elements Defining----
+
+!! N1=48
+!! ro=21.0 !bero/Bm
+!! leng=ro*(twopi/N1)
+
+!! Rr=0.07! Reference radius of field measurement (Half good-field width)
+!! a1=0.0 !4.5e-4
+!! a2=0.0!
+!! a3=0.0!
+
+!! RB: SBEND, L=leng,ANGLE=TWOPI/N1,K1=a1*(1/ro)*(1/Rr),HGAP=0.037,FINT=0.0,FINTX=0.0,E1=PI/N1,E2=PI/N1
+ RB: SBEND, L=2.7489,ANGLE=0.13089,K1=0,HGAP=0.037,FINT=0.0,FINTX=0.0,E1=0.06545,E2=0.06545
+
+  QF1: QUADRUPOLE, L=0.5, K1=2.528953E-01
+  QD1: QUADRUPOLE, L=0.4, K1=-3.044037E-01
+
+  QF2: QUADRUPOLE, L=0.5, K1=3.257198E-01
+  QD2: QUADRUPOLE, L=0.4, K1=-3.217099E-01 
+
+  QF3: QUADRUPOLE, L=0.5, K1= 1.804786E-01
+  QD3: QUADRUPOLE, L=0.4, K1=-1.904012E-01
+
+  QFS1: QUADRUPOLE, L=1.0, K1= 2.870537E-01
+  QDS1: QUADRUPOLE, L=1.0, K1=-2.986904E-01
+   
+  QFS2: QUADRUPOLE, L=1.0, K1= 2.388488E-01 
+  QDS2: QUADRUPOLE, L=1.0, K1=-2.971475E-01 
+
+  QFS10: QUADRUPOLE, L=1.0, K1= 2.748578E-01
+  QDS10: QUADRUPOLE, L=1.0, K1=-2.655012E-01 
+
+  QFS20: QUADRUPOLE, L=1.0, K1= 3.049263E-01
+  QDS20: QUADRUPOLE, L=1.0, K1=-2.618413E-01
+                                                                  
+  DB: DRIFT,l=2.7489
+  D0: DRIFT,l=0.6
+
+  D1: DRIFT,l=2.2
+  D2: DRIFT,l=1.0
+  D3: DRIFT,l=1.0
+  D4: DRIFT,l=1.4
+ 
+  DS1: DRIFT,l=6.0
+  DS2: DRIFT,l=1.5
+  DS3: DRIFT,l=4.55
+  DS4: DRIFT,l=1.5
+  DS5: DRIFT,l=2.0
+  DS6: DRIFT,l=0.6
+  DS7: DRIFT,l=8
+  DS8: DRIFT,l=2.0
+  DS9: DRIFT,l=1.5
+  DS10: DRIFT,l=4.55
+  DS11: DRIFT,l=6.0
+  DS12: DRIFT,l=2.0
+  
+ MM:  MARKER
+ MI:  MARKER
+ ME:  MARKER
+ MR:  MARKER  
+ END: MARKER
+
+ MD:  MARKER
+ MD1:  MARKER
+ MD2:  MARKER
+ MD3:  MARKER
+ MD4:  MARKER
+ MD5:  MARKER
+
+ S1: MARKER
+
+ AS1: MARKER
+ AS2: MARKER
+ 
+ MB1:MARKER
+ MB2:MARKER
+
+D200: DRIFT, L=0.2
+D400: DRIFT, L=0.4
+D800: DRIFT, L=0.8
+
+SCV: SEXTUPOLE, L=0.4, K2=-1.726797E+00
+SCH: SEXTUPOLE, L=0.4, K2= 9.600620E-01
+
+!D4: DRIFT, L=1.4
+D4SH: LINE=(D200,SCH,D800)
+!D2: DRIFT,l=1.0
+D2SV: LINE=(D400,SCV,D200)
+
+FODO: LINE=(QF1,QF1,D4  ,RB,D0,RB,D2SV,QD1,QD1,D1,D0,&
+            QF1,QF1,D4  ,RB,D0,RB,D2  ,QD1,QD1,D1,D0,&
+            QF1,QF1,D4  ,RB,D0,RB,D2SV,QD1,QD1,D1,D0,&
+            QF1,QF1,D4SH,RB,D0,RB,D2  ,QD1,QD1,D1,D0,&
+            QF1,QF1,D4  ,RB,D0,RB,D2  ,QD1,QD1,D1,D0,&
+            QF1,QF1,D4SH,RB,D0,RB,D2SV,QD1,QD1,D1,D0,&
+            QF1,QF1,D4  ,RB,D0,RB,D2  ,QD1,QD1,D1,D0,&
+            QF1,QF1,D4  ,RB,D0,RB,D2SV,QD1,QD1,D1,D0)
+
+STRAIGHT1:LINE=(MD,QF3,QF3,D3,DB,D1,QDS1,D0,MD5,QFS1,D3,DB,D1,D1,QDS2,MD3,&
+                 DS6,QFS2,&
+                 MD1,DS7,S1,DS7,MD2,QDS20,DS6,MD4,QFS20,D3,DB,D1,D1,QDS10,&
+                 D0,QFS10,D3,DB,D1,QD3,QD3,D1,D0,MD3)
+
+ RING: LINE=(FODO,STRAIGHT1,FODO,STRAIGHT1,FODO,STRAIGHT1)
+
+ USE,RING
+ 
+   SELECT,TWISS,FULL
+   TWISS, save, !TAPE = 'BRing.twiss'
+  plot,  range=#s/#e, haxis=s,vaxis1=BETx,BETy,vaxis2=Dx,colour=100
+  plot,  range=#s/#e, haxis=s,vaxis=x,y, colour=100
+  
+ stop

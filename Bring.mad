@@ -1,0 +1,528 @@
+TITLE, S = ""
+
+MD: MARKER
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+DB: DRIFT, L= 2.9452431127
+D1: DRIFT, L= 1
+D1: DRIFT, L= 1
+QF4: QUADRUPOLE, L= .5, K1 =  .1726187
+QF4: QUADRUPOLE, L= .5, K1 =  .1726187
+D1: DRIFT, L= 1
+DB: DRIFT, L= 2.9452431127
+D2: DRIFT, L= 2
+QD4: QUADRUPOLE, L= .5, K1 = -.2333601
+ME: MARKER
+QD4: QUADRUPOLE, L= .5, K1 = -.2333601
+D8: DRIFT, L= 6
+QF2: QUADRUPOLE, L= 1, K1 =  .1429987
+D7: DRIFT, L= 8
+QD2: QUADRUPOLE, L= 1, K1 = -.1913065
+D5: DRIFT, L= 4
+QF3: QUADRUPOLE, L= 1, K1 =  .2110771
+D6: DRIFT, L= 1.4
+QD3: QUADRUPOLE, L= 1, K1 = -.09833112
+D7: DRIFT, L= 8
+S1: MARKER
+S1: MARKER
+D7: DRIFT, L= 8
+QD3: QUADRUPOLE, L= 1, K1 = -.09833112
+D6: DRIFT, L= 1.4
+QF3: QUADRUPOLE, L= 1, K1 =  .2110771
+D5: DRIFT, L= 4
+QD2: QUADRUPOLE, L= 1, K1 = -.1913065
+D7: DRIFT, L= 8
+QF2: QUADRUPOLE, L= 1, K1 =  .1429987
+D8: DRIFT, L= 6
+QD4: QUADRUPOLE, L= .5, K1 = -.2333601
+ME: MARKER
+QD4: QUADRUPOLE, L= .5, K1 = -.2333601
+D2: DRIFT, L= 2
+DB: DRIFT, L= 2.9452431127
+D1: DRIFT, L= 1
+QF4: QUADRUPOLE, L= .5, K1 =  .1726187
+QF4: QUADRUPOLE, L= .5, K1 =  .1726187
+D1: DRIFT, L= 1
+D1: DRIFT, L= 1
+DB: DRIFT, L= 2.9452431127
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+MD: MARKER
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+MD: MARKER
+MD: MARKER
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+MD: MARKER
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+DB: DRIFT, L= 2.9452431127
+D1: DRIFT, L= 1
+D1: DRIFT, L= 1
+QF4: QUADRUPOLE, L= .5, K1 =  .1726187
+QF4: QUADRUPOLE, L= .5, K1 =  .1726187
+D1: DRIFT, L= 1
+DB: DRIFT, L= 2.9452431127
+D2: DRIFT, L= 2
+QD4: QUADRUPOLE, L= .5, K1 = -.2333601
+ME: MARKER
+QD4: QUADRUPOLE, L= .5, K1 = -.2333601
+D8: DRIFT, L= 6
+QF2: QUADRUPOLE, L= 1, K1 =  .1429987
+D7: DRIFT, L= 8
+QD2: QUADRUPOLE, L= 1, K1 = -.1913065
+D5: DRIFT, L= 4
+QF3: QUADRUPOLE, L= 1, K1 =  .2110771
+D6: DRIFT, L= 1.4
+QD3: QUADRUPOLE, L= 1, K1 = -.09833112
+D7: DRIFT, L= 8
+S1: MARKER
+S1: MARKER
+D7: DRIFT, L= 8
+QD3: QUADRUPOLE, L= 1, K1 = -.09833112
+D6: DRIFT, L= 1.4
+QF3: QUADRUPOLE, L= 1, K1 =  .2110771
+D5: DRIFT, L= 4
+QD2: QUADRUPOLE, L= 1, K1 = -.1913065
+D7: DRIFT, L= 8
+QF2: QUADRUPOLE, L= 1, K1 =  .1429987
+D8: DRIFT, L= 6
+QD4: QUADRUPOLE, L= .5, K1 = -.2333601
+ME: MARKER
+QD4: QUADRUPOLE, L= .5, K1 = -.2333601
+D2: DRIFT, L= 2
+DB: DRIFT, L= 2.9452431127
+D1: DRIFT, L= 1
+QF4: QUADRUPOLE, L= .5, K1 =  .1726187
+QF4: QUADRUPOLE, L= .5, K1 =  .1726187
+D1: DRIFT, L= 1
+D1: DRIFT, L= 1
+DB: DRIFT, L= 2.9452431127
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+MD: MARKER
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+MD: MARKER
+MD: MARKER
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+D2: DRIFT, L= 2
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D1: DRIFT, L= 1
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+QF1: QUADRUPOLE, L= .4, K1 =  .2474523
+D1: DRIFT, L= 1
+RB: SBEND, L= 2.9452431127, ANGLE =  .19634954085
+D2: DRIFT, L= 2
+QD1: QUADRUPOLE, L= .4, K1 = -.2351544
+
+APICL: Line(MD, &
+            QD1, &
+            D2, &
+            DB, &
+            D1, &
+            D1, &
+            QF4, &
+            QF4, &
+            D1, &
+            DB, &
+            D2, &
+            QD4, &
+            ME, &
+            QD4, &
+            D8, &
+            QF2, &
+            D7, &
+            QD2, &
+            D5, &
+            QF3, &
+            D6, &
+            QD3, &
+            D7, &
+            S1, &
+            S1, &
+            D7, &
+            QD3, &
+            D6, &
+            QF3, &
+            D5, &
+            QD2, &
+            D7, &
+            QF2, &
+            D8, &
+            QD4, &
+            ME, &
+            QD4, &
+            D2, &
+            DB, &
+            D1, &
+            QF4, &
+            QF4, &
+            D1, &
+            D1, &
+            DB, &
+            D2, &
+            QD1, &
+            MD, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            MD, &
+            MD, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            MD, &
+            QD1, &
+            D2, &
+            DB, &
+            D1, &
+            D1, &
+            QF4, &
+            QF4, &
+            D1, &
+            DB, &
+            D2, &
+            QD4, &
+            ME, &
+            QD4, &
+            D8, &
+            QF2, &
+            D7, &
+            QD2, &
+            D5, &
+            QF3, &
+            D6, &
+            QD3, &
+            D7, &
+            S1, &
+            S1, &
+            D7, &
+            QD3, &
+            D6, &
+            QF3, &
+            D5, &
+            QD2, &
+            D7, &
+            QF2, &
+            D8, &
+            QD4, &
+            ME, &
+            QD4, &
+            D2, &
+            DB, &
+            D1, &
+            QF4, &
+            QF4, &
+            D1, &
+            D1, &
+            DB, &
+            D2, &
+            QD1, &
+            MD, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            MD, &
+            MD, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1, &
+            QD1, &
+            D2, &
+            RB, &
+            D1, &
+            QF1, &
+            QF1, &
+            D1, &
+            RB, &
+            D2, &
+            QD1)
+
+Use, APICL
+Print, full
+Twiss, save
+Return

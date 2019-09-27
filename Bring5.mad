@@ -1,0 +1,137 @@
+TITLE "BRing-2015-09-11-v 11:19:49"
+
+!  ASSIGN, PRINT="BRingInj.print"
+!  ASSIGN, ECHO="BRingInj.echo"
+
+RB: SBEND, L=2.61799387799149, ANGLE=0.1745329252,&
+ K1=0, E1=0.087266462599716, E2=0.087266462599716,&
+ K2=0, HGAP=0.037, FINT=0
+ 
+QF1: QUADRUPOLE, L=0.5, K1=0.2564015
+QD1: QUADRUPOLE, L=0.5, K1=-0.2508547
+QF3: QUADRUPOLE, L=0.5, K1=0.1895654
+QDS1: QUADRUPOLE, L=1, K1=-0.2743613
+QFS1: QUADRUPOLE, L=1, K1=0.236514
+QDS2: QUADRUPOLE, L=1, K1=-0.29571
+QFS2: QUADRUPOLE, L=1, K1=0.2531125
+QDS20: QUADRUPOLE, L=1, K1=-0.2271483
+QFS20: QUADRUPOLE, L=1, K1=0.3178452
+QDS10: QUADRUPOLE, L=1, K1=-0.2142464
+QFS10: QUADRUPOLE, L=1, K1=0.16028
+QD3: QUADRUPOLE, L=0.5, K1=-0.1784801
+
+D0: DRIFT, L=1.4
+D1: DRIFT, L=2.4
+D1_1: DRIFT, L=1
+D1_2: DRIFT, L=1.4
+D2: DRIFT, L=0.8
+D3: DRIFT, L=0.8
+DB: DRIFT, L=2.6
+DB_1: DRIFT, L=1.1
+DB_2: DRIFT, L=1.5
+DS6: DRIFT, L=0.6
+DS7: DRIFT, L=7.5
+DS7_1: DRIFT, L=1.5
+DS7_2: DRIFT, L=2
+DS7_3: DRIFT, L=1.5
+DS7_4: DRIFT, L=1.5
+
+MD: MARKER, TYPE=MM
+MD1: MARKER, TYPE=MM
+MD2: MARKER, TYPE=MM
+MD3: MARKER, TYPE=MM
+MD4: MARKER, TYPE=MM
+MD5: MARKER, TYPE=MM
+S1: MARKER, TYPE=MM
+
+BPh1: MARKER, TYPE=MM
+BPv1: MARKER, TYPE=MM
+BPh2: MARKER, TYPE=MM
+BPv2: MARKER, TYPE=MM
+BPv3: MARKER, TYPE=MM
+BPh3: MARKER, TYPE=MM
+BPv4: MARKER, TYPE=MM
+BPh4: MARKER, TYPE=MM
+
+ES: DRIFT, L=1
+MS: DRIFT, L=1
+
+BRing: LINE=(ES,DS7_1,S1,DS7_1,MS,&
+             DS7_2,BPv3,DS7_3,BPh3,&
+             DS7_4,MD2,QDS20,DS6,&
+             MD4,QFS20,DB_1,BPv4,&
+             DB_2,BPh4,D0,QDS10,&
+             D0,QFS10,D3,DB,&
+             D2,QD3,QD3,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF3,QF3,D3,DB,&
+             D2,QDS1,D0,MD5,&
+             QFS1,D1,DB,D1,&
+             D1,QDS2,MD3,DS6,&
+             QFS2,MD1,DS7,S1,&
+             DS7,MD2,QDS20,DS6,&
+             MD4,QFS20,DB,D0,&
+             QDS10,D0,QFS10,D3,&
+             DB,D2,QD3,QD3,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF3,QF3,D3,&
+             DB,D2,QDS1,D0,&
+             MD5,QFS1,D1,DB,&
+             D1,D1,QDS2,MD3,&
+             DS6,QFS2,MD1,DS7,&
+             S1,DS7,MD2,QDS20,&
+             DS6,MD4,QFS20,DB,&
+             D0,QDS10,D0,QFS10,&
+             D3,DB,D2,QD3,QD3,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,QF1,QF1,D3,RB,D2,QD1,QD1,&
+             D1,MD,QF3,QF3,D3,&
+             DB,D2,QDS1,D0,&
+             MD5,QFS1,D1,DB,&
+             D1,BPh1,D1_2,BPv1,&
+             D1_1,QDS2,MD3,DS6,&
+             QFS2,MD1,DS7_4,BPh2,&
+             DS7_3,BPv2,DS7_2)
+
+
+USE,BRing
+!SELECT,FLAG=FIRST,RANGE=#S/#E
+!SURVEY,TAPE='BRingInj.survey'
+!SELECT,TWISS,FULL
+TWISS, SAVE, !DELTAP=0.0, TAPE="BRingInj.twiss"
+!PLOT,TABLE=twiss,HAXIS=S,VAXIS1=BETX,BETY,VAXIS2=DX,STYLE=100,colour=100
+!SAVE,FILENAME='BRingInj.save'
+STOP
+

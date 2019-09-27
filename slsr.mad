@@ -1,0 +1,97 @@
+ TITLE,s="Compact Laser Storage Ring (LSR)"
+!
+! Constant
+!
+ DIV   : CONSTANT=10            ! Divided Number
+ LST   : CONSTANT=1.86          ! Length of Straight section           
+ TL    : CONSTANT=1.099557429   ! length of a dispersion-suppresser
+ ND    : CONSTANT=10            ! dividing number of the dispersion-suppresser
+ LD    : CONSTANT=TL/ND
+! FB    : CONSTANT=0.0           ! fringe field length of the magnetic field
+! FE    : CONSTANT=0.0           ! fringe field length of the electric field
+ FB    : CONSTANT=0.1869        ! fringe field length of the magnetic field
+ FE    : CONSTANT=0.035         ! fringe field length of the electric field
+ RO    : CONSTANT=1.05          ! bending radius
+ n     : CONSTANT=0             ! field index of the dispersion-suppresser
+ G     : CONSTANT=1.000001562   ! Lorentz factor of the beam
+ G2    : CONSTANT=G*G
+ B     : CONSTANT=1.746994848E-03  ! Lorentz beta
+ E0    : CONSTANT=22.40384428            !total energy(GeV)
+ M     : CONSTANT=22.40380928            !restmass
+ kx    : CONSTANT=sqrt((1+n*G2)/(RO*RO))
+ ky    : CONSTANT=sqrt(G2*(1-n)/(RO*RO)) 
+!
+! Definition of Drift Space.
+! 
+!BEAM, MASS=M, ENERGY=E0,
+!
+! Definition of Drift Space. 
+!
+ L1  :  DRIFT, L=0.20
+ L2  :  DRIFT, L=LST/DIV
+!
+! Bending Magnet with edge angle and Clamped Logowski
+!
+ BMf :  MATRIX, L=0, RM(1,1)=1, RM(2,2)=1, RM(3,3)=1, &
+                RM(4,3)=(1+G*G*(1-DISP))*(FB*FB*(4+G*G*(1-DISP)) &
+                -FE*FE*G*G*(1-DISP))/(24*FB*RO*RO), &
+                RM(4,4)=1, RM(5,5)=1, RM(6,6)=1
+!
+EMB :  MATRIX, L=LD, RM(1,1)=COS(kx*LD), RM(1,2)=(SIN(kx*LD))/kx, &
+                RM(2,1)=-SIN(kx*LD)*kx, RM(2,2)=COS(kx*LD), &
+                RM(3,3)=COS(ky*LD), RM(3,4)=(SIN(ky*LD))/ky, &
+                RM(4,3)=-SIN(ky*LD)*ky, RM(4,4)=COS(ky*LD), &
+                RM(5,5)=1.0, &
+                RM(5,6)=LD/(G2*B*B), &
+                RM(6,6)=1.0
+!
+! Quadrupole Magnet
+!
+ QM1 :  QUADRUPOLE, L=0.20, K1=0.5
+ QM2 :  QUADRUPOLE, L=0.20, K1=0.0
+!
+! Correction Magnet of BM
+!
+ KB1 :  HKICKER,    L=0.0,     KICK=0.0
+!
+! Definition of BM structure
+!
+ BM1  : LINE=(KB1,BMf,10*(KB1,EMB),BMf,KB1)
+!
+! Definition of Superperiod
+! 
+ SEC1 : LINE=(QM1,L1,BM1,L1,QM2,10*L2)
+!
+! Definition of Ring
+!
+ RING : LINE=(SEC1,SEC1,SEC1,SEC1,SEC1,SEC1)
+ USE, RING, SUPER=1
+!
+! Matching Section.
+!
+ CELL
+    VARY, NAME=QM1[K1], STEP=1E-3, LOWER=-20.0, UPPER=10.0
+    VARY, NAME=QM2[K1], STEP=1E-3, LOWER=-20.0, UPPER=10.0
+    CONSTRAINT,#E, MUX=2.067, MUY=2.067
+    LEVEL,1
+    MIGRAD,  CALLS=100000, TOLERANCE=1.0E-9
+    LMDIF,  CALLS=100000, TOLERANCE=1.0E-9
+ ENDMATCH
+!
+! Print of Result
+!
+ PRINT, FULL
+ TWISS, SAVE, DELTAP=0.0
+ PRINT, FULL
+ PLOT, TABLE=TWISS, HAXIS=S, VAXIS1=BETX,BETY,VMAX=5.5, VMIN=0.5 &
+       VAXIS2=DX, STYLE=100 RANGE=SEC1, 
+!
+!
+!TRACK
+!START,X=5E-03,PX=-5E-03,Y=5E-03,T=1.0E-09,DELTAP=1.0E-4
+!RUN,TURNS=3000,FPRINT=1000, TABLE=TRACK
+!PLOT,HAXIS=PX,VAXIS=X, symbol=3
+!ENDTRACK
+!
+ STOP
+

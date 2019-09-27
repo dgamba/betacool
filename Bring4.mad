@@ -1,0 +1,160 @@
+!TITLE "BRing-2016-02-20-p 16:03:36";
+!BEAM, PARTICLE=proton, MASS=0.938255, CHARGE=1, PC=1.69602771203775,
+
+QF1: QUADRUPOLE, L=0.5, K1=0.2871075,
+D4: DRIFT, L=1,
+RB: SBEND, L=2.74889357, ANGLE=0.130899693899575,& 
+K1=0, E1=0.0654498469497874, E2=0.0654498469497874,& 
+K2=0, HGAP=0.037, FINT=0,
+D0: DRIFT, L=0.6,
+QD1: QUADRUPOLE, L=0.5, K1=-0.2274327,
+D1: DRIFT, L=3.2,
+QF2: QUADRUPOLE, L=0.5, K1=0.2943829,
+QD2: QUADRUPOLE, L=0.5, K1=-0.2266216,
+MD: MARKER, TYPE=MM,
+QF3: QUADRUPOLE, L=0.6, K1=0.2818371,
+D3: DRIFT, L=1,
+DB: DRIFT, L=2.74889357,
+D5: DRIFT, L=2.6,
+QDS1: QUADRUPOLE, L=1.4, K1=-0.230318,
+MD5: MARKER, TYPE=MM,
+QFS1: QUADRUPOLE, L=1.4, K1=0.289836,
+QDS2: QUADRUPOLE, L=1.2, K1=-0.254614,
+MD3: MARKER, TYPE=MM,
+DS6: DRIFT, L=0.6,
+QFS2: QUADRUPOLE, L=1.2, K1=0.253939,
+MD1: MARKER, TYPE=MM,
+DS7: DRIFT, L=8,
+S1: MARKER, TYPE=MM,
+MD2: MARKER, TYPE=MM,
+QDS20: QUADRUPOLE, L=1.4, K1=-0.2330971,
+MD4: MARKER, TYPE=MM,
+QFS20: QUADRUPOLE, L=1.4, K1=0.2502174,
+D2: DRIFT, L=1,
+QDS10: QUADRUPOLE, L=1.2, K1=-0.4279476,
+QFS10: QUADRUPOLE, L=1.2, K1=0.3137919,
+QD3: QUADRUPOLE, L=0.6, K1=-0.2882633,
+D5_3: DRIFT, L=0.1,
+BPh4: MARKER, TYPE=MM,
+D5_2: DRIFT, L=1.5,
+BPv4: MARKER, TYPE=MM,
+D5_1: DRIFT, L=1,
+DS7_4: DRIFT, L=2,
+BPh3: MARKER, TYPE=MM,
+DS7_3: DRIFT, L=1.5,
+BPv3: MARKER, TYPE=MM,
+DS7_2: DRIFT, L=1.5,
+MSi: DRIFT, L=1.5,
+DS7_1: DRIFT, L=1.5,
+ESi: DRIFT, L=0.3,
+BPv2: MARKER, TYPE=MM,
+BPh2: MARKER, TYPE=MM,
+DB_1: DRIFT, L=1,
+BPv1: MARKER, TYPE=MM,
+DB_2: DRIFT, L=1.5,
+BPh1: MARKER, TYPE=MM,
+DB_3: DRIFT, L=0.24889357,
+
+
+BRing1: LINE=(QF1,QF1,D4,RB,& 
+                D0,RB,D0,QD1,& 
+                QD1,D1,QF2,QF2,& 
+                D4,RB,D0,RB,& 
+                D0,QD2,QD2,D1,& 
+                QF1,QF1,D4,RB,&
+                D0,RB,D0,QD1,& 
+                QD1,D1,QF2,QF2,& 
+                D4,RB,D0,RB,& 
+                D0,QD2,QD2,D1,& 
+                QF1,QF1,D4,RB,& 
+                D0,RB,D0,QD1,& 
+                QD1,D1,QF2,QF2,& 
+                D4,RB,D0,RB,& 
+                D0,QD2,QD2,D1,& 
+                QF1,QF1,D4,RB,& 
+                D0,RB,D0,QD1,& 
+                QD1,D1,QF2,QF2,& 
+                D4,RB,D0,RB,& 
+                D0,QD2,QD2,D1,& 
+                MD,QF3,QF3,D3,& 
+                DB,D5,QDS1,D0,& 
+                MD5,QFS1,D3,DB,& 
+                D5,D5,QDS2,MD3,& 
+                DS6,QFS2,MD1,DS7,& 
+                S1,DS7,MD2,QDS20,& 
+                DS6,MD4,QFS20,DB,& 
+                D5,D2,QDS10,D0,& 
+                QFS10,D3,DB,D0,& 
+                D0,QD3,QD3,D5,& 
+                D0,QF1,QF1,D4,& 
+                RB,D0,RB,D0,& 
+                QD1,QD1,D1,QF2,& 
+                QF2,D4,RB,D0,& 
+                RB,D0,QD2,QD2,& 
+                D1,QF1,QF1,D4,& 
+                RB,D0,RB,D0,& 
+                QD1,QD1,D1,QF2,& 
+                QF2,D4,RB,D0,& 
+                RB,D0,QD2,QD2,& 
+                D1,QF1,QF1,D4,& 
+                RB,D0,RB,D0,& 
+                QD1,QD1,D1,QF2,& 
+                QF2,D4,RB,D0,& 
+                RB,D0,QD2,QD2,& 
+                D1,QF1,QF1,D4,& 
+                RB,D0,RB,D0,& 
+                QD1,QD1,D1,QF2,& 
+                QF2,D4,RB,D0,& 
+                RB,D0,QD2,QD2,& 
+                D1,MD,QF3,QF3,& 
+                D3,DB,D5,QDS1,& 
+                D0,MD5,QFS1,D3,& 
+                DB,D5,D5,QDS2,& 
+                MD3,DS6,QFS2,MD1,& 
+                DS7,S1,DS7,MD2,& 
+                QDS20,DS6,MD4,QFS20,& 
+                DB,D5,D2,QDS10,& 
+                D0,QFS10,D3,DB,& 
+                D0,D0,QD3,QD3,& 
+                D5,D0,QF1,QF1,& 
+                D4,RB,D0,RB,& 
+                D0,QD1,QD1,D1,& 
+                QF2,QF2,D4,RB,& 
+                D0,RB,D0,QD2,& 
+                QD2,D1,QF1,QF1,& 
+                D4,RB,D0,RB,& 
+                D0,QD1,QD1,D1,& 
+                QF2,QF2,D4,RB,& 
+                D0,RB,D0,QD2,& 
+                QD2,D1,QF1,QF1,& 
+                D4,RB,D0,RB,& 
+                D0,QD1,QD1,D1,& 
+                QF2,QF2,D4,RB,& 
+                D0,RB,D0,QD2,& 
+                QD2,D1,QF1,QF1,& 
+                D4,RB,D0,RB,& 
+                D0,QD1,QD1,D1,& 
+                QF2,QF2,D4,RB,& 
+                D0,RB,D0,QD2,& 
+                QD2,D1,MD,QF3,& 
+                QF3,D3,DB,D5,& 
+                QDS1,D0,MD5,QFS1,& 
+                D3,DB,D5,D5_3,& 
+                BPh4,D5_2,BPv4,D5_1,& 
+                QDS2,MD3,DS6,QFS2,& 
+                MD1,DS7_4,BPh3,DS7_3,& 
+                BPv3,DS7_2,MSi,DS7_1,& 
+                S1,DS7_1,ESi,ESi,& 
+                ESi,ESi,ESi)
+BRing2: LINE=(DS7_2,BPv2,DS7_3,BPh2,DS7_4,& 
+                MD2,QDS20,DS6,MD4,& 
+                QFS20,DB_1,BPv1,DB_2,& 
+                BPh1,DB_3,D5,D2,& 
+                QDS10,D0,QFS10,D3,& 
+                DB,D0,D0,QD3,& 
+                QD3,D5,D0)
+BRing: LINE=(BRing2,BRing1)
+
+USE, BRing,
+SELECT,TWISS,FULL
+TWISS, save

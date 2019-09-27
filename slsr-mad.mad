@@ -1,0 +1,113 @@
+ TITLE,s="Compact Laser Storage Ring (LSR)"
+!
+! Constant
+!
+ BRHO  : CONSTANT=0.1319549682 ! Magnetic Regidity
+ DIV   : CONSTANT=10            ! Divided Number
+ LST   : CONSTANT=1.8           ! Length of Straight section
+ LQF   : CONSTANT=0.025         ! Length of QM Fringe Field
+ LBP   : CONSTANT=0.50          ! Position of Bump Magnet
+ RK    : CONSTANT=1/1.05             
+ TL    : CONSTANT=1.099557429           ! length of a dispersion-controler
+ ND    : CONSTANT=10            ! dividing number of the dispersion-controller
+ LD    : CONSTANT=TL/ND
+ FB    : CONSTANT=0.1869
+ FE    : CONSTANT=0.035
+ RO    : CONSTANT=1.05
+ GAMMA : CONSTANT=1.0000015665969508
+ DI    : CONSTANT=0                   ! input dispersion factor
+ DISP  : CONSTANT=DI*GAMMA*GAMMA      ! effective dispersion factor
+ RK2   : CONSTANT=GAMMA/1.05   
+ BETA  : CONSTANT=0.00177008094
+ E0    : CONSTANT=22.342         !total energy(GeV)
+ M     : CONSTANT=22.3419         !restmass
+!
+! Definition of Drift Space.
+! 
+BEAM, MASS=M, ENERGY=E0,
+!
+! Definition of Drift Space. 
+!
+ L1  :  DRIFT, L=0.20
+ L2  :  DRIFT, L=LST/DIV
+ L3  :  DRIFT, L=0.06
+!
+! Bending Magnet with edge angle and Clamped Logowski
+!
+BMf :  MATRIX, L=0, RM(1,1)=1, RM(2,2)=1, RM(3,3)=1, &
+                RM(4,3)=(1+GAMMA*GAMMA*(1-DISP))*(FB*FB* &
+               (4+GAMMA*GAMMA*(1-DISP))-FE*FE*GAMMA*GAMMA* &
+                (1-DISP))/(24*FB*RO*RO), RM(4,4)=1,&
+                RM(5,5)=1, RM(6,6)=1
+!
+EMB :  MATRIX, L=LD, RM(1,1)=COS(RK*LD), RM(1,2)=(SIN(RK*LD))/RK, &
+                RM(1,6)=(1-COS(RK*LD))*DISP/RK/RK/BETA, &
+                RM(2,1)=-SIN(RK*LD)*RK, RM(2,2)=COS(RK*LD), &
+                RM(2,6)=SIN(RK*LD)*DISP/RK/BETA, &
+                RM(3,3)=COS(RK2*LD), RM(3,4)=(SIN(RK2*LD))/RK2, &
+                RM(4,3)=-SIN(RK2*LD)*RK2, RM(4,4)=COS(RK2*LD), &
+                RM(5,1)=-SIN(RK*LD)*DISP/RK/BETA, &
+                RM(5,2)=-(1-COS(RK*LD))*DISP/RK/RK/BETA, &
+                RM(5,5)=1.0, &
+                RM(5,6)=(-(LD-SIN(RK*LD)/RK)*DISP*DISP/RK/RK &
+                +LD/GAMMA/GAMMA)/BETA/BETA, &
+                RM(6,6)=1.0
+!
+! Quadrupole Magnet
+!
+ QM1 :  QUADRUPOLE, L=0.20, K1=1.0
+ QM2 :  QUADRUPOLE, L=0.20, K1=1.0
+!
+! RF Cavity
+!
+ CAV :  RFCAVITY, L=0., VOLT=0.0005, HARMON=1
+!
+! Correction Magnet of BM
+!
+ KB1 :  HKICKER,    L=0.0,     KICK=0.0
+ KB2 :  HKICKER,    L=0.0,     KICK=0.0
+ KB3 :  HKICKER,    L=0.0,     KICK=0.0
+ KB4 :  HKICKER,    L=0.0,     KICK=0.0
+ KB5 :  HKICKER,    L=0.0,     KICK=0.0
+ KB6 :  HKICKER,    L=0.0,     KICK=0.0
+!
+!
+! Definition of BM structure
+!
+ BM1  : LINE=(KB1,BMf,10*(KB1,EMB),BMf,KB1)
+ BM2  : LINE=(KB2,BMf,10*(KB2,EMB),BMf,KB2)
+ BM3  : LINE=(KB3,BMf,10*(KB3,EMB),BMf,KB3)
+ BM4  : LINE=(KB4,BMf,10*(KB4,EMB),BMf,KB4)
+ BM5  : LINE=(KB5,BMf,10*(KB5,EMB),BMf,KB5)
+ BM6  : LINE=(KB6,BMf,10*(KB6,EMB),BMf,KB6)
+!
+! Definition of Superperiod
+! 
+ SEC1 : LINE=(5*L2,QM1,L1,BM1,L1,QM2,5*L2,L3)     
+!
+! Definition of Ring
+!
+ RING : LINE=(6*SEC1)
+ USE, RING, SUPER=1
+!
+! Matching Section.
+!
+ CELL
+    VARY, NAME=QM1[K1], STEP=1E-4, LOWER=-20.0, UPPER=10.0
+    VARY, NAME=QM2[K1], STEP=1E-4, LOWER=-20.0, UPPER=10.0
+    CONSTRAINT,#E, MUX=2.07, MUY=2.07
+    LEVEL,1
+    MIGRAD,  CALLS=100000, TOLERANCE=1.0E-9
+    LMDIF,  CALLS=100000, TOLERANCE=1.0E-9
+ ENDMATCH
+!
+! Print of Result
+!
+ PRINT, FULL
+ TWISS, SAVE, DELTAP=0.0
+ PRINT, FULL
+ PLOT, TABLE=TWISS, HAXIS=S, VAXIS1=BETX,BETY,VMAX=6.5, VMIN=0.5 &
+       VAXIS2=DX, STYLE=100 RANGE=SEC1, 
+!
+ STOP
+

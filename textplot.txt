@@ -1,0 +1,15 @@
+space.cur; input file name
+; output file name
+5; saving interval [sec]
+; finish time [sec]
+luminosity; y-axis name
+time [sec]; x-axis name
+2; input file column of y-axis
+0; input file column of x-axis
+; y-axis max (nothing means auto)
+; y-axis min
+; x-axis max
+; x-axis min
+223; lower plot symbol
+220; upper plot symbol
+219; double plot symbol

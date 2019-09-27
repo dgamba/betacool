@@ -1,0 +1,214 @@
+TITLE "Injection"
+
+!OPTION, -INTER, -ECHO
+!ASSIGN, PRINT="nica2t.prn"
+!ASSIGN, ECHO="nica2t.ech" 
+
+ODET: DRIFT, L= 4.5000000000E+00
+QFF1: QUADRUPOLE, L= 8.5000000000E-01, K1= 4.1227529412E-01
+OO: DRIFT, L= 3.0000000000E-01
+QFF2: QUADRUPOLE, L= 1.6500000000E+00, K1=-4.1957030303E-01
+QFF3: QUADRUPOLE, L= 1.0000000000E+00, K1= 4.3056300000E-01
+QT10: QUADRUPOLE, L= 3.0000000000E-01, K1= 2.2215996034E-02
+BV1: SBEND, L= 9.8963200000E-01, ANGLE= 3.9978700000E-02, &
+ K1= 0.0000000000E+00, E1= 0.0000000000E+00, E2= 0.0000000000E+00, TILT, &
+ K2= 0.0000000000E+00, HGAP= 0.0000000000E+00, FINT= 0.0000000000E+00
+OBV12: DRIFT, L= 3.0103700000E+00
+BV2: SBEND, L= 9.8963200000E-01, ANGLE=-3.9978700000E-02, &
+ K1= 0.0000000000E+00, E1= 0.0000000000E+00, E2= 0.0000000000E+00, TILT, &
+ K2= 0.0000000000E+00, HGAP= 0.0000000000E+00, FINT= 0.0000000000E+00
+OSSFIN2: DRIFT, L= 1.0470000000E+00
+QT9: QUADRUPOLE, L= 3.0000000000E-01, K1=-2.4626196216E-01
+QT8: QUADRUPOLE, L= 3.0000000000E-01, K1= 1.0770334817E-01
+OSSFIN: DRIFT, L= 1.0953000000E+01
+DIQ: DRIFT, L= 3.0000000000E-01
+IQ: DRIFT, L= 0.0000000000E+00
+OQC: DRIFT, L= 1.0000000000E-01
+HQ: MONITOR, L= 0.0000000000E+00
+QDA: QUADRUPOLE, L= 4.0000000000E-01, K1=-5.8933250000E-01
+OQQ: DRIFT, L= 3.0000000000E-01
+QFA: QUADRUPOLE, L= 4.0000000000E-01, K1= 6.0244500000E-01
+SF0: SEXTUPOLE, L= 1.5000000000E-04, K2= 0.0000000000E+00
+QFT7: QUADRUPOLE, L= 3.0000000000E-01, K1= 4.7886200286E-01
+SD0: SEXTUPOLE, L= 1.5000000000E-04, K2= 0.0000000000E+00
+QDT7: QUADRUPOLE, L= 3.0000000000E-01, K1=-5.1445632754E-01
+OSS: DRIFT, L= 9.0000000000E+00
+QFT6: QUADRUPOLE, L= 3.0000000000E-01, K1=-2.2851691731E-01
+QDT6: QUADRUPOLE, L= 3.0000000000E-01, K1= 1.5549138647E-01
+OSS1: DRIFT, L= 7.4052750000E+00
+QFT5: QUADRUPOLE, L= 3.0000000000E-01, K1=-9.6455050932E-02
+QDT5: QUADRUPOLE, L= 3.0000000000E-01, K1=-2.4791600000E-01
+HD: MONITOR, L= 0.0000000000E+00
+BH: SBEND, L= 1.9400000000E+00, ANGLE= 7.8539800000E-02, &
+ K1= 0.0000000000E+00, E1= 3.9269900000E-02, E2= 3.9269900000E-02, &
+ K2= 0.0000000000E+00, HGAP= 0.0000000000E+00, FINT= 0.0000000000E+00
+SF: SEXTUPOLE, L= 1.5000000000E-04, K2= 0.0000000000E+00
+QFT3: QUADRUPOLE, L= 3.0000000000E-01, K1=-1.6725466667E-01
+OD1: DRIFT, L= 4.7800000000E+00
+SD: SEXTUPOLE, L= 1.5000000000E-04, K2= 0.0000000000E+00
+QDT2: QUADRUPOLE, L= 3.0000000000E-01, K1= 2.2443066667E-07
+QFT2: QUADRUPOLE, L= 3.0000000000E-01, K1=-3.2838500000E-02
+QDT1: QUADRUPOLE, L= 3.0000000000E-01, K1= 2.2443066667E-07
+QFT1: QUADRUPOLE, L= 3.0000000000E-01, K1= 2.2443066667E-07
+QDA2: QUADRUPOLE, L= 2.0000000000E-01, K1=-5.8933500000E-01
+
+SCAT: KICKER, L=0.0, HKICK=0.0, VKICK=0.0
+injm1: marker
+injm2: marker
+ecin: marker
+oein: drift, l=1.5
+oss1e: drift, l=oss1[l]-oein[l]
+
+nc_90gr1: LINE=(ODET,QFF1,OO,QFF2, &
+                OO,QFF3,OO,QT10, &
+                OO,BV1,OBV12,BV2, &
+                OO,OSSFIN2,QT9,OO, &
+                QT8,OSSFIN,DIQ,IQ, &
+                OQC,HQ,QDA,HQ, &
+                OQQ,HQ,QFA,HQ, &
+                OQQ,SF0,QFT7,SF0, &
+                OQQ,HQ,QFA,HQ, &
+                OQQ,HQ,QDA,HQ, &
+                OQC,SD0,QDT7,SD0, &
+                OSS,DIQ,IQ,OQC, &
+                HQ,QDA,HQ,OQQ, &
+                HQ,QFA,HQ,OQQ, &
+                SF0,QFT6,SF0,OQQ, &
+                HQ,QFA,HQ,OQQ, &
+                HQ,QDA,HQ,OQC, &
+                SD0,QDT6,SD0,oein,OSS1e, &
+                DIQ,IQ,OQQ,SF0, &
+                QFT5,SF0,OQQ,HQ, &
+                QFA,HQ,OQQ,HQ, &
+                QDA,HQ,OQC,SD0, &
+                QDT5,SD0,OO,HD, &
+                BH,HD,OO,HD, &
+                BH,HD,OO,DIQ, &
+                IQ,OQC,HQ,injm1, QFA, &
+                HQ,OQC,SF,QFT3, &
+                SF,OD1,DIQ,IQ, &
+                OQC,HQ,QDA,HQ,  &
+                OQC,SD,QDT2,SD, &
+                OD1,DIQ,IQ,OQC, &
+                HQ,QFA,injm2, HQ,OQC, &
+                SF,QFT2,SF,OO, &
+                HD,BH,HD,OO, &
+                HD,BH,HD,OO, &
+             DIQ, SCAT, IQ,OQC,HQ, &
+                QDA,HQ,OQC,SD, &
+                QDT1,SD,OO,HD, &
+                BH,HD,OO,HD, &
+                BH,HD,OO,DIQ, &
+                IQ,OQC,HQ,QFA, &
+                HQ,OQC,SF,QFT1, &
+                SF,OO,HD,BH, &
+                HD,OO,HD,BH, &
+                HD,OO,DIQ,IQ, &
+                OQC,HQ,QDA,HQ, &
+                OQC,SD,QDT1,SD, &
+                OO,HD,BH,HD, &
+                OO,HD,BH,HD, &
+                OO,DIQ,IQ,OQC, &
+                HQ,QFA,HQ,OQC, &
+                SF,QFT1,SF,OO, &
+                HD,BH,HD,OO, &
+                HD,BH,HD,OO, &
+                DIQ,IQ,OQC,HQ, &
+                QDA,HQ,OQC,SD, &
+                QDT1,SD,OO,HD, &
+                BH,HD,OO,HD, &
+                BH,HD,OO,DIQ, &
+                IQ,OQC,HQ,QFA, &
+                HQ,OQC,SF,QFT1, &
+                SF,OO,HD,BH, &
+                HD,OO,HD,BH, &
+                HD,OO,DIQ,IQ, &
+                OQC,HQ,QDA,HQ, &
+                OQC,SD,QDT1,SD, &
+                OO,HD,BH,HD, &
+                OO,HD,BH,HD, &
+                OO,DIQ,IQ,OQC, &
+                HQ,QFA,HQ,OQC, &
+                SF,QFT1,SF,OO, &
+                HD,BH,HD,OO, &
+                HD,BH,HD,OO, &
+                DIQ,IQ,OQC,QDA2, &
+                QDA2,OQC,DIQ,IQ, &
+                OO,HD,BH,HD, &
+                OO,HD,BH,HD, &
+                OO,SF,QFT1,SF, &
+                OQC,HQ,QFA,HQ, &
+                OQC,DIQ,IQ,OO, &
+                HD,BH,HD,OO, &
+                HD,BH,HD,OO, &
+                SD,QDT1,SD,OQC, &
+                HQ,QDA,HQ,OQC, &
+                DIQ,IQ,OO,HD, &
+                BH,HD,OO,HD, &
+                BH,HD,OO,SF, &
+                QFT1,SF,OQC,HQ, &
+                QFA,HQ,OQC,DIQ, &
+                IQ,OO,HD,BH, &
+                HD,OO,HD,BH, &
+                HD,OO,SD,QDT1, &
+                SD,OQC,HQ,QDA, &
+                HQ,OQC,DIQ,IQ, &
+                OO,HD,BH,HD, &
+                OO,HD,BH,HD, &
+                OO,SF,QFT1,SF, &
+                OQC,HQ,QFA,HQ, &
+                OQC,DIQ,IQ,OO, &
+                HD,BH,HD,OO, &
+                HD,BH,HD,OO, &
+                SD,QDT1,SD,OQC, &
+                HQ,QDA,HQ,OQC, &
+                DIQ,IQ,OO,HD, &
+                BH,HD,OO,HD, &
+                BH,HD,OO,SF, &
+                QFT1,SF,OQC,HQ, &
+                QFA,HQ,OQC,DIQ, &
+                IQ,OO,HD,BH, &
+                HD,OO,HD,BH, &
+                HD,OO,SD,QDT1, &
+                SD,OQC,HQ,QDA, &
+                HQ,OQC,DIQ,IQ, &
+                OO,HD,BH,HD, &
+                OO,HD,BH,HD, &
+                OO,SF,QFT2,SF, &
+                OQC,HQ,QFA,HQ, &
+                OQC,DIQ,IQ,OD1, &
+                SD,QDT2,SD,OQC, &
+                HQ,QDA,HQ,OQC, &
+                DIQ,IQ,OD1,SF, &
+                QFT3,SF,OQC,HQ, &
+                QFA,HQ,OQC,DIQ, &
+                IQ,OO,HD,BH, &
+                HD,OO,HD,BH, &
+                HD,OO,SD0,QDT5, &
+                SD0,OQC,HQ,QDA, &
+                HQ,OQQ,HQ,QFA, &
+                HQ,OQQ,SF0,QFT5, &
+                SF0,OQQ,IQ,DIQ, &
+                OSS1,SD0,QDT6,SD0, &
+                OQC,HQ,QDA,HQ, &
+                OQQ,HQ,QFA,HQ, &
+                OQQ,SF0,QFT6,SF0, &
+                OQQ,HQ,QFA,HQ, &
+                OQQ,HQ,QDA,HQ, &
+                OQC,IQ,DIQ,OSS, &
+                SD0,QDT7,SD0,OQC, &
+                HQ,QDA,HQ,OQQ, &
+                HQ,QFA,HQ,OQQ, &
+                SF0,QFT7,SF0,OQQ, &
+                HQ,QFA,HQ,OQQ, &
+                HQ,QDA,HQ,OQC, &
+                IQ,DIQ,OSSFIN,QT8, &
+                OO,QT9,OSSFIN2,OO, &
+                BV2,OBV12,BV1,OO, &
+                QT10,OO,QFF3,OO, &
+                QFF2,OO,QFF1,ODET)
+
+Use, nc_90gr1, super=2
+Print, full
+Twiss, save
+end_file

@@ -1,0 +1,125 @@
+﻿Build started 03.10.2018 14:39:59.
+     1>Project "D:\betacool\Betacool.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(356,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Yc"stdafx.h" /Fp".\Debug/Betacool.pch" /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Yu"stdafx.h" /Fp".\Debug/Betacool.pch" /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Betacool.cpp bolideU.cpp bpData.cpp bpIBS.cpp dataU.cpp doubleU.cpp matrixU.cpp pellets.cpp bpTune.cpp vectoru.cpp xBeam.cpp xbucket.cpp xDistributor.cpp xDraw.cpp xDynamic.cpp xEbeam.cpp xEcool.cpp xEffect.cpp xForce.cpp xhiroshi.cpp xIBS.cpp xLibrary.cpp xOptics.cpp xPowell.cpp xrestgas.cpp xRing.cpp xRunge.cpp xstoch.cpp xTarget.cpp
+         xTarget.cpp
+         xstoch.cpp
+         xRunge.cpp
+         xRing.cpp
+     1>d:\betacool\xring.cpp(181): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+         xrestgas.cpp
+         xPowell.cpp
+         xOptics.cpp
+         xLibrary.cpp
+         xIBS.cpp
+         xhiroshi.cpp
+         xForce.cpp
+         xEffect.cpp
+         xEcool.cpp
+     1>d:\betacool\xecool.cpp(233): warning C4800: 'BunchEnum' : forcing value to bool 'true' or 'false' (performance warning)
+         xEbeam.cpp
+     1>d:\betacool\xebeam.cpp(133): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+     1>d:\betacool\xebeam.cpp(678): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+         xDynamic.cpp
+     1>d:\betacool\xdynamic.cpp(311): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+         xDraw.cpp
+     1>d:\betacool\xdraw.cpp(269): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\xdraw.cpp(920): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\xdraw.cpp(921): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\xdraw.cpp(923): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\xdraw.cpp(924): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\xdraw.cpp(958): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\xdraw.cpp(959): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\xdraw.cpp(989): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\xdraw.cpp(990): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\xdraw.cpp(1363): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\xdraw.cpp(1378): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\xdraw.cpp(1386): warning C4800: 'BunchEnum' : forcing value to bool 'true' or 'false' (performance warning)
+         xDistributor.cpp
+         xbucket.cpp
+     1>d:\betacool\xbucket.cpp(188): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+         xBeam.cpp
+         vectoru.cpp
+         Generating Code...
+         Compiling...
+         bpTune.cpp
+     1>d:\betacool\bptune.cpp(97): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\bptune.cpp(98): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\bptune.cpp(99): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>d:\betacool\bptune.cpp(116): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         pellets.cpp
+         matrixU.cpp
+         doubleU.cpp
+         dataU.cpp
+     1>d:\betacool\datau.cpp(220): warning C4996: 'gcvt': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _gcvt. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(936) : see declaration of 'gcvt'
+     1>d:\betacool\datau.cpp(533): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
+         bpIBS.cpp
+         bpData.cpp
+     1>d:\betacool\bpdata.cpp(27): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>d:\betacool\bpdata.cpp(64): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>d:\betacool\bpdata.cpp(72): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>d:\betacool\bpdata.cpp(77): warning C4996: 'gcvt': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _gcvt. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(936) : see declaration of 'gcvt'
+     1>d:\betacool\bpdata.cpp(78): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>d:\betacool\bpdata.cpp(79): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>d:\betacool\bpdata.cpp(82): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+     1>d:\betacool\bpdata.cpp(85): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+         bolideU.cpp
+     1>d:\betacool\bolideu.cpp(29): warning C4996: 'gcvt': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _gcvt. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(936) : see declaration of 'gcvt'
+     1>d:\betacool\bolideu.cpp(38): warning C4996: 'gcvt': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _gcvt. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(936) : see declaration of 'gcvt'
+     1>d:\betacool\bolideu.cpp(47): warning C4996: 'gcvt': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _gcvt. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdlib.h(936) : see declaration of 'gcvt'
+         Betacool.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Betacool.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug/Betacool.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE:NO /IMPLIB:".\Betacool.lib" /MACHINE:X86 /SAFESEH .\Debug/Betacool.obj
+         .\Debug/bolideU.obj
+         .\Debug/bpData.obj
+         .\Debug/bpIBS.obj
+         .\Debug/dataU.obj
+         .\Debug/doubleU.obj
+         .\Debug/matrixU.obj
+         .\Debug/pellets.obj
+         .\Debug/bpTune.obj
+         .\Debug/StdAfx.obj
+         .\Debug/vectoru.obj
+         .\Debug/xBeam.obj
+         .\Debug/xbucket.obj
+         .\Debug/xDistributor.obj
+         .\Debug/xDraw.obj
+         .\Debug/xDynamic.obj
+         .\Debug/xEbeam.obj
+         .\Debug/xEcool.obj
+         .\Debug/xEffect.obj
+         .\Debug/xForce.obj
+         .\Debug/xhiroshi.obj
+         .\Debug/xIBS.obj
+         .\Debug/xLibrary.obj
+         .\Debug/xOptics.obj
+         .\Debug/xPowell.obj
+         .\Debug/xrestgas.obj
+         .\Debug/xRing.obj
+         .\Debug/xRunge.obj
+         .\Debug/xstoch.obj
+         .\Debug/xTarget.obj
+     1>Betacool.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         Betacool.vcxproj -> D:\betacool\.\Betacool.exe
+     1>Done Building Project "D:\betacool\Betacool.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.78

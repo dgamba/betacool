@@ -1,0 +1,128 @@
+ TITLE,s="Compact Laser Storage Ring (LSR)"
+!
+! Constant
+!
+ BRHO : CONSTANT=SQRT(2.*24E6*931E6*12)/CLIGHT/6. ! Magnetic Regidity
+ DIV  : CONSTANT=10            ! Divided Number
+ LST  : CONSTANT=1.8           ! Length of Straight section
+ LQF  : CONSTANT=0.025         ! Length of QM Fringe Field
+ LBP  : CONSTANT=0.50          ! Position of Bump Magnet
+!
+! Definition of Drift Space. 
+!
+ L1  :  DRIFT, L=0.20
+ L2  :  DRIFT, L=LST/DIV
+ L3  :  DRIFT, L=0.20
+ L4  :  DRIFT, L=LST/2.-LQF-L3[L]-CS1[L]-TR1[L]-CSL[L]
+ L5  :  DRIFT, L=0.03
+!
+! Bending Magnet with edge angle and Clamped Logowski
+!
+ BMf :  SBEND, L=1.05*2.*PI*(60./360./DIV), &
+        ANGLE=60.*RADDEG/DIV, FINT=0.455/2, HGAP=0.035
+!
+ BMm :  SBEND, L=1.05*2.*PI*(60./360./DIV), &
+        ANGLE=60.*RADDEG/DIV, FINT=0., HGAP=0.035
+!
+ BMr :  SBEND, L=1.05*2.*PI*(60./360./DIV), &
+        ANGLE=60.*RADDEG/DIV, FINT=0.455/2, HGAP=0.035
+!
+! Quadrupole Magnet
+!
+ QM1 :  QUADRUPOLE, L=0.20, K1=-1.14075
+ QM2 :  QUADRUPOLE, L=0.20, K1=-1.14075
+!
+! RF Cavity
+!
+ CAV :  RFCAVITY, L=0., VOLT=0.0005, HARMON=1
+!
+! Marker
+!
+ MC  :  MARKER    ! Cooler Center
+ MI  :  MARKER    ! Injection, Extraction  point
+!
+! Laser aperture
+!
+ LA1  :  DRIFT, L=0.44
+ LA21  :  DRIFT, L=0.49
+ LA22  :  DRIFT, L=0.66
+ LA3  :  DRIFT, L=0.27
+ MA1  :  MONITOR, L=0   ! upstream aperture
+ MA2  :  MONITOR, L=0   ! downstream aperture
+!
+! Correction Magnet of BM
+!
+ KB1 :  HKICKER,    L=0.0,     KICK=0.0
+ KB2 :  HKICKER,    L=0.0,     KICK=0.0
+ KB3 :  HKICKER,    L=0.0,     KICK=0.0
+ KB4 :  HKICKER,    L=0.0,     KICK=0.0
+ KB5 :  HKICKER,    L=0.0,     KICK=0.0
+ KB6 :  HKICKER,    L=0.0,     KICK=0.0
+!
+! Half Solenoid of Electron Cooler
+!
+ CSL :  SOLENOID, L=0.4, KS=0.05/BRHO*0.
+!
+! Troid Magnet
+!
+ TR1 :  HKICKER,    L=0.2,    KICK=0.05*TR1[L]*0.5/BRHO*0.
+ TR2 :  HKICKER,    L=0.2,    KICK=-1.*TR1[KICK]
+!
+! Cooler Steering Magnet with Vertical Steering
+!
+ CS1 :  KICKER,  L=0.05,  VKICK=0.,  HKICK=-1.501E-02*0.
+ CS2 :  KICKER,  L=0.05,  VKICK=0.,  HKICK=-1.*CS1[HKICK]
+!
+! Bump Magnet
+!
+ BP1  :  HKICKER,    L=0., KICK=0.0
+ BP2  :  HKICKER,    L=0., KICK=BP1[KICK]
+!
+! Definition of Beam
+!
+! BEAM, MASS=0.931*12., CHARGE=6, ENERGY=0.931*12.+0.024
+!
+! Definition of BM structure
+!
+ BM1  : LINE=(KB1,BMf,8*(KB1,BMm),KB1,BMr)
+ BM2  : LINE=(KB2,BMf,8*(KB2,BMm),KB2,BMr)
+ BM3  : LINE=(KB3,BMf,8*(KB3,BMm),KB3,BMr)
+ BM4  : LINE=(KB4,BMf,8*(KB4,BMm),KB4,BMr)
+ BM5  : LINE=(KB5,BMf,8*(KB5,BMm),KB5,BMr)
+ BM6  : LINE=(KB6,BMf,8*(KB6,BMm),KB6,BMr)
+!
+! Definition of Superperiod
+! 
+ SEC1 : LINE=(5*L2,L5,QM1,L1,BM1,L1,QM2,L5,5*L2)           ! Laser Cooling Section
+ SEC2 : LINE=(5*L2,L5,QM1,L1,BM2,L1,QM2,L5,5*L2)   ! Bump Section
+ SEC3 : LINE=(5*L2,L5,QM1,L1,BM3,L1,QM2,LA1,MA1,LA21)    ! Injection, Extraction
+ SEC4 : LINE=(LA22,MA2,LA3,QM1,L1,BM4,L1,QM2,L5,5*L2)   ! Bump Section
+ SEC5 : LINE=(5*L2,L5,QM1,L1,BM5,L1,QM2,L5,5*L2)
+ SEC6 : LINE=(5*L2,L5,QM1,L1,BM6,L1,QM2,L5,5*L2)       ! RF Cavity
+!
+! Definition of Ring
+!
+ RING : LINE=(SEC1,SEC2,SEC3,SEC4,SEC5,SEC6)
+ USE, RING, SUPER=1
+!
+! Matching Section.
+!
+ CELL
+    VARY, NAME=QM1[K1], STEP=1E-3, LOWER=-10.0, UPPER=10.0
+    VARY, NAME=QM2[K1], STEP=1E-3, LOWER=-10.0, UPPER=10.0
+    CONSTRAINT,#E, MUX=2.068, MUY=1.105
+    LEVEL,1
+    MIGRAD,  CALLS=100000, TOLERANCE=1.0E-9
+    LMDIF,  CALLS=100000, TOLERANCE=1.0E-9
+ ENDMATCH
+!
+! Print of Result
+!
+ PRINT, FULL
+ TWISS, SAVE, DELTAP=0.0
+ PRINT, FULL
+ PLOT, TABLE=TWISS, HAXIS=S, VAXIS=BETX,BETY,DX,VMAX=5.5, VMIN=0.5 &
+       STYLE=100 RANGE=SEC3, 
+!
+ STOP
+
