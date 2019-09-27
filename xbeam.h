@@ -69,7 +69,7 @@ class xBeam : public xDistributor //xGener
    doubleU GetEquillibrium(doubleU emit);
    void KeepCross();
    bool Crossed();
-   bool Loss(xLattice&, int, double);
+   bool Loss(xLattice&, int, double,bool);
 
 // from Grisha
 //---------------------------------------------------------------------------

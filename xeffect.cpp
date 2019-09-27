@@ -162,7 +162,7 @@ void xLosses::Kick(xTime& time, xBeam& beam, xRing& ring)
    if (Decay)
    {  loss = (time.dt / ring.TLife)(U1_);
       for (int j = 0; j < beam.Number(); j++)
-         beam.Loss(Lattice, j, loss);
+         beam.Loss(Lattice, j, loss,false);
    }
    if (Acceptance)
    {  beam.Courant_Snyder(Lattice);
@@ -170,12 +170,12 @@ void xLosses::Kick(xTime& time, xBeam& beam, xRing& ring)
        {
 		 //if ((U_Abs(beam(j,0)) > ((ring.AcceptH*ring.BetaH)^0.5)) || (U_Abs(beam(j,2)) > ((ring.AcceptV*ring.BetaV)^0.5)) )
 		 if (((beam.Inv(j)[0]*ring.BetaH)^0.5)+((beam.Inv(j)[2]^0.5)*ring.DispH) > ((ring.AcceptH*ring.BetaH)^0.5))
-			beam.Loss(Lattice, j, 1.); else
+			beam.Loss(Lattice, j, 1.,false); else
 		 if (((beam.Inv(j)[1]*ring.BetaV)^0.5)+((beam.Inv(j)[2]^0.5)*ring.DispV) > ((ring.AcceptV*ring.BetaV)^0.5))
-			beam.Loss(Lattice, j, 1.); else
+			beam.Loss(Lattice, j, 1.,false); else
 		 //if (U_Abs(beam(j,5)) > ring.AcceptDp)
 		 if (beam.Inv(j)[2] > (ring.AcceptDp*ring.AcceptDp))
-			beam.Loss(Lattice, j, 1.);
+			beam.Loss(Lattice, j, 1.,false);
 	   }
    }
    if (Separatrix)
@@ -183,10 +183,10 @@ void xLosses::Kick(xTime& time, xBeam& beam, xRing& ring)
       for (int j = 0; j < beam.Number(); j++)
       {  if (beam.benum == BUCKET)
             if (U_Abs(beam(j,4)) > ring.AcceptS / 2.)
-               beam.Loss(Lattice, j, 1.);
+               beam.Loss(Lattice, j, 1.,false);
          if (beam.benum == BUNCHED)
             if (U_Abs(beam(j,4)) > ring.L_s * ring.Size_s / 200.)
-               beam.Loss(Lattice, j, 1.);
+               beam.Loss(Lattice, j, 1.,false);
       }
    }
 }
@@ -752,7 +752,7 @@ void xColl::Kick(xTime& time, xBeam& beam, xRing& ring)
                  (ring.Bucket.barrier[2].s2-ring.Bucket.barrier[2].s1)(m_)/2.);
       }           
       if (Loss)
-         beam.Loss(Lattice, j, (lumi * Points * time.dt * Cross)(U1_));
+         beam.Loss(Lattice, j, (lumi * Points * time.dt * Cross)(U1_),false);
       Luminosity += lumi * beam.N_b * beam.Emit[3] / beam.Number();
    }
    /*

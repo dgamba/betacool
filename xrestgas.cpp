@@ -148,7 +148,7 @@ void xRestGas::Kick (xTime&time, xBeam&beam, xRing&ring)
       loss = (-time.dt * rates[3])(U1_);
 
    for (int j = 0; j < beam.Number(); j++)
-   {  if (!beam.Loss(Lattice, j, loss))
+   {  if (!beam.Loss(Lattice, j, loss,false))
       {
          beam.Add(j,1,(U_Abs((beam.Emit[0] / Lattice.betax) *
          rates[0] * time.dt * 2.0)^0.5)*xDistributor::Gaussian());

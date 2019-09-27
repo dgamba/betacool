@@ -1,12 +1,12 @@
-﻿Build started 28.03.2019 16:03:55.
-     1>Project "D:\betacool\Betacool.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 27.06.2019 9:05:22.
+     1>Project "C:\d\betacool\Betacool.vcxproj" on node 2 (Rebuild target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(357,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob1 /D WIN32 /D NDEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Yc"stdafx.h" /Fp".\Release/Betacool.pch" /Fo".\Release/" /Fd".\Release/vc120.pdb" /Gd /TP /errorReport:prompt StdAfx.cpp
          StdAfx.cpp
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob1 /D WIN32 /D NDEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Yu"stdafx.h" /Fp".\Release/Betacool.pch" /Fo".\Release/" /Fd".\Release/vc120.pdb" /Gd /TP /errorReport:prompt Betacool.cpp bolideU.cpp bpData.cpp bpIBS.cpp dataU.cpp doubleU.cpp matrixU.cpp pellets.cpp bpTune.cpp vectoru.cpp xBeam.cpp xbucket.cpp xDistributor.cpp xDraw.cpp xDynamic.cpp xEbeam.cpp xEcool.cpp xEffect.cpp xForce.cpp xhiroshi.cpp xIBS.cpp xLibrary.cpp xOptics.cpp xPowell.cpp xrestgas.cpp xRing.cpp xRunge.cpp xstoch.cpp xTarget.cpp
          Betacool.cpp
-     1>Betacool.cpp(76): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>Betacool.cpp(79): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
          bolideU.cpp
      1>bolideU.cpp(29): warning C4996: 'gcvt': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _gcvt. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(936) : see declaration of 'gcvt'
@@ -66,7 +66,7 @@
      1>xDraw.cpp(1379): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
      1>xDraw.cpp(1387): warning C4800: 'BunchEnum' : forcing value to bool 'true' or 'false' (performance warning)
          xDynamic.cpp
-     1>xDynamic.cpp(311): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>xDynamic.cpp(332): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
          xEbeam.cpp
      1>xEbeam.cpp(133): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
      1>xEbeam.cpp(678): warning C4800: 'double' : forcing value to bool 'true' or 'false' (performance warning)
@@ -119,9 +119,9 @@
          .\Release/xRunge.obj
          .\Release/xstoch.obj
          .\Release/xTarget.obj
-         Betacool.vcxproj -> D:\betacool\.\Betacool.exe
-     1>Done Building Project "D:\betacool\Betacool.vcxproj" (Rebuild target(s)).
+         Betacool.vcxproj -> C:\d\betacool\.\Betacool.exe
+     1>Done Building Project "C:\d\betacool\Betacool.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:11.65
+Time Elapsed 00:00:35.56

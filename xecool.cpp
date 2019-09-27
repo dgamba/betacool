@@ -531,7 +531,7 @@ void xEcool::Kick (xTime&time, xBeam&beam, xRing&ring)
 
          if (Loss)
          {  loss = (-time.dt * lifetime * SectionNumber)(U1_);
-            beam.Loss(Lattice, j, loss);
+            beam.Loss(Lattice, j, loss,false);
          }
          iEbeam.Initial[4] += iEbeam.Bdistance;
          iEbeam.Final[4] += iEbeam.Bdistance;

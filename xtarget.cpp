@@ -645,7 +645,7 @@ void xTarget::Kick (xTime&time, xBeam&beam, xRing&ring)
    {
       if (itype == 0)
       {
-         if (!beam.Loss(Lattice, j, loss))
+         if (!beam.Loss(Lattice, j, loss,false))
          {
             beam[j][1] += teta * xDistributor::Gaussian();
             beam[j][3] += teta * xDistributor::Gaussian();
@@ -661,7 +661,7 @@ void xTarget::Kick (xTime&time, xBeam&beam, xRing&ring)
          else
             NN = FiberProbability(time, beam(j), ring) * turn;
 
-         if(!beam.Loss(Lattice, j, (loss*NN()/turn)))
+         if(!beam.Loss(Lattice, j, (loss*NN()/turn),false))
          {
             if (itype == 1) //!!!!!!!!!!!!!!!!!!!!!!!!!
             {

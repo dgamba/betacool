@@ -1,4 +1,4 @@
-BETACOOL----------release ver.6.2 (omp)----------2019/3/28
+BETACOOL----------debug ver.6.2 (omp)----------2019/6/26
 betacool.exe nica_my_inj.bld /model
 Input parameter [23,12] was initialised with default value:0
 Input parameter [55,8] was initialised with default value:0
@@ -23,44 +23,1965 @@ Cannot open file : NoFile
 Input parameter [44,12] was initialised with default value:0
 Input parameter [44,13] was initialised with default value:0
 Input parameter [36,10] was initialised with default value:1
-Model Beam: Integration Step [sec] =1.e-003
+Model Beam: Integration Step [sec] =2.e-003
 Tcal[m.s]=0 Tref[s]=0 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=4.e-002 Tref[s]=2.e-003 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=8.e-002 Tref[s]=4.e-003 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.12 Tref[s]=6.e-003 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.17 Tref[s]=8.e-003 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.21 Tref[s]=1.e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.26 Tref[s]=1.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.3 Tref[s]=1.4e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.35 Tref[s]=1.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.38 Tref[s]=1.8e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.43 Tref[s]=2.e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.47 Tref[s]=2.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.51 Tref[s]=2.4e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.55 Tref[s]=2.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=0.59 Tref[s]=2.8e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.04 Tref[s]=3.e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.08 Tref[s]=3.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.12 Tref[s]=3.4e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.16 Tref[s]=3.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.2 Tref[s]=3.8e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.24 Tref[s]=4.e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.28 Tref[s]=4.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.32 Tref[s]=4.4e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.36 Tref[s]=4.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.4 Tref[s]=4.8e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.44 Tref[s]=5.e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.48 Tref[s]=5.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.52 Tref[s]=5.4e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=1.56 Tref[s]=5.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=2 Tref[s]=5.8e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=2.04 Tref[s]=6.e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=2.08 Tref[s]=6.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=2.12 Tref[s]=6.4e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=2.16 Tref[s]=6.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=2.2 Tref[s]=6.8e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=2.24 Tref[s]=7.e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=2.28 Tref[s]=7.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=2.32 Tref[s]=7.4e-002 Ecool[%]=0 Core[%]=0 Impact=0
-Tcal[m.s]=2.36 Tref[s]=7.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
-STOP -2019/5/10-11:54:1
+Tcal[m.s]=7.e-002 Tref[s]=4.e-003 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.14 Tref[s]=8.e-003 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.21 Tref[s]=1.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.27 Tref[s]=1.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.34 Tref[s]=2.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.41 Tref[s]=2.4e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.47 Tref[s]=2.8e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.54 Tref[s]=3.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.01 Tref[s]=3.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.07 Tref[s]=4.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.14 Tref[s]=4.4e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.21 Tref[s]=4.8e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.27 Tref[s]=5.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.33 Tref[s]=5.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.4 Tref[s]=6.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.46 Tref[s]=6.4e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.53 Tref[s]=6.8e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.59 Tref[s]=7.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.06 Tref[s]=7.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.12 Tref[s]=8.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.18 Tref[s]=8.4e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.25 Tref[s]=8.8e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.31 Tref[s]=9.2e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.38 Tref[s]=9.6e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.44 Tref[s]=0.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.51 Tref[s]=0.104 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.58 Tref[s]=0.108 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.04 Tref[s]=0.112 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.11 Tref[s]=0.116 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.17 Tref[s]=0.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.23 Tref[s]=0.124 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.3 Tref[s]=0.128 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.36 Tref[s]=0.132 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.42 Tref[s]=0.136 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.49 Tref[s]=0.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.55 Tref[s]=0.144 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.01 Tref[s]=0.148 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.06 Tref[s]=0.152 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.13 Tref[s]=0.156 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.19 Tref[s]=0.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.26 Tref[s]=0.164 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.31 Tref[s]=0.168 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.38 Tref[s]=0.172 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.44 Tref[s]=0.176 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.5 Tref[s]=0.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.57 Tref[s]=0.184 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.03 Tref[s]=0.188 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.09 Tref[s]=0.192 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.15 Tref[s]=0.196 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.22 Tref[s]=0.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.29 Tref[s]=0.204 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.35 Tref[s]=0.208 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.41 Tref[s]=0.212 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.48 Tref[s]=0.216 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.54 Tref[s]=0.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6 Tref[s]=0.224 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.07 Tref[s]=0.228 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.13 Tref[s]=0.232 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.2 Tref[s]=0.236 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.26 Tref[s]=0.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.33 Tref[s]=0.244 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.39 Tref[s]=0.248 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.45 Tref[s]=0.252 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.52 Tref[s]=0.256 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.58 Tref[s]=0.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.04 Tref[s]=0.264 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.11 Tref[s]=0.268 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.17 Tref[s]=0.272 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.24 Tref[s]=0.276 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.3 Tref[s]=0.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.36 Tref[s]=0.284 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.42 Tref[s]=0.288 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.48 Tref[s]=0.292 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.55 Tref[s]=0.296 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.01 Tref[s]=0.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.08 Tref[s]=0.304 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.14 Tref[s]=0.308 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.18 Tref[s]=0.312 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.25 Tref[s]=0.316 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.31 Tref[s]=0.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.38 Tref[s]=0.324 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.44 Tref[s]=0.328 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.5 Tref[s]=0.332 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.56 Tref[s]=0.336 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.02 Tref[s]=0.34 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.08 Tref[s]=0.344 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.15 Tref[s]=0.348 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.21 Tref[s]=0.352 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.27 Tref[s]=0.356 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.33 Tref[s]=0.36 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.39 Tref[s]=0.364 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.45 Tref[s]=0.368 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.52 Tref[s]=0.372 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.57 Tref[s]=0.376 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.03 Tref[s]=0.38 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.09 Tref[s]=0.384 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.15 Tref[s]=0.388 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.21 Tref[s]=0.392 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.28 Tref[s]=0.396 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.34 Tref[s]=0.4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.4 Tref[s]=0.404 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.46 Tref[s]=0.408 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.53 Tref[s]=0.412 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.58 Tref[s]=0.416 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.05 Tref[s]=0.42 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.11 Tref[s]=0.424 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.18 Tref[s]=0.428 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.23 Tref[s]=0.432 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.29 Tref[s]=0.436 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.35 Tref[s]=0.44 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.41 Tref[s]=0.444 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.47 Tref[s]=0.448 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.54 Tref[s]=0.452 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12 Tref[s]=0.456 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.06 Tref[s]=0.46 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.12 Tref[s]=0.464 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.19 Tref[s]=0.468 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.25 Tref[s]=0.472 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.32 Tref[s]=0.476 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.38 Tref[s]=0.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.44 Tref[s]=0.484 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.5 Tref[s]=0.488 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.56 Tref[s]=0.492 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.02 Tref[s]=0.496 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.08 Tref[s]=0.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.14 Tref[s]=0.504 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.2 Tref[s]=0.508 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.26 Tref[s]=0.512 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.32 Tref[s]=0.516 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.38 Tref[s]=0.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.45 Tref[s]=0.524 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.51 Tref[s]=0.528 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.57 Tref[s]=0.532 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.03 Tref[s]=0.536 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.09 Tref[s]=0.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.15 Tref[s]=0.544 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.22 Tref[s]=0.548 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.27 Tref[s]=0.552 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.33 Tref[s]=0.556 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.38 Tref[s]=0.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.43 Tref[s]=0.564 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.49 Tref[s]=0.568 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.54 Tref[s]=0.572 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.59 Tref[s]=0.576 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.06 Tref[s]=0.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.12 Tref[s]=0.584 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.18 Tref[s]=0.588 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.24 Tref[s]=0.592 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.3 Tref[s]=0.596 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.36 Tref[s]=0.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.42 Tref[s]=0.604 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.48 Tref[s]=0.608 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.54 Tref[s]=0.612 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16 Tref[s]=0.616 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.06 Tref[s]=0.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.12 Tref[s]=0.624 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.18 Tref[s]=0.628 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.24 Tref[s]=0.632 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.3 Tref[s]=0.636 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.36 Tref[s]=0.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.42 Tref[s]=0.644 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.48 Tref[s]=0.648 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.54 Tref[s]=0.652 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17 Tref[s]=0.656 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.06 Tref[s]=0.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.12 Tref[s]=0.664 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.18 Tref[s]=0.668 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.24 Tref[s]=0.672 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.3 Tref[s]=0.676 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.36 Tref[s]=0.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.42 Tref[s]=0.684 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.47 Tref[s]=0.688 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.53 Tref[s]=0.692 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.59 Tref[s]=0.696 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.05 Tref[s]=0.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.11 Tref[s]=0.704 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.17 Tref[s]=0.708 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.22 Tref[s]=0.712 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.27 Tref[s]=0.716 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.33 Tref[s]=0.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.39 Tref[s]=0.724 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.45 Tref[s]=0.728 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.5 Tref[s]=0.732 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.56 Tref[s]=0.736 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.02 Tref[s]=0.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.08 Tref[s]=0.744 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.14 Tref[s]=0.748 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.19 Tref[s]=0.752 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.25 Tref[s]=0.756 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.31 Tref[s]=0.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.37 Tref[s]=0.764 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.43 Tref[s]=0.768 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.49 Tref[s]=0.772 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.55 Tref[s]=0.776 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.01 Tref[s]=0.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.07 Tref[s]=0.784 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.13 Tref[s]=0.788 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.18 Tref[s]=0.792 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.24 Tref[s]=0.796 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.3 Tref[s]=0.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.36 Tref[s]=0.804 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.42 Tref[s]=0.808 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.48 Tref[s]=0.812 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.53 Tref[s]=0.816 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.59 Tref[s]=0.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.05 Tref[s]=0.824 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.11 Tref[s]=0.828 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.16 Tref[s]=0.832 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.22 Tref[s]=0.836 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.27 Tref[s]=0.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.33 Tref[s]=0.844 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.39 Tref[s]=0.848 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.44 Tref[s]=0.852 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.5 Tref[s]=0.856 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.56 Tref[s]=0.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.01 Tref[s]=0.864 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.07 Tref[s]=0.868 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.13 Tref[s]=0.872 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.18 Tref[s]=0.876 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.23 Tref[s]=0.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.28 Tref[s]=0.884 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.34 Tref[s]=0.888 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.38 Tref[s]=0.892 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.41 Tref[s]=0.896 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.45 Tref[s]=0.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.5 Tref[s]=0.904 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=22.57 Tref[s]=0.908 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.03 Tref[s]=0.912 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.09 Tref[s]=0.916 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.14 Tref[s]=0.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.19 Tref[s]=0.924 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.25 Tref[s]=0.928 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.31 Tref[s]=0.932 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.36 Tref[s]=0.936 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.42 Tref[s]=0.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.47 Tref[s]=0.944 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.53 Tref[s]=0.948 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.59 Tref[s]=0.952 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.05 Tref[s]=0.956 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.11 Tref[s]=0.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.17 Tref[s]=0.964 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.22 Tref[s]=0.968 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.29 Tref[s]=0.972 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.34 Tref[s]=0.976 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.4 Tref[s]=0.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.45 Tref[s]=0.984 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.51 Tref[s]=0.988 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.55 Tref[s]=0.992 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.01 Tref[s]=0.996 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.06 Tref[s]=1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.12 Tref[s]=1.004 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.18 Tref[s]=1.008 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.24 Tref[s]=1.012 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.29 Tref[s]=1.016 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.35 Tref[s]=1.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.41 Tref[s]=1.024 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.46 Tref[s]=1.028 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.52 Tref[s]=1.032 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.58 Tref[s]=1.036 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.03 Tref[s]=1.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.09 Tref[s]=1.044 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.15 Tref[s]=1.048 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.2 Tref[s]=1.052 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.24 Tref[s]=1.056 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.3 Tref[s]=1.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.35 Tref[s]=1.064 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.4 Tref[s]=1.068 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.46 Tref[s]=1.072 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.52 Tref[s]=1.076 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.57 Tref[s]=1.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.03 Tref[s]=1.084 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.09 Tref[s]=1.088 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.15 Tref[s]=1.092 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.2 Tref[s]=1.096 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.26 Tref[s]=1.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.32 Tref[s]=1.104 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.37 Tref[s]=1.108 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.43 Tref[s]=1.112 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.48 Tref[s]=1.116 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.53 Tref[s]=1.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.59 Tref[s]=1.124 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.05 Tref[s]=1.128 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.1 Tref[s]=1.132 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.16 Tref[s]=1.136 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.21 Tref[s]=1.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.27 Tref[s]=1.144 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.32 Tref[s]=1.148 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.38 Tref[s]=1.152 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.44 Tref[s]=1.156 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.5 Tref[s]=1.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.55 Tref[s]=1.164 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29 Tref[s]=1.168 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.06 Tref[s]=1.172 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.11 Tref[s]=1.176 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.17 Tref[s]=1.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.23 Tref[s]=1.184 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.29 Tref[s]=1.188 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.35 Tref[s]=1.192 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.4 Tref[s]=1.196 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.46 Tref[s]=1.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.51 Tref[s]=1.204 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.57 Tref[s]=1.208 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.03 Tref[s]=1.212 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.08 Tref[s]=1.216 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.14 Tref[s]=1.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.18 Tref[s]=1.224 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.24 Tref[s]=1.228 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.29 Tref[s]=1.232 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.35 Tref[s]=1.236 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.4 Tref[s]=1.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.46 Tref[s]=1.244 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.51 Tref[s]=1.248 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.56 Tref[s]=1.252 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.02 Tref[s]=1.256 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.08 Tref[s]=1.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.13 Tref[s]=1.264 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.18 Tref[s]=1.268 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.24 Tref[s]=1.272 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.3 Tref[s]=1.276 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.35 Tref[s]=1.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.41 Tref[s]=1.284 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.46 Tref[s]=1.288 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.52 Tref[s]=1.292 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.57 Tref[s]=1.296 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.03 Tref[s]=1.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.08 Tref[s]=1.304 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.13 Tref[s]=1.308 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.19 Tref[s]=1.312 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.24 Tref[s]=1.316 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.3 Tref[s]=1.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.36 Tref[s]=1.324 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.41 Tref[s]=1.328 Ecool[%]=0 Core[%]=0 Impact=0
+STOP -2019/6/27-5:36:32
+BETACOOL----------debug ver.6.2 (omp)----------2019/6/26
+betacool.exe nica_my_inj.bld /model
+Input parameter [23,12] was initialised with default value:0
+Input parameter [55,8] was initialised with default value:0
+Input parameter [55,9] was initialised with default value:-0.1
+Input parameter [55,10] was initialised with default value:0.1
+Input parameter [42,19] was initialised with default value:100
+Input parameter [42,20] was initialised with default value:1000
+Input parameter [42,21] was initialised with default value:10
+Input parameter [44,1] was initialised with default value:0
+Input parameter [44,2] was initialised with default value:100
+Input parameter [44,3] was initialised with default value:100
+Input parameter [44,4] was initialised with default value:100
+Input parameter [44,5] was initialised with default value:100
+Input parameter [44,6] was initialised with default value:100
+Input parameter [44,7] was initialised with default value:100
+Input parameter [44,7] was initialised with default value:100
+Input parameter [44,8] was initialised with default value:0
+Input parameter [44,9] was initialised with default value:0
+Input parameter [44,11] was initialised with default value:0
+Input parameter [44,10] was initialised with default value
+Cannot open file : NoFile
+Input parameter [44,12] was initialised with default value:0
+Input parameter [44,13] was initialised with default value:0
+Input parameter [36,10] was initialised with default value:1
+Model Beam: Integration Step [sec] =5.e-003
+Tcal[m.s]=0 Tref[s]=0 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.e-002 Tref[s]=1.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.13 Tref[s]=2.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.19 Tref[s]=3.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.25 Tref[s]=4.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.31 Tref[s]=5.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.37 Tref[s]=6.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.42 Tref[s]=7.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.48 Tref[s]=8.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=0.54 Tref[s]=9.e-002 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1 Tref[s]=0.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.06 Tref[s]=0.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.11 Tref[s]=0.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.17 Tref[s]=0.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.23 Tref[s]=0.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.29 Tref[s]=0.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.35 Tref[s]=0.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.41 Tref[s]=0.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.47 Tref[s]=0.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=1.54 Tref[s]=0.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2 Tref[s]=0.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.05 Tref[s]=0.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.09 Tref[s]=0.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.12 Tref[s]=0.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.15 Tref[s]=0.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.18 Tref[s]=0.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.2 Tref[s]=0.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.23 Tref[s]=0.27 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.26 Tref[s]=0.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.32 Tref[s]=0.29 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.38 Tref[s]=0.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.44 Tref[s]=0.31 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.5 Tref[s]=0.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=2.56 Tref[s]=0.33 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3 Tref[s]=0.34 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.04 Tref[s]=0.35 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.1 Tref[s]=0.36 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.15 Tref[s]=0.37 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.22 Tref[s]=0.38 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.27 Tref[s]=0.39 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.31 Tref[s]=0.4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.35 Tref[s]=0.41 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.37 Tref[s]=0.42 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.43 Tref[s]=0.43 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.49 Tref[s]=0.44 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=3.56 Tref[s]=0.45 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.03 Tref[s]=0.46 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.1 Tref[s]=0.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.17 Tref[s]=0.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.23 Tref[s]=0.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.28 Tref[s]=0.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.35 Tref[s]=0.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.42 Tref[s]=0.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.48 Tref[s]=0.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.51 Tref[s]=0.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.54 Tref[s]=0.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=4.57 Tref[s]=0.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5 Tref[s]=0.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.03 Tref[s]=0.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.06 Tref[s]=0.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.08 Tref[s]=0.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.12 Tref[s]=0.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.15 Tref[s]=0.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.18 Tref[s]=0.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.21 Tref[s]=0.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.24 Tref[s]=0.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.27 Tref[s]=0.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.3 Tref[s]=0.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.33 Tref[s]=0.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.36 Tref[s]=0.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.39 Tref[s]=0.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.42 Tref[s]=0.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.46 Tref[s]=0.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.49 Tref[s]=0.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.52 Tref[s]=0.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.55 Tref[s]=0.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=5.58 Tref[s]=0.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.01 Tref[s]=0.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.04 Tref[s]=0.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.07 Tref[s]=0.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.1 Tref[s]=0.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.14 Tref[s]=0.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.17 Tref[s]=0.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.2 Tref[s]=0.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.23 Tref[s]=0.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.26 Tref[s]=0.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.29 Tref[s]=0.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.32 Tref[s]=0.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.34 Tref[s]=0.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.37 Tref[s]=0.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.39 Tref[s]=0.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.42 Tref[s]=0.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.45 Tref[s]=0.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.47 Tref[s]=0.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.5 Tref[s]=0.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.53 Tref[s]=0.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.56 Tref[s]=0.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=6.59 Tref[s]=0.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.02 Tref[s]=0.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.05 Tref[s]=0.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.08 Tref[s]=1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.11 Tref[s]=1.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.14 Tref[s]=1.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.18 Tref[s]=1.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.22 Tref[s]=1.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.25 Tref[s]=1.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.28 Tref[s]=1.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.31 Tref[s]=1.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.35 Tref[s]=1.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.38 Tref[s]=1.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.41 Tref[s]=1.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.44 Tref[s]=1.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.47 Tref[s]=1.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.5 Tref[s]=1.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.53 Tref[s]=1.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.56 Tref[s]=1.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=7.59 Tref[s]=1.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.02 Tref[s]=1.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.05 Tref[s]=1.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.08 Tref[s]=1.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.12 Tref[s]=1.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.15 Tref[s]=1.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.18 Tref[s]=1.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.21 Tref[s]=1.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.24 Tref[s]=1.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.29 Tref[s]=1.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.35 Tref[s]=1.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.42 Tref[s]=1.27 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.48 Tref[s]=1.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=8.54 Tref[s]=1.29 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.01 Tref[s]=1.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.07 Tref[s]=1.31 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.14 Tref[s]=1.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.2 Tref[s]=1.33 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.26 Tref[s]=1.34 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.29 Tref[s]=1.35 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.32 Tref[s]=1.36 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.35 Tref[s]=1.37 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.37 Tref[s]=1.38 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.4 Tref[s]=1.39 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.42 Tref[s]=1.4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.45 Tref[s]=1.41 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.47 Tref[s]=1.42 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.49 Tref[s]=1.43 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.52 Tref[s]=1.44 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.54 Tref[s]=1.45 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.57 Tref[s]=1.46 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=9.59 Tref[s]=1.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.02 Tref[s]=1.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.04 Tref[s]=1.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.07 Tref[s]=1.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.09 Tref[s]=1.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.12 Tref[s]=1.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.14 Tref[s]=1.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.16 Tref[s]=1.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.19 Tref[s]=1.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.21 Tref[s]=1.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.24 Tref[s]=1.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.26 Tref[s]=1.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.29 Tref[s]=1.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.31 Tref[s]=1.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.34 Tref[s]=1.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.36 Tref[s]=1.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.39 Tref[s]=1.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.41 Tref[s]=1.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.43 Tref[s]=1.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.46 Tref[s]=1.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.48 Tref[s]=1.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.51 Tref[s]=1.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.53 Tref[s]=1.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.55 Tref[s]=1.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=10.58 Tref[s]=1.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11 Tref[s]=1.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.03 Tref[s]=1.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.1 Tref[s]=1.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.16 Tref[s]=1.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.22 Tref[s]=1.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.28 Tref[s]=1.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.34 Tref[s]=1.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.4 Tref[s]=1.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.47 Tref[s]=1.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.53 Tref[s]=1.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=11.59 Tref[s]=1.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.05 Tref[s]=1.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.11 Tref[s]=1.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.17 Tref[s]=1.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.23 Tref[s]=1.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.3 Tref[s]=1.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.36 Tref[s]=1.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.42 Tref[s]=1.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.48 Tref[s]=1.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=12.54 Tref[s]=1.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.01 Tref[s]=1.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.07 Tref[s]=1.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.13 Tref[s]=1.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.19 Tref[s]=1.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.24 Tref[s]=1.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.28 Tref[s]=1.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.33 Tref[s]=1.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.38 Tref[s]=1.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.43 Tref[s]=2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.49 Tref[s]=2.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=13.56 Tref[s]=2.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.02 Tref[s]=2.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.08 Tref[s]=2.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.14 Tref[s]=2.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.2 Tref[s]=2.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.25 Tref[s]=2.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.31 Tref[s]=2.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.37 Tref[s]=2.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.43 Tref[s]=2.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.49 Tref[s]=2.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=14.55 Tref[s]=2.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.01 Tref[s]=2.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.07 Tref[s]=2.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.14 Tref[s]=2.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.2 Tref[s]=2.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.26 Tref[s]=2.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.32 Tref[s]=2.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.38 Tref[s]=2.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.44 Tref[s]=2.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.5 Tref[s]=2.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=15.56 Tref[s]=2.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.02 Tref[s]=2.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.08 Tref[s]=2.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.14 Tref[s]=2.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.2 Tref[s]=2.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.26 Tref[s]=2.27 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.32 Tref[s]=2.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.38 Tref[s]=2.29 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.44 Tref[s]=2.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.49 Tref[s]=2.31 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=16.56 Tref[s]=2.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.02 Tref[s]=2.33 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.08 Tref[s]=2.34 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.14 Tref[s]=2.35 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.2 Tref[s]=2.36 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.26 Tref[s]=2.37 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.31 Tref[s]=2.38 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.38 Tref[s]=2.39 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.44 Tref[s]=2.4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.5 Tref[s]=2.41 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=17.56 Tref[s]=2.42 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.02 Tref[s]=2.43 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.08 Tref[s]=2.44 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.14 Tref[s]=2.45 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.2 Tref[s]=2.46 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.26 Tref[s]=2.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.31 Tref[s]=2.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.37 Tref[s]=2.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.43 Tref[s]=2.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.49 Tref[s]=2.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=18.55 Tref[s]=2.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.01 Tref[s]=2.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.07 Tref[s]=2.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.13 Tref[s]=2.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.19 Tref[s]=2.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.25 Tref[s]=2.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.3 Tref[s]=2.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.36 Tref[s]=2.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.42 Tref[s]=2.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.48 Tref[s]=2.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=19.54 Tref[s]=2.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20 Tref[s]=2.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.06 Tref[s]=2.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.12 Tref[s]=2.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.18 Tref[s]=2.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.24 Tref[s]=2.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.3 Tref[s]=2.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.36 Tref[s]=2.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.42 Tref[s]=2.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.48 Tref[s]=2.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=20.54 Tref[s]=2.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21 Tref[s]=2.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.06 Tref[s]=2.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.11 Tref[s]=2.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.17 Tref[s]=2.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.23 Tref[s]=2.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.29 Tref[s]=2.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.35 Tref[s]=2.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.41 Tref[s]=2.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.46 Tref[s]=2.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.52 Tref[s]=2.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=21.58 Tref[s]=2.83 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 6.591025052e-002
+Integral of barrier potentials [V m] = 0.1786088168
+Tcal[m.s]=22.04 Tref[s]=2.84 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 0.2787313832
+Integral of barrier potentials [V m] = 0.3662779495
+Tcal[m.s]=22.1 Tref[s]=2.85 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 0.4412485161
+Integral of barrier potentials [V m] = 0.5036430824
+Tcal[m.s]=22.16 Tref[s]=2.86 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 0.5534616488
+Integral of barrier potentials [V m] = 0.5907042152
+Tcal[m.s]=22.21 Tref[s]=2.87 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 0.6153707816
+Integral of barrier potentials [V m] = 0.627461348
+Tcal[m.s]=22.26 Tref[s]=2.88 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 0.6269759144
+Integral of barrier potentials [V m] = 0.6139144808
+Tcal[m.s]=22.32 Tref[s]=2.89 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 0.5882770472
+Integral of barrier potentials [V m] = 0.5500636136
+Tcal[m.s]=22.38 Tref[s]=2.9 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 0.49927418
+Integral of barrier potentials [V m] = 0.4359087464
+Tcal[m.s]=22.44 Tref[s]=2.91 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 0.3599673128
+Integral of barrier potentials [V m] = 0.2714498792
+Tcal[m.s]=22.5 Tref[s]=2.92 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 0.1703564456
+Integral of barrier potentials [V m] = 5.668701201e-002
+Tcal[m.s]=22.56 Tref[s]=2.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.02 Tref[s]=2.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.08 Tref[s]=2.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.14 Tref[s]=2.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.2 Tref[s]=2.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.26 Tref[s]=2.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.32 Tref[s]=2.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.39 Tref[s]=3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.44 Tref[s]=3.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.5 Tref[s]=3.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=23.56 Tref[s]=3.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.02 Tref[s]=3.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.07 Tref[s]=3.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.12 Tref[s]=3.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.17 Tref[s]=3.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.21 Tref[s]=3.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.27 Tref[s]=3.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.32 Tref[s]=3.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.37 Tref[s]=3.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.43 Tref[s]=3.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.48 Tref[s]=3.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.53 Tref[s]=3.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=24.59 Tref[s]=3.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.04 Tref[s]=3.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.09 Tref[s]=3.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.14 Tref[s]=3.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.19 Tref[s]=3.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.24 Tref[s]=3.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.3 Tref[s]=3.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.35 Tref[s]=3.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.41 Tref[s]=3.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.46 Tref[s]=3.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.52 Tref[s]=3.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=25.58 Tref[s]=3.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.04 Tref[s]=3.27 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.08 Tref[s]=3.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.13 Tref[s]=3.29 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.19 Tref[s]=3.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.24 Tref[s]=3.31 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.3 Tref[s]=3.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.35 Tref[s]=3.33 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.4 Tref[s]=3.34 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.45 Tref[s]=3.35 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.5 Tref[s]=3.36 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=26.56 Tref[s]=3.37 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.01 Tref[s]=3.38 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.07 Tref[s]=3.39 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.12 Tref[s]=3.4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.17 Tref[s]=3.41 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.23 Tref[s]=3.42 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.28 Tref[s]=3.43 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.33 Tref[s]=3.44 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.39 Tref[s]=3.45 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.44 Tref[s]=3.46 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.5 Tref[s]=3.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=27.55 Tref[s]=3.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.01 Tref[s]=3.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.05 Tref[s]=3.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.11 Tref[s]=3.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.16 Tref[s]=3.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.22 Tref[s]=3.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.27 Tref[s]=3.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.33 Tref[s]=3.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.39 Tref[s]=3.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.44 Tref[s]=3.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.49 Tref[s]=3.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.54 Tref[s]=3.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=28.59 Tref[s]=3.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.04 Tref[s]=3.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.09 Tref[s]=3.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.14 Tref[s]=3.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.2 Tref[s]=3.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.25 Tref[s]=3.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.3 Tref[s]=3.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.36 Tref[s]=3.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.41 Tref[s]=3.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.47 Tref[s]=3.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.52 Tref[s]=3.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=29.58 Tref[s]=3.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.03 Tref[s]=3.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.08 Tref[s]=3.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.14 Tref[s]=3.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.18 Tref[s]=3.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.23 Tref[s]=3.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.28 Tref[s]=3.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.34 Tref[s]=3.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.4 Tref[s]=3.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.45 Tref[s]=3.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.51 Tref[s]=3.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=30.56 Tref[s]=3.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.02 Tref[s]=3.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.07 Tref[s]=3.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.12 Tref[s]=3.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.18 Tref[s]=3.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.23 Tref[s]=3.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.29 Tref[s]=3.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.34 Tref[s]=3.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.4 Tref[s]=3.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.45 Tref[s]=3.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.5 Tref[s]=3.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=31.55 Tref[s]=3.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32 Tref[s]=3.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.06 Tref[s]=3.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.11 Tref[s]=3.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.16 Tref[s]=3.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.21 Tref[s]=3.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.27 Tref[s]=3.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.32 Tref[s]=4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.37 Tref[s]=4.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.4 Tref[s]=4.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.45 Tref[s]=4.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.5 Tref[s]=4.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=32.56 Tref[s]=4.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.01 Tref[s]=4.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.06 Tref[s]=4.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.1 Tref[s]=4.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.16 Tref[s]=4.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.21 Tref[s]=4.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.26 Tref[s]=4.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.32 Tref[s]=4.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.37 Tref[s]=4.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.42 Tref[s]=4.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.48 Tref[s]=4.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.53 Tref[s]=4.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=33.58 Tref[s]=4.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=34.03 Tref[s]=4.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=34.09 Tref[s]=4.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=34.14 Tref[s]=4.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=34.19 Tref[s]=4.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=34.25 Tref[s]=4.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=34.3 Tref[s]=4.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=34.35 Tref[s]=4.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=34.41 Tref[s]=4.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=34.46 Tref[s]=4.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=34.51 Tref[s]=4.27 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=34.56 Tref[s]=4.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.01 Tref[s]=4.29 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.07 Tref[s]=4.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.12 Tref[s]=4.31 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.17 Tref[s]=4.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.22 Tref[s]=4.33 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.25 Tref[s]=4.34 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.28 Tref[s]=4.35 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.33 Tref[s]=4.36 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.39 Tref[s]=4.37 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.45 Tref[s]=4.38 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.5 Tref[s]=4.39 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=35.55 Tref[s]=4.4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36 Tref[s]=4.41 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36.05 Tref[s]=4.42 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36.1 Tref[s]=4.43 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36.15 Tref[s]=4.44 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36.2 Tref[s]=4.45 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36.25 Tref[s]=4.46 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36.3 Tref[s]=4.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36.35 Tref[s]=4.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36.41 Tref[s]=4.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36.46 Tref[s]=4.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36.52 Tref[s]=4.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=36.57 Tref[s]=4.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.02 Tref[s]=4.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.07 Tref[s]=4.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.12 Tref[s]=4.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.17 Tref[s]=4.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.22 Tref[s]=4.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.27 Tref[s]=4.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.33 Tref[s]=4.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.38 Tref[s]=4.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.44 Tref[s]=4.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.49 Tref[s]=4.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.54 Tref[s]=4.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=37.59 Tref[s]=4.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=38.05 Tref[s]=4.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=38.1 Tref[s]=4.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=38.15 Tref[s]=4.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=38.2 Tref[s]=4.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=38.25 Tref[s]=4.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=38.31 Tref[s]=4.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=38.36 Tref[s]=4.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=38.42 Tref[s]=4.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=38.47 Tref[s]=4.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=38.52 Tref[s]=4.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=38.58 Tref[s]=4.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=39.03 Tref[s]=4.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=39.08 Tref[s]=4.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=39.13 Tref[s]=4.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=39.18 Tref[s]=4.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=39.23 Tref[s]=4.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=39.29 Tref[s]=4.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=39.34 Tref[s]=4.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=39.4 Tref[s]=4.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=39.45 Tref[s]=4.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=39.5 Tref[s]=4.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=39.55 Tref[s]=4.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40 Tref[s]=4.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40.06 Tref[s]=4.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40.11 Tref[s]=4.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40.16 Tref[s]=4.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40.21 Tref[s]=4.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40.27 Tref[s]=4.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40.32 Tref[s]=4.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40.37 Tref[s]=4.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40.43 Tref[s]=4.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40.47 Tref[s]=4.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40.52 Tref[s]=4.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=40.57 Tref[s]=4.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.02 Tref[s]=4.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.07 Tref[s]=5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.13 Tref[s]=5.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.18 Tref[s]=5.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.24 Tref[s]=5.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.29 Tref[s]=5.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.33 Tref[s]=5.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.37 Tref[s]=5.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.42 Tref[s]=5.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.47 Tref[s]=5.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.52 Tref[s]=5.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=41.58 Tref[s]=5.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.02 Tref[s]=5.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.07 Tref[s]=5.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.12 Tref[s]=5.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.17 Tref[s]=5.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.22 Tref[s]=5.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.26 Tref[s]=5.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.32 Tref[s]=5.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.37 Tref[s]=5.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.43 Tref[s]=5.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.48 Tref[s]=5.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.52 Tref[s]=5.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=42.56 Tref[s]=5.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.01 Tref[s]=5.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.06 Tref[s]=5.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.11 Tref[s]=5.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.16 Tref[s]=5.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.21 Tref[s]=5.27 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.26 Tref[s]=5.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.3 Tref[s]=5.29 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.34 Tref[s]=5.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.4 Tref[s]=5.31 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.46 Tref[s]=5.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.51 Tref[s]=5.33 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=43.56 Tref[s]=5.34 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44 Tref[s]=5.35 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.05 Tref[s]=5.36 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.1 Tref[s]=5.37 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.15 Tref[s]=5.38 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.2 Tref[s]=5.39 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.25 Tref[s]=5.4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.3 Tref[s]=5.41 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.36 Tref[s]=5.42 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.4 Tref[s]=5.43 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.43 Tref[s]=5.44 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.45 Tref[s]=5.45 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.48 Tref[s]=5.46 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.5 Tref[s]=5.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.52 Tref[s]=5.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.54 Tref[s]=5.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.56 Tref[s]=5.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=44.59 Tref[s]=5.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=45.05 Tref[s]=5.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=45.09 Tref[s]=5.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=45.14 Tref[s]=5.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=45.19 Tref[s]=5.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=45.24 Tref[s]=5.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=45.29 Tref[s]=5.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=45.35 Tref[s]=5.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=45.39 Tref[s]=5.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=45.45 Tref[s]=5.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=45.5 Tref[s]=5.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=45.55 Tref[s]=5.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.01 Tref[s]=5.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.06 Tref[s]=5.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.11 Tref[s]=5.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.16 Tref[s]=5.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.22 Tref[s]=5.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.27 Tref[s]=5.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.32 Tref[s]=5.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.38 Tref[s]=5.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.43 Tref[s]=5.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.48 Tref[s]=5.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.53 Tref[s]=5.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=46.58 Tref[s]=5.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.03 Tref[s]=5.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.09 Tref[s]=5.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.13 Tref[s]=5.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.17 Tref[s]=5.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.22 Tref[s]=5.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.28 Tref[s]=5.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.33 Tref[s]=5.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.38 Tref[s]=5.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.43 Tref[s]=5.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.48 Tref[s]=5.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.54 Tref[s]=5.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=47.59 Tref[s]=5.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=48.05 Tref[s]=5.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=48.1 Tref[s]=5.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=48.15 Tref[s]=5.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=48.2 Tref[s]=5.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=48.26 Tref[s]=5.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=48.31 Tref[s]=5.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=48.37 Tref[s]=5.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=48.42 Tref[s]=5.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=48.47 Tref[s]=5.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=48.53 Tref[s]=5.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=48.58 Tref[s]=5.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=49.04 Tref[s]=5.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=49.09 Tref[s]=5.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=49.15 Tref[s]=6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=49.2 Tref[s]=6.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=49.25 Tref[s]=6.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=49.31 Tref[s]=6.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=49.36 Tref[s]=6.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=49.41 Tref[s]=6.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=49.46 Tref[s]=6.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=49.52 Tref[s]=6.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=49.57 Tref[s]=6.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.02 Tref[s]=6.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.07 Tref[s]=6.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.13 Tref[s]=6.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.18 Tref[s]=6.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.23 Tref[s]=6.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.28 Tref[s]=6.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.33 Tref[s]=6.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.38 Tref[s]=6.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.43 Tref[s]=6.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.48 Tref[s]=6.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.53 Tref[s]=6.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=50.59 Tref[s]=6.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=51.04 Tref[s]=6.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=51.09 Tref[s]=6.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=51.14 Tref[s]=6.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=51.18 Tref[s]=6.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=51.24 Tref[s]=6.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=51.29 Tref[s]=6.26 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.141015673e-007
+Tcal[m.s]=51.33 Tref[s]=6.27 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 3.054141416e-006
+Integral of barrier potentials [V m] = 5.692418199e-006
+Tcal[m.s]=51.39 Tref[s]=6.28 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 8.0288155e-006
+Integral of barrier potentials [V m] = 1.006337698e-005
+Tcal[m.s]=51.44 Tref[s]=6.29 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.179616083e-005
+Integral of barrier potentials [V m] = 1.322706521e-005
+Tcal[m.s]=51.49 Tref[s]=6.3 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.435619197e-005
+Integral of barrier potentials [V m] = 1.51834538e-005
+Tcal[m.s]=51.54 Tref[s]=6.31 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.570886525e-005
+Integral of barrier potentials [V m] = 1.593251363e-005
+Tcal[m.s]=51.59 Tref[s]=6.32 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.585426799e-005
+Integral of barrier potentials [V m] = 1.547417196e-005
+Tcal[m.s]=52.04 Tref[s]=6.33 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.479235652e-005
+Integral of barrier potentials [V m] = 1.38086325e-005
+Tcal[m.s]=52.1 Tref[s]=6.34 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.252311631e-005
+Integral of barrier potentials [V m] = 1.093573519e-005
+Tcal[m.s]=52.15 Tref[s]=6.35 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 9.046518244e-006
+Integral of barrier potentials [V m] = 6.855523679e-006
+Tcal[m.s]=52.19 Tref[s]=6.36 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 4.362664185e-006
+Integral of barrier potentials [V m] = 1.784050255e-006
+Tcal[m.s]=52.24 Tref[s]=6.37 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 4.556466592e-006
+Integral of barrier potentials [V m] = 7.02709076e-006
+Tcal[m.s]=52.29 Tref[s]=6.38 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 9.195922757e-006
+Integral of barrier potentials [V m] = 1.106288983e-005
+Tcal[m.s]=52.34 Tref[s]=6.39 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.262805017e-005
+Integral of barrier potentials [V m] = 1.389137469e-005
+Tcal[m.s]=52.38 Tref[s]=6.4 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.485281973e-005
+Integral of barrier potentials [V m] = 1.551248715e-005
+Tcal[m.s]=52.42 Tref[s]=6.41 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.587027509e-005
+Integral of barrier potentials [V m] = 1.592628541e-005
+Tcal[m.s]=52.48 Tref[s]=6.42 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.568047446e-005
+Integral of barrier potentials [V m] = 1.513282768e-005
+Tcal[m.s]=52.53 Tref[s]=6.43 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.428330143e-005
+Integral of barrier potentials [V m] = 1.313196844e-005
+Tcal[m.s]=52.58 Tref[s]=6.44 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.167885785e-005
+Integral of barrier potentials [V m] = 9.923896869e-006
+Tcal[m.s]=53.03 Tref[s]=6.45 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 7.867085515e-006
+Integral of barrier potentials [V m] = 5.508452887e-006
+Tcal[m.s]=53.07 Tref[s]=6.46 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 2.847926226e-006
+Tcal[m.s]=53.13 Tref[s]=6.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=53.18 Tref[s]=6.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=53.23 Tref[s]=6.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=53.28 Tref[s]=6.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=53.32 Tref[s]=6.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=53.37 Tref[s]=6.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=53.41 Tref[s]=6.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=53.47 Tref[s]=6.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=53.52 Tref[s]=6.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=53.57 Tref[s]=6.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.03 Tref[s]=6.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.08 Tref[s]=6.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.13 Tref[s]=6.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.18 Tref[s]=6.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.23 Tref[s]=6.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.29 Tref[s]=6.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.34 Tref[s]=6.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.37 Tref[s]=6.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.42 Tref[s]=6.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.48 Tref[s]=6.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.53 Tref[s]=6.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=54.58 Tref[s]=6.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.03 Tref[s]=6.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.08 Tref[s]=6.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.13 Tref[s]=6.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.18 Tref[s]=6.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.22 Tref[s]=6.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.28 Tref[s]=6.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.33 Tref[s]=6.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.38 Tref[s]=6.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.44 Tref[s]=6.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.49 Tref[s]=6.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.54 Tref[s]=6.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=55.59 Tref[s]=6.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.04 Tref[s]=6.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.09 Tref[s]=6.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.13 Tref[s]=6.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.18 Tref[s]=6.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.23 Tref[s]=6.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.28 Tref[s]=6.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.32 Tref[s]=6.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.38 Tref[s]=6.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.43 Tref[s]=6.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.48 Tref[s]=6.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.53 Tref[s]=6.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=56.58 Tref[s]=6.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.03 Tref[s]=6.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.09 Tref[s]=6.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.14 Tref[s]=6.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.19 Tref[s]=6.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.24 Tref[s]=6.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.3 Tref[s]=6.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.34 Tref[s]=6.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.4 Tref[s]=7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.45 Tref[s]=7.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.5 Tref[s]=7.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.55 Tref[s]=7.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=57.59 Tref[s]=7.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.04 Tref[s]=7.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.1 Tref[s]=7.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.15 Tref[s]=7.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.19 Tref[s]=7.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.24 Tref[s]=7.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.29 Tref[s]=7.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.34 Tref[s]=7.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.39 Tref[s]=7.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.45 Tref[s]=7.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.49 Tref[s]=7.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.54 Tref[s]=7.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=58.59 Tref[s]=7.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.05 Tref[s]=7.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.1 Tref[s]=7.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.14 Tref[s]=7.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.17 Tref[s]=7.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.22 Tref[s]=7.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.27 Tref[s]=7.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.32 Tref[s]=7.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.37 Tref[s]=7.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.42 Tref[s]=7.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.47 Tref[s]=7.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.52 Tref[s]=7.27 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=59.57 Tref[s]=7.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.02 Tref[s]=7.29 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.07 Tref[s]=7.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.12 Tref[s]=7.31 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.17 Tref[s]=7.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.22 Tref[s]=7.33 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.27 Tref[s]=7.34 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.32 Tref[s]=7.35 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.37 Tref[s]=7.36 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.41 Tref[s]=7.37 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.47 Tref[s]=7.38 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.52 Tref[s]=7.39 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=60.57 Tref[s]=7.4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.02 Tref[s]=7.41 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.07 Tref[s]=7.42 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.13 Tref[s]=7.43 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.18 Tref[s]=7.44 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.23 Tref[s]=7.45 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.27 Tref[s]=7.46 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.32 Tref[s]=7.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.36 Tref[s]=7.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.42 Tref[s]=7.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.47 Tref[s]=7.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.52 Tref[s]=7.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=61.57 Tref[s]=7.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.02 Tref[s]=7.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.07 Tref[s]=7.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.11 Tref[s]=7.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.16 Tref[s]=7.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.2 Tref[s]=7.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.25 Tref[s]=7.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.3 Tref[s]=7.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.35 Tref[s]=7.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.4 Tref[s]=7.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.44 Tref[s]=7.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.5 Tref[s]=7.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.54 Tref[s]=7.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=62.58 Tref[s]=7.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=63.03 Tref[s]=7.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=63.08 Tref[s]=7.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=63.13 Tref[s]=7.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=63.18 Tref[s]=7.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=63.23 Tref[s]=7.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=63.28 Tref[s]=7.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=63.33 Tref[s]=7.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=63.38 Tref[s]=7.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=63.43 Tref[s]=7.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=63.49 Tref[s]=7.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=63.54 Tref[s]=7.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64 Tref[s]=7.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64.05 Tref[s]=7.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64.1 Tref[s]=7.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64.16 Tref[s]=7.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64.21 Tref[s]=7.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64.26 Tref[s]=7.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64.31 Tref[s]=7.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64.36 Tref[s]=7.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64.41 Tref[s]=7.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64.45 Tref[s]=7.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64.51 Tref[s]=7.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=64.56 Tref[s]=7.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.01 Tref[s]=7.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.06 Tref[s]=7.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.11 Tref[s]=7.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.16 Tref[s]=7.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.21 Tref[s]=7.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.25 Tref[s]=7.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.3 Tref[s]=7.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.35 Tref[s]=7.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.4 Tref[s]=7.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.44 Tref[s]=7.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.49 Tref[s]=7.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.54 Tref[s]=8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=65.59 Tref[s]=8.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.04 Tref[s]=8.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.09 Tref[s]=8.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.14 Tref[s]=8.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.19 Tref[s]=8.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.25 Tref[s]=8.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.3 Tref[s]=8.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.36 Tref[s]=8.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.41 Tref[s]=8.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.46 Tref[s]=8.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.49 Tref[s]=8.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.53 Tref[s]=8.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=66.57 Tref[s]=8.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.03 Tref[s]=8.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.06 Tref[s]=8.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.11 Tref[s]=8.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.17 Tref[s]=8.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.22 Tref[s]=8.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.27 Tref[s]=8.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.32 Tref[s]=8.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.37 Tref[s]=8.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.42 Tref[s]=8.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.48 Tref[s]=8.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.53 Tref[s]=8.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=67.59 Tref[s]=8.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=68.04 Tref[s]=8.26 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.141015673e-007
+Tcal[m.s]=68.09 Tref[s]=8.27 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 3.054126864e-006
+Integral of barrier potentials [V m] = 5.692432751e-006
+Tcal[m.s]=68.14 Tref[s]=8.28 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 8.0288155e-006
+Integral of barrier potentials [V m] = 1.006337698e-005
+Tcal[m.s]=68.19 Tref[s]=8.29 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.179614628e-005
+Integral of barrier potentials [V m] = 1.322707976e-005
+Tcal[m.s]=68.24 Tref[s]=8.3 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.435619197e-005
+Integral of barrier potentials [V m] = 1.51834538e-005
+Tcal[m.s]=68.3 Tref[s]=8.31 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.57088507e-005
+Integral of barrier potentials [V m] = 1.593251363e-005
+Tcal[m.s]=68.35 Tref[s]=8.32 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.585426799e-005
+Integral of barrier potentials [V m] = 1.547418651e-005
+Tcal[m.s]=68.4 Tref[s]=8.33 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.479235652e-005
+Integral of barrier potentials [V m] = 1.38086325e-005
+Tcal[m.s]=68.46 Tref[s]=8.34 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.252311631e-005
+Integral of barrier potentials [V m] = 1.093573519e-005
+Tcal[m.s]=68.51 Tref[s]=8.35 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 9.046518244e-006
+Integral of barrier potentials [V m] = 6.855538231e-006
+Tcal[m.s]=68.56 Tref[s]=8.36 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 4.362649634e-006
+Integral of barrier potentials [V m] = 1.783977496e-006
+Tcal[m.s]=69.01 Tref[s]=8.37 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 4.556466592e-006
+Integral of barrier potentials [V m] = 7.027061656e-006
+Tcal[m.s]=69.05 Tref[s]=8.38 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 9.195893654e-006
+Integral of barrier potentials [V m] = 1.106286072e-005
+Tcal[m.s]=69.11 Tref[s]=8.39 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.262805017e-005
+Integral of barrier potentials [V m] = 1.389130193e-005
+Tcal[m.s]=69.16 Tref[s]=8.4 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.485281973e-005
+Integral of barrier potentials [V m] = 1.551245805e-005
+Tcal[m.s]=69.21 Tref[s]=8.41 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.58703042e-005
+Integral of barrier potentials [V m] = 1.592631452e-005
+Tcal[m.s]=69.25 Tref[s]=8.42 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.568050357e-005
+Integral of barrier potentials [V m] = 1.513278403e-005
+Tcal[m.s]=69.3 Tref[s]=8.43 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.428330143e-005
+Integral of barrier potentials [V m] = 1.313196844e-005
+Tcal[m.s]=69.36 Tref[s]=8.44 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.167884329e-005
+Integral of barrier potentials [V m] = 9.923882317e-006
+Tcal[m.s]=69.4 Tref[s]=8.45 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 7.867085515e-006
+Integral of barrier potentials [V m] = 5.508452887e-006
+Tcal[m.s]=69.46 Tref[s]=8.46 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 2.847984433e-006
+Tcal[m.s]=69.51 Tref[s]=8.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=69.56 Tref[s]=8.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.01 Tref[s]=8.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.06 Tref[s]=8.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.1 Tref[s]=8.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.15 Tref[s]=8.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.2 Tref[s]=8.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.26 Tref[s]=8.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.32 Tref[s]=8.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.37 Tref[s]=8.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.42 Tref[s]=8.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.46 Tref[s]=8.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.51 Tref[s]=8.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=70.56 Tref[s]=8.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.01 Tref[s]=8.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.05 Tref[s]=8.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.11 Tref[s]=8.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.16 Tref[s]=8.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.22 Tref[s]=8.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.27 Tref[s]=8.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.32 Tref[s]=8.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.37 Tref[s]=8.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.42 Tref[s]=8.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.47 Tref[s]=8.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.53 Tref[s]=8.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=71.58 Tref[s]=8.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.03 Tref[s]=8.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.09 Tref[s]=8.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.14 Tref[s]=8.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.19 Tref[s]=8.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.24 Tref[s]=8.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.27 Tref[s]=8.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.33 Tref[s]=8.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.38 Tref[s]=8.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.43 Tref[s]=8.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.48 Tref[s]=8.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.54 Tref[s]=8.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=72.59 Tref[s]=8.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=73.04 Tref[s]=8.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=73.09 Tref[s]=8.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=73.15 Tref[s]=8.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=73.19 Tref[s]=8.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=73.24 Tref[s]=8.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=73.3 Tref[s]=8.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=73.35 Tref[s]=8.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=73.4 Tref[s]=8.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=73.45 Tref[s]=8.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=73.5 Tref[s]=8.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=73.55 Tref[s]=8.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.01 Tref[s]=8.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.06 Tref[s]=8.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.11 Tref[s]=8.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.17 Tref[s]=8.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.22 Tref[s]=9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.27 Tref[s]=9.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.32 Tref[s]=9.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.37 Tref[s]=9.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.42 Tref[s]=9.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.47 Tref[s]=9.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.52 Tref[s]=9.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=74.57 Tref[s]=9.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.02 Tref[s]=9.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.07 Tref[s]=9.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.12 Tref[s]=9.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.18 Tref[s]=9.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.23 Tref[s]=9.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.28 Tref[s]=9.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.34 Tref[s]=9.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.39 Tref[s]=9.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.43 Tref[s]=9.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.49 Tref[s]=9.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.54 Tref[s]=9.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=75.59 Tref[s]=9.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=76.05 Tref[s]=9.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=76.1 Tref[s]=9.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=76.16 Tref[s]=9.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=76.2 Tref[s]=9.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=76.26 Tref[s]=9.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=76.31 Tref[s]=9.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=76.37 Tref[s]=9.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=76.42 Tref[s]=9.27 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=76.47 Tref[s]=9.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=76.52 Tref[s]=9.29 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=76.58 Tref[s]=9.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=77.02 Tref[s]=9.31 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=77.08 Tref[s]=9.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=77.13 Tref[s]=9.33 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=77.18 Tref[s]=9.34 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=77.23 Tref[s]=9.35 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=77.29 Tref[s]=9.36 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=77.34 Tref[s]=9.37 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=77.39 Tref[s]=9.38 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=77.44 Tref[s]=9.39 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=77.5 Tref[s]=9.4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=77.55 Tref[s]=9.41 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78 Tref[s]=9.42 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78.05 Tref[s]=9.43 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78.1 Tref[s]=9.44 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78.15 Tref[s]=9.45 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78.2 Tref[s]=9.46 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78.25 Tref[s]=9.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78.31 Tref[s]=9.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78.35 Tref[s]=9.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78.4 Tref[s]=9.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78.44 Tref[s]=9.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78.49 Tref[s]=9.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=78.54 Tref[s]=9.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79 Tref[s]=9.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79.05 Tref[s]=9.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79.1 Tref[s]=9.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79.15 Tref[s]=9.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79.19 Tref[s]=9.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79.24 Tref[s]=9.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79.3 Tref[s]=9.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79.35 Tref[s]=9.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79.41 Tref[s]=9.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79.46 Tref[s]=9.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79.5 Tref[s]=9.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=79.55 Tref[s]=9.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.01 Tref[s]=9.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.05 Tref[s]=9.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.1 Tref[s]=9.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.14 Tref[s]=9.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.19 Tref[s]=9.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.25 Tref[s]=9.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.3 Tref[s]=9.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.35 Tref[s]=9.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.4 Tref[s]=9.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.46 Tref[s]=9.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.51 Tref[s]=9.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=80.57 Tref[s]=9.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.02 Tref[s]=9.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.07 Tref[s]=9.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.12 Tref[s]=9.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.17 Tref[s]=9.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.23 Tref[s]=9.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.28 Tref[s]=9.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.33 Tref[s]=9.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.38 Tref[s]=9.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.42 Tref[s]=9.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.47 Tref[s]=9.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.52 Tref[s]=9.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=81.57 Tref[s]=9.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.02 Tref[s]=9.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.07 Tref[s]=9.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.12 Tref[s]=9.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.17 Tref[s]=9.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.21 Tref[s]=9.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.26 Tref[s]=9.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.31 Tref[s]=9.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.36 Tref[s]=9.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.4 Tref[s]=9.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.45 Tref[s]=9.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.51 Tref[s]=10 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=82.55 Tref[s]=10.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83 Tref[s]=10.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83.05 Tref[s]=10.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83.09 Tref[s]=10.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83.14 Tref[s]=10.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83.19 Tref[s]=10.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83.25 Tref[s]=10.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83.29 Tref[s]=10.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83.35 Tref[s]=10.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83.4 Tref[s]=10.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83.45 Tref[s]=10.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83.5 Tref[s]=10.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=83.56 Tref[s]=10.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.01 Tref[s]=10.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.06 Tref[s]=10.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.11 Tref[s]=10.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.17 Tref[s]=10.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.22 Tref[s]=10.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.27 Tref[s]=10.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.32 Tref[s]=10.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.37 Tref[s]=10.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.41 Tref[s]=10.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.47 Tref[s]=10.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.52 Tref[s]=10.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=84.57 Tref[s]=10.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=85.02 Tref[s]=10.26 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.140288077e-007
+Tcal[m.s]=85.06 Tref[s]=10.27 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 3.05409776e-006
+Integral of barrier potentials [V m] = 5.692418199e-006
+Tcal[m.s]=85.1 Tref[s]=10.28 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 8.028830052e-006
+Integral of barrier potentials [V m] = 1.006336242e-005
+Tcal[m.s]=85.14 Tref[s]=10.29 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.179618994e-005
+Integral of barrier potentials [V m] = 1.322706521e-005
+Tcal[m.s]=85.18 Tref[s]=10.3 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.435620652e-005
+Integral of barrier potentials [V m] = 1.518343925e-005
+Tcal[m.s]=85.21 Tref[s]=10.31 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.570886525e-005
+Integral of barrier potentials [V m] = 1.593251363e-005
+Tcal[m.s]=85.25 Tref[s]=10.32 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.585428254e-005
+Integral of barrier potentials [V m] = 1.547417196e-005
+Tcal[m.s]=85.31 Tref[s]=10.33 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.479235652e-005
+Integral of barrier potentials [V m] = 1.38086325e-005
+Tcal[m.s]=85.36 Tref[s]=10.34 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.252314541e-005
+Integral of barrier potentials [V m] = 1.093574974e-005
+Tcal[m.s]=85.4 Tref[s]=10.35 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 9.046532796e-006
+Integral of barrier potentials [V m] = 6.855538231e-006
+Tcal[m.s]=85.46 Tref[s]=10.36 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 4.362664185e-006
+Integral of barrier potentials [V m] = 1.784064807e-006
+Tcal[m.s]=85.51 Tref[s]=10.37 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 4.556481144e-006
+Integral of barrier potentials [V m] = 7.027105312e-006
+Tcal[m.s]=85.56 Tref[s]=10.38 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 9.195922757e-006
+Integral of barrier potentials [V m] = 1.106286072e-005
+Tcal[m.s]=85.59 Tref[s]=10.39 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.262799196e-005
+Integral of barrier potentials [V m] = 1.389130193e-005
+Tcal[m.s]=86.04 Tref[s]=10.4 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.485280518e-005
+Integral of barrier potentials [V m] = 1.55124726e-005
+Tcal[m.s]=86.09 Tref[s]=10.41 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.587027509e-005
+Integral of barrier potentials [V m] = 1.592627086e-005
+Tcal[m.s]=86.14 Tref[s]=10.42 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.568047446e-005
+Integral of barrier potentials [V m] = 1.513278403e-005
+Tcal[m.s]=86.18 Tref[s]=10.43 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.428333053e-005
+Integral of barrier potentials [V m] = 1.313202665e-005
+Tcal[m.s]=86.22 Tref[s]=10.44 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.167884329e-005
+Integral of barrier potentials [V m] = 9.923882317e-006
+Tcal[m.s]=86.27 Tref[s]=10.45 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 7.867070963e-006
+Integral of barrier potentials [V m] = 5.508380127e-006
+Tcal[m.s]=86.33 Tref[s]=10.46 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 2.847984433e-006
+Tcal[m.s]=86.37 Tref[s]=10.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=86.43 Tref[s]=10.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=86.48 Tref[s]=10.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=86.53 Tref[s]=10.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=86.59 Tref[s]=10.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.04 Tref[s]=10.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.09 Tref[s]=10.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.14 Tref[s]=10.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.19 Tref[s]=10.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.24 Tref[s]=10.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.29 Tref[s]=10.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.33 Tref[s]=10.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.38 Tref[s]=10.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.42 Tref[s]=10.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.47 Tref[s]=10.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.52 Tref[s]=10.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=87.57 Tref[s]=10.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.02 Tref[s]=10.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.07 Tref[s]=10.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.12 Tref[s]=10.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.18 Tref[s]=10.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.23 Tref[s]=10.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.28 Tref[s]=10.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.33 Tref[s]=10.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.39 Tref[s]=10.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.43 Tref[s]=10.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.48 Tref[s]=10.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.53 Tref[s]=10.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=88.58 Tref[s]=10.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.04 Tref[s]=10.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.09 Tref[s]=10.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.14 Tref[s]=10.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.19 Tref[s]=10.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.24 Tref[s]=10.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.29 Tref[s]=10.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.34 Tref[s]=10.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.39 Tref[s]=10.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.43 Tref[s]=10.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.48 Tref[s]=10.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.53 Tref[s]=10.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=89.58 Tref[s]=10.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.03 Tref[s]=10.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.08 Tref[s]=10.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.12 Tref[s]=10.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.18 Tref[s]=10.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.23 Tref[s]=10.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.28 Tref[s]=10.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.33 Tref[s]=10.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.38 Tref[s]=10.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.43 Tref[s]=10.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.48 Tref[s]=10.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.52 Tref[s]=10.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=90.57 Tref[s]=10.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.02 Tref[s]=11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.07 Tref[s]=11.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.12 Tref[s]=11.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.16 Tref[s]=11.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.2 Tref[s]=11.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.25 Tref[s]=11.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.31 Tref[s]=11.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.34 Tref[s]=11.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.37 Tref[s]=11.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.39 Tref[s]=11.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.41 Tref[s]=11.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.44 Tref[s]=11.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.46 Tref[s]=11.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.48 Tref[s]=11.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.5 Tref[s]=11.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.52 Tref[s]=11.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.55 Tref[s]=11.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.57 Tref[s]=11.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=91.59 Tref[s]=11.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.01 Tref[s]=11.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.03 Tref[s]=11.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.06 Tref[s]=11.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.08 Tref[s]=11.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.1 Tref[s]=11.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.12 Tref[s]=11.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.14 Tref[s]=11.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.17 Tref[s]=11.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.19 Tref[s]=11.27 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.21 Tref[s]=11.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.23 Tref[s]=11.29 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.25 Tref[s]=11.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.27 Tref[s]=11.31 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.3 Tref[s]=11.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.32 Tref[s]=11.33 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.34 Tref[s]=11.34 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.36 Tref[s]=11.35 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.39 Tref[s]=11.36 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.41 Tref[s]=11.37 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.43 Tref[s]=11.38 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.45 Tref[s]=11.39 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.47 Tref[s]=11.4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.49 Tref[s]=11.41 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.51 Tref[s]=11.42 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.54 Tref[s]=11.43 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.56 Tref[s]=11.44 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=92.58 Tref[s]=11.45 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93 Tref[s]=11.46 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.02 Tref[s]=11.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.05 Tref[s]=11.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.07 Tref[s]=11.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.09 Tref[s]=11.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.11 Tref[s]=11.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.13 Tref[s]=11.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.15 Tref[s]=11.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.18 Tref[s]=11.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.2 Tref[s]=11.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.22 Tref[s]=11.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.24 Tref[s]=11.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.26 Tref[s]=11.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.28 Tref[s]=11.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.31 Tref[s]=11.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.33 Tref[s]=11.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.35 Tref[s]=11.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.37 Tref[s]=11.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.39 Tref[s]=11.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.41 Tref[s]=11.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.44 Tref[s]=11.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.46 Tref[s]=11.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.48 Tref[s]=11.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.5 Tref[s]=11.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.52 Tref[s]=11.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.55 Tref[s]=11.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.57 Tref[s]=11.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=93.59 Tref[s]=11.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.01 Tref[s]=11.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.05 Tref[s]=11.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.1 Tref[s]=11.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.16 Tref[s]=11.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.19 Tref[s]=11.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.22 Tref[s]=11.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.24 Tref[s]=11.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.26 Tref[s]=11.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.29 Tref[s]=11.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.31 Tref[s]=11.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.33 Tref[s]=11.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.35 Tref[s]=11.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.37 Tref[s]=11.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.39 Tref[s]=11.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.42 Tref[s]=11.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.44 Tref[s]=11.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.46 Tref[s]=11.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.48 Tref[s]=11.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.5 Tref[s]=11.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.52 Tref[s]=11.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.55 Tref[s]=11.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.57 Tref[s]=11.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=94.59 Tref[s]=11.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.01 Tref[s]=11.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.03 Tref[s]=11.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.06 Tref[s]=11.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.08 Tref[s]=12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.1 Tref[s]=12.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.12 Tref[s]=12.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.14 Tref[s]=12.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.16 Tref[s]=12.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.19 Tref[s]=12.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.21 Tref[s]=12.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.23 Tref[s]=12.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.25 Tref[s]=12.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.27 Tref[s]=12.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.3 Tref[s]=12.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.32 Tref[s]=12.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.34 Tref[s]=12.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.36 Tref[s]=12.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.38 Tref[s]=12.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.41 Tref[s]=12.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.43 Tref[s]=12.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.45 Tref[s]=12.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.47 Tref[s]=12.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.49 Tref[s]=12.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.52 Tref[s]=12.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.54 Tref[s]=12.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.56 Tref[s]=12.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=95.58 Tref[s]=12.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=96 Tref[s]=12.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=96.03 Tref[s]=12.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=96.05 Tref[s]=12.26 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.140288077e-007
+Tcal[m.s]=96.07 Tref[s]=12.27 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 3.05409776e-006
+Integral of barrier potentials [V m] = 5.692374543e-006
+Tcal[m.s]=96.09 Tref[s]=12.28 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 8.028771845e-006
+Integral of barrier potentials [V m] = 1.006331877e-005
+Tcal[m.s]=96.11 Tref[s]=12.29 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.179618994e-005
+Integral of barrier potentials [V m] = 1.322706521e-005
+Tcal[m.s]=96.14 Tref[s]=12.3 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.435623562e-005
+Integral of barrier potentials [V m] = 1.51834829e-005
+Tcal[m.s]=96.16 Tref[s]=12.31 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.570889435e-005
+Integral of barrier potentials [V m] = 1.593252819e-005
+Tcal[m.s]=96.18 Tref[s]=12.32 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.585428254e-005
+Integral of barrier potentials [V m] = 1.547421562e-005
+Tcal[m.s]=96.21 Tref[s]=12.33 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.479238563e-005
+Integral of barrier potentials [V m] = 1.380864705e-005
+Tcal[m.s]=96.23 Tref[s]=12.34 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.252314541e-005
+Integral of barrier potentials [V m] = 1.093574974e-005
+Tcal[m.s]=96.25 Tref[s]=12.35 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 9.046532796e-006
+Integral of barrier potentials [V m] = 6.855567335e-006
+Tcal[m.s]=96.27 Tref[s]=12.36 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 4.362678737e-006
+Integral of barrier potentials [V m] = 1.784035703e-006
+Tcal[m.s]=96.29 Tref[s]=12.37 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 4.556452041e-006
+Integral of barrier potentials [V m] = 7.027076208e-006
+Tcal[m.s]=96.32 Tref[s]=12.38 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 9.19586455e-006
+Integral of barrier potentials [V m] = 1.106284617e-005
+Tcal[m.s]=96.34 Tref[s]=12.39 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.262806472e-005
+Integral of barrier potentials [V m] = 1.389134559e-005
+Tcal[m.s]=96.36 Tref[s]=12.4 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.485280518e-005
+Integral of barrier potentials [V m] = 1.551245805e-005
+Tcal[m.s]=96.39 Tref[s]=12.41 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.587031875e-005
+Integral of barrier potentials [V m] = 1.592631452e-005
+Tcal[m.s]=96.41 Tref[s]=12.42 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.568050357e-005
+Integral of barrier potentials [V m] = 1.513281313e-005
+Tcal[m.s]=96.43 Tref[s]=12.43 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.428327232e-005
+Integral of barrier potentials [V m] = 1.313196844e-005
+Tcal[m.s]=96.45 Tref[s]=12.44 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 1.167884329e-005
+Integral of barrier potentials [V m] = 9.923882317e-006
+Tcal[m.s]=96.48 Tref[s]=12.45 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 7.867070963e-006
+Integral of barrier potentials [V m] = 5.508423783e-006
+Tcal[m.s]=96.5 Tref[s]=12.46 Ecool[%]=0 Core[%]=0 Impact=0
+Integral of barrier potentials [V m] = 2.847984433e-006
+Tcal[m.s]=96.52 Tref[s]=12.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=96.54 Tref[s]=12.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=96.56 Tref[s]=12.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=96.59 Tref[s]=12.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.01 Tref[s]=12.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.03 Tref[s]=12.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.05 Tref[s]=12.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.07 Tref[s]=12.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.1 Tref[s]=12.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.12 Tref[s]=12.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.14 Tref[s]=12.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.16 Tref[s]=12.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.19 Tref[s]=12.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.21 Tref[s]=12.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.23 Tref[s]=12.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.25 Tref[s]=12.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.28 Tref[s]=12.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.3 Tref[s]=12.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.32 Tref[s]=12.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.34 Tref[s]=12.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.36 Tref[s]=12.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.39 Tref[s]=12.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.41 Tref[s]=12.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.43 Tref[s]=12.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.45 Tref[s]=12.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.48 Tref[s]=12.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.5 Tref[s]=12.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.52 Tref[s]=12.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.54 Tref[s]=12.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.56 Tref[s]=12.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=97.58 Tref[s]=12.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.01 Tref[s]=12.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.03 Tref[s]=12.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.05 Tref[s]=12.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.07 Tref[s]=12.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.1 Tref[s]=12.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.12 Tref[s]=12.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.14 Tref[s]=12.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.16 Tref[s]=12.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.18 Tref[s]=12.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.2 Tref[s]=12.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.23 Tref[s]=12.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.25 Tref[s]=12.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.27 Tref[s]=12.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.29 Tref[s]=12.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.31 Tref[s]=12.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.34 Tref[s]=12.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.36 Tref[s]=12.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.38 Tref[s]=12.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.4 Tref[s]=12.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.42 Tref[s]=12.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.44 Tref[s]=12.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.47 Tref[s]=12.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.49 Tref[s]=13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.51 Tref[s]=13.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.53 Tref[s]=13.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.55 Tref[s]=13.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=98.58 Tref[s]=13.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99 Tref[s]=13.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.02 Tref[s]=13.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.04 Tref[s]=13.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.06 Tref[s]=13.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.08 Tref[s]=13.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.11 Tref[s]=13.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.13 Tref[s]=13.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.15 Tref[s]=13.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.17 Tref[s]=13.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.19 Tref[s]=13.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.22 Tref[s]=13.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.24 Tref[s]=13.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.26 Tref[s]=13.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.28 Tref[s]=13.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.31 Tref[s]=13.19 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.33 Tref[s]=13.2 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.35 Tref[s]=13.21 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.37 Tref[s]=13.22 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.39 Tref[s]=13.23 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.41 Tref[s]=13.24 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.44 Tref[s]=13.25 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.46 Tref[s]=13.26 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.48 Tref[s]=13.27 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.5 Tref[s]=13.28 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.52 Tref[s]=13.29 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.55 Tref[s]=13.3 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.57 Tref[s]=13.31 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=99.59 Tref[s]=13.32 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.01 Tref[s]=13.33 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.03 Tref[s]=13.34 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.06 Tref[s]=13.35 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.08 Tref[s]=13.36 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.1 Tref[s]=13.37 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.12 Tref[s]=13.38 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.14 Tref[s]=13.39 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.16 Tref[s]=13.4 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.19 Tref[s]=13.41 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.21 Tref[s]=13.42 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.23 Tref[s]=13.43 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.26 Tref[s]=13.44 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.28 Tref[s]=13.45 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.3 Tref[s]=13.46 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.32 Tref[s]=13.47 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.35 Tref[s]=13.48 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.37 Tref[s]=13.49 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.39 Tref[s]=13.5 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.41 Tref[s]=13.51 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.43 Tref[s]=13.52 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.46 Tref[s]=13.53 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.48 Tref[s]=13.54 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.5 Tref[s]=13.55 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.52 Tref[s]=13.56 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.54 Tref[s]=13.57 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.57 Tref[s]=13.58 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=100.59 Tref[s]=13.59 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.01 Tref[s]=13.6 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.06 Tref[s]=13.61 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.12 Tref[s]=13.62 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.17 Tref[s]=13.63 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.23 Tref[s]=13.64 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.28 Tref[s]=13.65 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.34 Tref[s]=13.66 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.39 Tref[s]=13.67 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.43 Tref[s]=13.68 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.48 Tref[s]=13.69 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.53 Tref[s]=13.7 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=101.57 Tref[s]=13.71 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.03 Tref[s]=13.72 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.08 Tref[s]=13.73 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.13 Tref[s]=13.74 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.18 Tref[s]=13.75 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.23 Tref[s]=13.76 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.28 Tref[s]=13.77 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.34 Tref[s]=13.78 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.38 Tref[s]=13.79 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.43 Tref[s]=13.8 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.48 Tref[s]=13.81 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.53 Tref[s]=13.82 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=102.57 Tref[s]=13.83 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.01 Tref[s]=13.84 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.06 Tref[s]=13.85 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.11 Tref[s]=13.86 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.16 Tref[s]=13.87 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.21 Tref[s]=13.88 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.25 Tref[s]=13.89 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.28 Tref[s]=13.9 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.3 Tref[s]=13.91 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.32 Tref[s]=13.92 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.35 Tref[s]=13.93 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.37 Tref[s]=13.94 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.39 Tref[s]=13.95 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.41 Tref[s]=13.96 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.44 Tref[s]=13.97 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.46 Tref[s]=13.98 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.48 Tref[s]=13.99 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.51 Tref[s]=14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.53 Tref[s]=14.01 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.55 Tref[s]=14.02 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=103.58 Tref[s]=14.03 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104 Tref[s]=14.04 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.02 Tref[s]=14.05 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.04 Tref[s]=14.06 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.07 Tref[s]=14.07 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.09 Tref[s]=14.08 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.11 Tref[s]=14.09 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.13 Tref[s]=14.1 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.16 Tref[s]=14.11 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.18 Tref[s]=14.12 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.22 Tref[s]=14.13 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.28 Tref[s]=14.14 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.33 Tref[s]=14.15 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.37 Tref[s]=14.16 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.4 Tref[s]=14.17 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.45 Tref[s]=14.18 Ecool[%]=0 Core[%]=0 Impact=0
+Tcal[m.s]=104.5 Tref[s]=14.19 Ecool[%]=0 Core[%]=0 Impact=0
+STOP -2019/6/27-7:24:40

@@ -296,13 +296,34 @@ void xDynamics::ModelBeam()
          if (iLosses.Multi && iLosses.Injection)
          {
 			iBeam.Courant_Snyder(iRing.LATTICE);
+			bool logic1 = true;
+			bool logic2 = true;
+			bool logic3 = true;
+			bool logic4 = true;
+			bool logic = true;
+			
+			//bool linj_loss = true;
+			int Nmp = iBeam.Number();
 			
 			for (int j = 0; j < iBeam.Number(); j++)
 			   {
-				if (((sqrt(iBeam.Invs[j][2])*fabs(iRing.LATTICE.Dx())+sqrt(iBeam.Invs[j][0]*iRing.LATTICE.betax()))> sqrt(iRing.AcceptHinj()*iRing.LATTICE.betax())) ||
-					((sqrt(iBeam.Invs[j][2])*fabs(iRing.LATTICE.Dy())+sqrt(iBeam.Invs[j][1]*iRing.LATTICE.betay()))> sqrt(iRing.AcceptVinj()*iRing.LATTICE.betay())) ||
-					((iBeam.benum == BUCKET) && (iBeam.longshift-iRing.S1(m_) < iBeam(j,4)(m_)) && (iBeam(j,4)(m_) < iBeam.longshift+iRing.S1(m_))) )
-					iBeam.Loss(iRing.LATTICE, j, 1.);
+				Nmp = iBeam.Number();
+				logic1 = ((sqrt(iBeam.Invs[j][2])*fabs(iRing.LATTICE.Dx()) + sqrt(iBeam.Invs[j][0] * iRing.LATTICE.betax()))> sqrt(iRing.AcceptHinj()*iRing.LATTICE.betax()));
+				logic2 = ((sqrt(iBeam.Invs[j][2])*fabs(iRing.LATTICE.Dy()) + sqrt(iBeam.Invs[j][1] * iRing.LATTICE.betay())) > sqrt(iRing.AcceptVinj()*iRing.LATTICE.betay()));
+					logic4 = (iBeam.longshift - iRing.S1(m_) < iBeam(j, 4)(m_)) && (iBeam(j, 4)(m_) < iBeam.longshift + iRing.S1(m_));
+					logic3 = (iBeam.benum == BUCKET);
+					logic = logic1 || logic2 || (logic3 && logic4);
+					if (logic && (Nmp > 10))
+					{
+						iBeam.Loss(iRing.LATTICE, j, 1.,true);
+						j--;
+					};
+					
+
+				//if (((sqrt(iBeam.Invs[j][2])*fabs(iRing.LATTICE.Dx())+sqrt(iBeam.Invs[j][0]*iRing.LATTICE.betax()))> sqrt(iRing.AcceptHinj()*iRing.LATTICE.betax())) ||
+				//	((sqrt(iBeam.Invs[j][2])*fabs(iRing.LATTICE.Dy())+sqrt(iBeam.Invs[j][1]*iRing.LATTICE.betay()))> sqrt(iRing.AcceptVinj()*iRing.LATTICE.betay())) ||
+				//	((iBeam.benum == BUCKET) && (iBeam.longshift-iRing.S1(m_) < iBeam(j,4)(m_)) && (iBeam(j,4)(m_) < iBeam.longshift+iRing.S1(m_))) )
+				//	iBeam.Loss(iRing.LATTICE, j, 1.,true);
 			   }
 			   
 		   }
@@ -745,10 +766,22 @@ void xDynamics::Tracking()
 
          int num = 0;
          if (cycles) {                                      // no new injection for 1st cycle
-            if (iLosses.Multi && iLosses.Injection) 
-               for (int i = 0; i < iBeam.Number(); i++)     // particle losses of stored beam above septum
-                  if (iBeam[i][2]  > angle * (iBeam[i][0]  - SeptX) + SeptY)  // (-1.) means -45 degree
-					       iBeam.Loss(iRing.LATTICE, i--, 1.);
+			 if (iLosses.Multi && iLosses.Injection)
+			 {
+				 //bool linj_loss = true;
+				 int Nmp = iBeam.Number();
+				 for (int i = 0; i < iBeam.Number(); i++)     // particle losses of stored beam above septum
+				 {
+					 if (iBeam[i][2]  > angle * (iBeam[i][0] - SeptX) + SeptY)  // (-1.) means -45 degree
+					 {
+						 iBeam.Loss(iRing.LATTICE, i, 1.,true);
+						 i--;
+					 }
+
+				 }
+			 }
+
+
             num = iBeam.Number();                       
 		      iBeam.Number(num + iBeam.IniNumber);            // injection
 		      //iBeam.Number(num * ((iBeam.InitialEmit[3]/iBeam.Emit[3])(U1_) + 1.));
@@ -763,17 +796,36 @@ void xDynamics::Tracking()
          }  cycles++;
 
          if (iLosses.Multi) {
-            if (iLosses.Injection) 
-               for (int i = num; i < iBeam.Number(); i++)     // particle losses of injected beam below septum
-                  if (iBeam[i][2]  < angle * (iBeam[i][0]  - SeptX) + SeptY)   // (-1.) means -45 degree
-					       iBeam.Loss(iRing.LATTICE, i--, 1.);
-            if (iLosses.Acceptance) {
+			 if (iLosses.Injection)
+			 {
+				 //bool linj_loss = true;
+				 int Nmp = iBeam.Number();
+				 for (int i = num; i < iBeam.Number(); i++)     // particle losses of injected beam below septum
+				 {
+					 if (iBeam[i][2] < angle * (iBeam[i][0] - SeptX) + SeptY)   // (-1.) means -45 degree
+					 {
+						 iBeam.Loss(iRing.LATTICE, i, 1.,true);
+						 i--;
+					 }
+				 }
+			 }
+					  
+            if (iLosses.Acceptance) 
+			{
+				//bool linj_loss = false;
+				int Nmp = iBeam.Number();
 			      iBeam.Courant_Snyder(iRing.LATTICE);
-			      for (int j = 0; j < iBeam.Number(); j++)
-				   if (((sqrt(iBeam.Invs[j][2])*fabs(iRing.LATTICE.Dx())+sqrt(iBeam.Invs[j][0]*iRing.LATTICE.betax()))> sqrt(iRing.AcceptHinj()*iRing.LATTICE.betax())) ||
-					    ((sqrt(iBeam.Invs[j][2])*fabs(iRing.LATTICE.Dy())+sqrt(iBeam.Invs[j][1]*iRing.LATTICE.betay()))> sqrt(iRing.AcceptVinj()*iRing.LATTICE.betay()))) 
-					   // || ((iBeam.benum == BUCKET) && (iBeam.longshift-iRing.S1(m_) < iBeam(j,4)(m_)) && (iBeam(j,4)(m_) < iBeam.longshift+iRing.S1(m_))) )
-				      iBeam.Loss(iRing.LATTICE, j--, 1.);
+				  for (int j = 0; j < iBeam.Number(); j++)
+				  {
+					  if (((sqrt(iBeam.Invs[j][2])*fabs(iRing.LATTICE.Dx()) + sqrt(iBeam.Invs[j][0] * iRing.LATTICE.betax()))> sqrt(iRing.AcceptHinj()*iRing.LATTICE.betax())) ||
+						  ((sqrt(iBeam.Invs[j][2])*fabs(iRing.LATTICE.Dy()) + sqrt(iBeam.Invs[j][1] * iRing.LATTICE.betay())) > sqrt(iRing.AcceptVinj()*iRing.LATTICE.betay())))
+						  // || ((iBeam.benum == BUCKET) && (iBeam.longshift-iRing.S1(m_) < iBeam(j,4)(m_)) && (iBeam(j,4)(m_) < iBeam.longshift+iRing.S1(m_))) )
+					  {
+						  iBeam.Loss(iRing.LATTICE, j, 1., false);
+						  j--;
+					  }
+				  }
+
             }
          }
          bpData Septum(1001,2); 

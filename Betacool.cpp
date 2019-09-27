@@ -49,6 +49,7 @@ xTime      iTime(iRing);
 xTaskRates iTaskRates;
 xDynamics  iDynamics;
 CollidingBeam cBeam;
+//xDynamics  linj_loss;
 
 // ECOOL objects
 xEcool iEcool;
@@ -67,6 +68,8 @@ xGated     iGated (4);
 xLaserCooling iLaserCooling;
 xLastEffect iLastEffect;
 xComponent iComponent;
+
+bool linj_loss;
 
 int main(int argc, char* argv[])
 {

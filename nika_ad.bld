@@ -1,11 +1,11 @@
 [row=1] Beam | Parameters | Emittance
 1= Horizontal emittance, pi*mm*mrad
 1= Vertical emittance, pi*mm*mrad
-0.0001= Momentum spread
-5.28e+10= Number of particles
+1.e-004= Momentum spread
+5.28e+010= Number of particles
 2= bunched(0), coasting(1), barrier bucket (2), non-linear RF (3)
 0= Collider regime (0/1)
-0.005824340649= Mean beam radius, m
+5.824340649e-003= Mean beam radius, m
 4.853667309= Longitudinal form factor
 52.86609204= Longitudinal space charge impendances, Ohm
 51797048.21= Transverse space charge impendances, Ohm/m
@@ -19,28 +19,28 @@
 5.991464547= rms
 24.56757518= normilised horizontal emittance
 24.56757518= normilised vertical emittance
-0.07524525723= energy spread
+7.524525723e-002= energy spread
 3; energy spread unit
 
 [row=2] Beam | Parameters | Model Beam
 10= Number of model particles
 4000= Maximum number of model particles 
-1e-06= Impact parametr, m
-9.527272727e-08= Cell size, m
+1.e-006= Impact parametr, m
+9.527272727e-008= Cell size, m
 168.7435341= Linear density
 20099404.7= Initial longitudinal temperature, K
 4221611245= Initial transverse temperature, K
-0.00891581032= Gamma1
-1.784121641e-06; Gamma2
+8.91581032e-003= Gamma1
+1.784121641e-006; Gamma2
 
 [row=3] Beam | Parameters | Stability
 1= Image force correction factor
-0.002882721095= Horizontal tune shift
-0.002882721095= Vertical tune shift
+2.882721095e-003= Horizontal tune shift
+2.882721095e-003= Vertical tune shift
 1= Factor of distribution function FI
 1= Longitudinal coupling impendance, Ohm
 1.542245271= Microwavw instaility
-0.003919342058= Tune spread for first mode
+3.919342058e-003= Tune spread for first mode
 1= Factor of distribution function Ft
 1= Transverse coupling impendance, Ohm/m
 0.5650713491; Dipole instability
@@ -59,7 +59,7 @@
 8= Horizontal upper frequency, GHz
 1= Electronic gain linear(0) logarithm (1)
 1= Horizontal gain
-31622.78= linear electronic gain
+31622.7766= linear electronic gain
 90= log electronic gain
 1.3= Horizontal electrode length, cm
 1.8= Horizontal PU electrode width, cm
@@ -75,7 +75,7 @@
 0.736= Horizontal kicker app. length, m
 75= Beta function at horizontal kicker, m
 0.9171523357= Horizontal kicker sensitivity
-0.008836277255= Thermal noise power, kW
+8.836277255e-003= Thermal noise power, kW
 1= Schottky power, kW
 1= Equilibrium emittance, pi*m*rad
 1= Cooling rate, s^-1
@@ -89,7 +89,7 @@
 8= Vertical upper frequency, GHz
 1= Electronic gain linear(0) logarithm (1)
 1= Vertical gain
-31622.78= linear electronic gain
+31622.7766= linear electronic gain
 90= log electronic gain
 1.3= Vertical electrode length, cm
 1.8= Vertical PU electrode width, cm
@@ -105,7 +105,7 @@
 0.736= Vertical kicker app. length, m
 75= Beta function at vertical kicker, m
 0.9171523357= Vertical kicker sensitivity
-0.008836277255= Thermal noise power, kW
+8.836277255e-003= Thermal noise power, kW
 1= Schottky power, kW
 1= Equilibrium emittance, pi*m*rad
 1= Cooling rate, s^-1
@@ -119,7 +119,7 @@
 8= Longitudinal upper frequency, GHz
 1= Electronic gain linear(0) logarithm (1)
 =
-316227.8= linear electronic gain
+316227.766= linear electronic gain
 110= log electronic gain
 1.3= Longitudinal electrode length, cm
 1.8= Reserv (PU electrode width, cm)
@@ -179,12 +179,12 @@
 100= Percents, %
 1= Via local density
 0= Include diffusion
-0.01= Noise power, s^-1
-0.06564838613; HourGlass value
+1.e-002= Noise power, s^-1
+6.564838613e-002; HourGlass value
 
 [row=11] Ring | Parameters | Ion kind
 2= Reference Energy: Gamma(0), Beta(1), Kinetic(2), Momentum(3)
-4.220606,0.97153,3,752.45= Reference Energy
+4.220606384,0.9715260461,3,752.4525723= Reference Energy
 197= Atomic number
 79= Charge number
 1= Life time, sec
@@ -197,8 +197,8 @@
 9.440831= Vertical tunes
 -26.85996= Horizontal Chromaticity
 -27.45639= Vertical Chromaticity
-6e-05= Horizontal Acceptance
-2.5e-05= Vertical Acceptance
+6.e-005= Horizontal Acceptance
+2.5e-005= Vertical Acceptance
 0= Imagenary (0/1)
 1= Acceptance on momentum deviation
 6; Separatrix length, m 
@@ -250,20 +250,20 @@ nica_5e-4.inj= File with initial distribution
 8.481148351= Horizontal beta function, m
 8.480323668= Veritical beta function, m
 0.8984350122= Dispersion, m
-1.72713931e-06= Revolution period, sec
-0.03624885937= Off momentum factor
+1.72713931e-006= Revolution period, sec
+3.624885937e-002= Off momentum factor
 0= Induction acceleration
--0.005= Amplitude, V
+-5.e-003= Amplitude, V
 
 
 [row=17] Ring | Parameters | RF system
 22= Harmonic number
 1.472= RF voltage, kV
 22.86545455= Separatrix length, m
-0.0001415777172= Synchrotron tune
+1.415777172e-004= Synchrotron tune
 100= Separatrix size, %
 0= Initial momentum deviation, dP/p
--0.006= Final momentum deviation, dP/P
+-6.e-003= Final momentum deviation, dP/P
 0= Deviation sweeping time, s
 
 [row=18] Ring | Parameters | Injection point
@@ -279,17 +279,17 @@ nica_5e-4.inj= File with initial distribution
 
 [row=19] Ring | Lattice Structure | Matrix
 -0.7191775512,-5.022768624,0,0,0,-0.1173778172=
-0.09998155862,-0.6922014787,0,0,0,0.02084460211=
+9.998155862e-002,-0.6922014787,0,0,0,2.084460211e-002=
 0,0,-0.5212294515,-14.34212012,0,0=
-0,0,0.04558132436,-0.6643277156,0,0=
-0.00325535279,0.1859467121,0,0,1,-22.00092927=
+0,0,4.558132436e-002,-0.6643277156,0,0=
+3.25535279e-003,0.1859467121,0,0,1,-22.00092927=
 0,0,0,0,0,1;0
 
 [row=20] Ring | Optics Structure | Matrix
 1= Matrix: Optics(0) / Ring(1)
 0= Index
 0= Complex value: Real(0) / Imag(1) / Abs(2) / Arg(3) 
--2.187583448e-11= 1 - |Det|
+-2.187583448e-011= 1 - |Det|
 0= mu_x
 0; mu_y
 
@@ -302,15 +302,15 @@ nica_5e-4.inj= File with initial distribution
 1; Auto skip of points (0/1)
 
 [row=22] Task | Algorithm | RMS Dynamics
-0.001= Initial integration step, sec
+1.e-003= Initial integration step, sec
 20= Maximum integration step, sec
 2= Step multiplier
 20; Maximum groth, %
 
 [row=23] Task | Algorithm | Model Beam
-0.00015= Integration step, sec
+1.5e-004= Integration step, sec
 0= IBS kick model
-86.84881= Integration step, turns
+86.84881362= Integration step, turns
 0= Integration step: time (0), turns (1)
 1= Random synchrotron tune
 2= Core definition [sigma]
@@ -324,7 +324,7 @@ nica_5e-4.inj= File with initial distribution
 [row=24] Task | Algorithm | Monte-Carlo
 1000= Turn step
 1= Enable Monte-Carlo step (0/1)
-0.0001= Maximum step, sec
+1.e-004= Maximum step, sec
 10; Min Invariant, %
 
 [row=25] Task | Algorithm | Tracking
@@ -337,10 +337,10 @@ nica_5e-4.inj= File with initial distribution
 50= Voltage amplitude, kV
 0.2= RF duration in T0
 0.1= Gap duration in T0
-0.007721729451= Barrier height
-0.0001000447339=RMS amplitude
+7.721729451e-003= Barrier height
+1.000447339e-004=RMS amplitude
 50.33777706= Bucket length, m
-0.09537874773= Synchrotron period in sec
+9.537874773e-002= Synchrotron period in sec
 0= Analytic
 0= Sattionary bucket file
 nica_tk.bar= filename
@@ -348,7 +348,7 @@ nica_tk.bar= filename
 U231.mov= filename
 0= 2 barriers
 500= Longitudinal profile divisions
-0.05= Scale of potential integral
+5.e-002= Scale of potential integral
 1= IBS normalisation
 0= Show on Injection
 0.8076195162= HourGlass Effect
@@ -416,7 +416,7 @@ U231.mov= filename
 5= Evolution for: Sx(0),Sy(1),Sp(2),Px(3),Py(4),Pp(5),Ex(6),Ey(7),dP/P(8)
 1= Sigma is normalised on Emittance: current(0) / initial (1)
 100= Number of slices for Evulution
-0.01= Time step for Evolution, sec
+1.e-002= Time step for Evolution, sec
 1= Sigma_x (0/1)
 1= Sigma_y (0/1)
 1= Sigma_p (0/1)
@@ -443,8 +443,8 @@ U231.mov= filename
 0; Laser Cooling (0/1)
 
 [row=32] Task | Rates | Rates
-0.009680261535= Horizontal emittance growth rate, Hz
-0.009680261535= Vertical emittance growth rate, Hz
+9.680261535e-003= Horizontal emittance growth rate, Hz
+9.680261535e-003= Vertical emittance growth rate, Hz
 -0.1961587662= Mometum spread growth rate, Hz
 0= Particle number  growth rate, Hz
 0=
@@ -458,7 +458,7 @@ U231.mov= filename
 0.1,2= Vertical emittance, pi*m,rad
 19= Division number
 0= Logarithmic scale (0/1)
-0.0001,0.002= Momentum spread
+1.e-004,2.e-003= Momentum spread
 19= Division number
 0; Logarithmic scale (0/1)
 
@@ -466,7 +466,7 @@ U231.mov= filename
 0,0,0,0,0,-60000= X0
 4,0,4,0,2,0= X1
 4,10= L0, L
-1e-05,0.0051,100= Dynamics
+1.e-005,5.1e-003,100= Dynamics
 TEK00005.DAT= oscilograph
 8= step, sec
 0; Cutting: (1)- Top, (0)- Centre
@@ -477,15 +477,15 @@ TEK00005.DAT= oscilograph
 181= Mass number, A
 73= Charge number, Z
 10= Length, mm
-0.085= Density, gram/cm^3
-2.828075e+20= Density, atom/cm^3
+8.5e-002= Density, gram/cm^3
+2.828075263e+020= Density, atom/cm^3
 1= Calculate from material (0/1)
-2.828075263e+20= Density, atom/cm^2
-0.0001493997273= Stripping angle
+2.828075263e+020= Density, atom/cm^2
+1.493997273e-004= Stripping angle
 631986741.1= Energy loss, eV
 17768660.39= Stripping energy, eV
 1= Energy loss (0/1)
-2.828075263e+20; Effective density [cm^-2]
+2.828075263e+020; Effective density [cm^-2]
 
 [row=37] Effects | Internal Target | Lattice
 1= Horizontal beta function, m
@@ -512,15 +512,15 @@ TEK00005.DAT= oscilograph
 0= Nuclear reaction (0/1)
 0= Interaction events (0/1)
 40= Cross-section, barn
-1.902042416e+38; Luminosity, cm^-2*s^-1
+1.902042416e+038; Luminosity, cm^-2*s^-1
 
 [row=40] Effects | Internal Target | Pellet
 0= Horizontal shift, mm
-0.025= Horizontal size, mm
-0.025= Vertical size, mm
+2.5e-002= Horizontal size, mm
+2.5e-002= Vertical size, mm
 60= Vertical velocity, m/s
 6= Interval between pellets, mm
-2.828075263e+20= Effective density, cm^-2
+2.828075263e+020= Effective density, cm^-2
 2; Flux width, mm
 
 [row=41] Effects | Additional Heating
@@ -579,7 +579,7 @@ TEK00005.DAT= oscilograph
 
 [row=43] Effects | Rest Gas | Vacuum composition
 4= Mean vacuum chamber radius, cm
-1e-10= Pressure, Torr
+1.e-010= Pressure, Torr
 70,10,10,10= %
 1,12,32,12= A
 1,6,16,7= Z
@@ -633,7 +633,7 @@ Bring3.bump= bump file
 0= Vertical final coordinate, m
 0= Longitudinal initial coordinate, m
 0= Longitudinal final coordinate, m
-0.0001= Initial momentum spread
+1.e-004= Initial momentum spread
 0= Final momentum spread
 0= Use time period (0/1)
 1= Painting time [integration steps]
@@ -654,14 +654,14 @@ dist20k_at54MeV.dat= File name
 1= RMS bunch length, cm
 1= RMS momentum spread
 0= distance between bunches, cm
-3.125e+10= Number of electrons
+3.125e+010= Number of electrons
 0= Number of particles in array
 200= Number of local particles
 1= Box dimension, sigma
 0= Use longitudinal slice, m
 0= From
-0.02= Up to
-7.16618e+13= local density, 1/m^3
+2.e-002= Up to
+7.16618e+013= local density, 1/m^3
 41747.0434= local horizontal velocity, m/s
 -47872.44712= local vertical velocity, m/s
 -47853.30028= local longitudinal velocity, m/s
@@ -671,7 +671,7 @@ dist20k_at54MeV.dat= File name
 20= number of steps along horizontal axis
 20= number of steps along longitudinal axis
 0= bi-Gaussian distribution
-0.05= part of the particles located inside core
+5.e-002= part of the particles located inside core
 0.2= ratio between core rms and tail rms
 0; Uniform density distribution
 
@@ -692,7 +692,7 @@ dist20k_at54MeV.dat= File name
 0.1= Vertical RMS dimensions, cm
 30= Longitudinal RMS dimensions, cm
 0= Distance between electron and ion bunch centers, cm
-1e+12= Number of electron
+1.e+012= Number of electron
 62.05514423; Peak current, A
 
 [row=57] ECOOL | Parameters | Gaussian bunch
@@ -700,12 +700,12 @@ dist20k_at54MeV.dat= File name
 0.1= Vertical RMS dimensions, cm
 20= Longitudinal RMS dimensions, cm
 0= Distance between electron and ion bunch centers, cm
-5e+10= Number of electron
-0.04654135817= Peak current, A
-5.507782403e+15= central density
-6e-06= Horizontal rms angle
-6e-06= Vertical rms angle
-0.00027= Momentum spread
+5.e+010= Number of electron
+4.654135817e-002= Peak current, A
+5.507782403e+015= central density
+6.e-006= Horizontal rms angle
+6.e-006= Vertical rms angle
+2.7e-004= Momentum spread
 1; Angular spread from tabsheet (0), from model (1)
 
 [row=58] ECOOL | Parameters | Gaussian cylinder
@@ -726,10 +726,10 @@ dist20k_at54MeV.dat= File name
 3= Model: Budker(0),Non-magnetized(1),Derbenev(2),Parkhomchuk(3),Tabulated(4)
 0= Emittance(0/1)
 1= Beam temperature(0/1)
-1.105931209e-06= Transverse emittance, pi*m*rad
+1.105931209e-006= Transverse emittance, pi*m*rad
 0.1= Transverse temperature, eV
-3.219724105e-05= Longitudinal emittance, dP/P
-0.0005= Longitudinal temperature, eV
+3.219724105e-005= Longitudinal emittance, dP/P
+5.e-004= Longitudinal temperature, eV
 0= Rms velocity 90/1)
 132619.9342= transverse velocity
 9377.645478= longitudinal velocity
@@ -744,15 +744,15 @@ dist20k_at54MeV.dat= File name
 200= number of integration steps for Pestrikov
 1= Numerical non magnetized force in accordance with Binney
 0= Numerical 3D integral
-0.01= step of Binney's integrals
+1.e-002= step of Binney's integrals
 5; Upper limit of Binney's integrals
 
 [row=61] ECOOL | Friction force | Parameters
 1= Smoothing coefficient (Derbenev model)
 0= Angular spread (0/1)
 1= Effective temperature (0/1)
-7.411366e-06= Angular spread, rad
-0.0005= Effective temperature, eV
+7.411365913e-006= Angular spread, rad
+5.e-004= Effective temperature, eV
 0= Asimptotic presentation of nonmagnetized force(0/1)
 17= number of integration steps over longitudinal velocity
 17= number of integration steps over transverse velocity
@@ -795,7 +795,7 @@ table.lvt=Longitudinal velocity table
 
 [row=65] Beam | Colliding Beam | Ion kind
 3= Reference Energy: Gamma(0), Beta(1), Kinetic(2), Momentum(3)
-1131.722,1,1.0533e+12,1054.2= Reference Energy
+1131.721525,0.9999996096,1.05326891e+012,1054.2= Reference Energy
 1= Atomic number
 1= Charge number
 100000= Life time, sec
@@ -805,7 +805,7 @@ table.lvt=Longitudinal velocity table
 0.12= Horizontal emittance, pi*mm*mrad
 0.12= Vertical emittance, pi*mm*mrad
 30= RMS bunch length, cm
-1e+11= Number of particles
+1.e+011= Number of particles
 0; bunched(0), coasting(1)
 
 [row=67] Beam| Colliding Beam | Lattice 
@@ -814,13 +814,13 @@ table.lvt=Longitudinal velocity table
 
 [row=69] ECOOL | Electron beam | Parabolic / File
 0.5= Beam radius, cm
-0.05= Beam current, A
+5.e-002= Beam current, A
 100000000= Gradient of transverse velocity with radius, 1/sec
-3.669735529e+11= Central density, m^-3
+3.669735529e+011= Central density, m^-3
 recycler.den= density distribution
 0.1044860681= Electron current, A
 0= transverse gradient, 1/s
-2.112534413e+13; Central density, 1/m^3
+2.112534413e+013; Central density, 1/m^3
 
 [row=70] ECOOL | Tabulated | Control
 table.tvt=Transverse velocity table
@@ -862,11 +862,11 @@ table.lvt=Longitudinal velocity table
 [row=80] Effects | Optical Stochastic coolng | Parameters
 0= R51
 0= R52
-0.004= R56
-6e-07= Go
+4.e-003= R56
+6.e-007= Go
 0= Zo
 7= SigmaZ
-1e-05; lambda
+1.e-005; lambda
 
 [row=81] Effects | Optical Stochastic coolng | Lattice functions
 10= Horizontal beta [m]
@@ -899,12 +899,12 @@ table.lvt=Longitudinal velocity table
 
 [row=87] Effects | Laser coolng | Sweeping
 0= Sweep propogate laser
--0.002= Start sweeping, dP/P
--0.0003= Stop sweeping, dP/P
+-2.e-003= Start sweeping, dP/P
+-3.e-004= Stop sweeping, dP/P
 1= Horizontal shift of propogate laser [mm]
 1= final shift, mm
 1= Sweep contr-propogate laser
-0.0003= Start sweeping, dP/P
+3.e-004= Start sweeping, dP/P
 1000= Stop sweeping, dP/P
 0= Horizontal shift of contr-propogate laser [mm]
 0= final shift, mm
@@ -913,8 +913,8 @@ table.lvt=Longitudinal velocity table
 
 [row=90] Effects | Stochastic cooling | RHIC
 6000= Coolin coefficient
-3e-15= Difusion coefficient
-5e+13= gain
+3.e-015= Difusion coefficient
+5.e+013= gain
 0= linear force coefficient
 1= Cubic force coefficient
 5= Lower frequency, GHZ
@@ -924,17 +924,17 @@ table.lvt=Longitudinal velocity table
 0.66; Time delay in T_0
 
 [row=91] Effects | Gated Stochastic cooling | Parameters
-1,2,1.16,-0.5,0.5,0,0.1,0,0.01,10= N,type,lower,upper,initial,final,p2k,noise,gain
-0,0,1.16,-0.42,0.42,0,0.01,8,9,10= N,type,lower,upper,initial,final,p2k,noise,gain
+1,2,1.16,-0.5,0.5,0,0.1,0,1.e-002,10= N,type,lower,upper,initial,final,p2k,noise,gain
+0,0,1.16,-0.42,0.42,0,1.e-002,8,9,10= N,type,lower,upper,initial,final,p2k,noise,gain
 0,0,1,-1,1,0,0.1,8,9,10= N,type,lower,upper,initial,final,p2k,noise,gain
-0,0,2,-1,1,0,0.01,8,9,10= N,type,lower,upper,initial,final,p2k,noise,gain
+0,0,2,-1,1,0,1.e-002,8,9,10= N,type,lower,upper,initial,final,p2k,noise,gain
 0,0; simple, optimal
 
 [row=92] Effects | Gated Stochastic cooling | Linear Approximation
 1= Linear Approximation
-0.0002= Force amplitude [1/s]
-0.005= Force position, d/p
-1e-07= Diffusion amplitude [1/s]
-0.002= Diffusion position, dp/p
-0.001; Initial sigma for diffusion, dp/p
+2.e-004= Force amplitude [1/s]
+5.e-003= Force position, d/p
+1.e-007= Diffusion amplitude [1/s]
+2.e-003= Diffusion position, dp/p
+1.e-003; Initial sigma for diffusion, dp/p
 

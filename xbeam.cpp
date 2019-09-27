@@ -585,10 +585,22 @@ bool xBeam::Crossed()
    return crossed;
 }
 
-bool xBeam::Loss(xLattice& lat, int j, double loss)
+bool xBeam::Loss(xLattice& lat, int j, double loss, bool linj_loss)
 {
+	
    if (loss > 1) loss = 1;
-   Emit[3] *= exp(-loss / Bunch.Number);
+    doubleU dn1;
+      if (linj_loss)
+   {
+	   dn1 = Emit[3] / Bunch.Number;
+	   Emit[3] -= dn1 * loss;
+   }
+   else
+   {
+	   Emit[3] *= exp(-loss / Bunch.Number);
+   }
+     
+    
    if (Emit[3] < 10) Emit[3] = 10;
 
    if (fabs(xDistributor::Flatten()) < loss)
