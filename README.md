@@ -9,7 +9,7 @@ The present version is a copy of BETACOOL source code by A. Smirnov with correct
 
 - README.md:         this file
 - src:               all source files of BETACOOL (only!)
-- Betacool.vcxproj:  Microsoft Visual Studio 2012 project file used to compile BETACOOL (only! no source for BOLIDE) for Windows (32 and 64 bit)
+- Betacool.vcxproj:  Microsoft Visual Studio 2013 project file used to compile BETACOOL (only! no source for BOLIDE) for Windows (32 and 64 bit)
 - Makefile:          UNIX Make file to compile BETACOOL (only! in Unix one has to deal with input files manually)
 - BOLIDE:            minimal set of files to start BOLIDE interface, including the original "bolide.exe" executable for Win32
 - Examples/BOLIDE:   a more extensive example of BOLIDE, with input/output files already generated for NICA (?) cooler
@@ -23,7 +23,7 @@ The present version is a copy of BETACOOL source code by A. Smirnov with correct
 # How to compile
 
 ## For compilation on Windows
-Just load Betacool.vcxproj with Microsoft Visual Studio 2012 and "Build" it for your Windows architecture. 
+Just load Betacool.vcxproj with Microsoft Visual Studio 2013 and "Build" it for your Windows architecture. 
 This will create a betacool_<arc>.exe file 
 
 
