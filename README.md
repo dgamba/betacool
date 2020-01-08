@@ -34,6 +34,13 @@ make
 `
 and this will create betacool_<arc> file executable on your architecture  
 
+### DEBUGGING
+- one can start with 
+`
+make Build/UNIX/bpTune.o
+`
+which at least compiles with some errors...
+
 
 ## For compilation on MacOSX:
 In a new conda environment, I installed:
