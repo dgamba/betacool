@@ -42,6 +42,7 @@ conda install -c anaconda gcc
 conda install -c conda-forge openmp
 conda install -c conda-forge stdlib-list
 conda install libcxx
+conda install gmp
 `
 
 I installed the stdlib as:

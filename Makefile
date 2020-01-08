@@ -1,49 +1,80 @@
+# the target output file
+TARGET   = Betacool_UNIX
+
+# where to do the compilation
+BUILDDIR = Build/UNIX/
+# where the source files are
+SRCDIR   = src/
+
+# the compiler to use
+CC       = g++
+
+# compiler flags:
+#  -g    adds debugging information to the executable file
+#  -Wall turns on most, but not all, compiler warnings
+#  -threads
+#  -pthread
+#  -fpermissive maybe not so nice.. but many things still to be improved in the code
+CFLAGS   = -g -Wall -fopenmp -O2 -fpermissive
+
+# the linker to use and its options
+LD       = ld
+LDFLAGS  = 
+
+# for creating a static library:
+DLD      = ar
+DLDFLAGS = rcs
+
+# if to include something more and/or add libraries for compilation
 INC     += -I.
 LIBS     =
-CC       = gcc
-CCFLAGS  = 
-BUILDDIR = tmp
 
-include ./Objects
+# betacool is made of several small objects:
+OBJS += Betacool.o \
+        bolideU.o \
+        bpData.o \
+        bpIBS.o \
+        bpTune.o \
+        dataU.o \
+        doubleU.o \
+        matrixU.o \
+        pellets.o \
+        StdAfx.o \
+        vectoru.o \
+        xBeam.o \
+        xbucket.o \
+        xDistributor.o \
+        xDraw.o \
+        xDynamic.o \
+        xEbeam.o \
+        xEcool.o \
+        xEffect.o \
+        xForce.o \
+        xhiroshi.o \
+        xIBS.o \
+        xLibrary.o \
+        xOptics.o \
+        xPowell.o \
+        xrestgas.o \
+        xRing.o \
+        xRunge.o \
+        xstoch.o \
+        xTarget.o
 
-all : $(OBJS) 
-	if [ ! -d build/MACx64 ] ; then mkdir build/MACx64 ; fi;
-	if [ ! -d build/MACx64/lib ] ; then mkdir build/MACx64/lib ; fi;
-	cp src/*.h build/MACx64/lib
-	$(DLD) $(DLDFLAGS) -o ../lib/libbetacool.a $(OBJS) $(LIBS)
 
-	$(LD) -o ../dat/betacool  $(LDFLAGS) $(INC) $(OBJS) $(LIBS)
+all: $(TARGET)
+
+$(TARGET) : $(BUILDDIR)$(OBJS) 
+	if [ ! -d $(BUILDDIR) ] ;     then mkdir $(BUILDDIR) ; fi;
+	$(LD)  -o $(TARGET)   $(LDFLAGS)  $(OBJS) $(LIBS) $(INC)
+	# $(DLD) -o $(TARGET).a $(DLDFLAGS) $(OBJS) $(LIBS)
 
 clean:
-	rm -f $(OBJS)
-#	rm -rf ../include/
+	@echo "Removing directory $(BUILDDIR)" 
+	rm -rf $(BUILDDIR)
 
-../lib/obj/%.o : %.cpp
+$(BUILDDIR)%.o : $(SRCDIR)%.cpp
+	@echo "Compiling $< into $@" 
+	if [ ! -d $(BUILDDIR) ] ;     then mkdir $(BUILDDIR) ; fi;
 	$(CC) $(CCFLAGS) $(INC) -c $< -o $@;
-
-OBJS += ../lib/obj/bolideu.o \
-	../lib/obj/datau.o \
-	../lib/obj/doubleu.o \
-	../lib/obj/matrixu.o \
-	../lib/obj/stdafx.o \
-	../lib/obj/vectoru.o \
-	../lib/obj/xbeam.o \
-	../lib/obj/xdistributor.o \
-	../lib/obj/xdraw.o \
-	../lib/obj/xdynamic.o \
-	../lib/obj/xebeam.o \
-	../lib/obj/xecool.o \
-	../lib/obj/xeffect.o \
-	../lib/obj/xforce.o \
-	../lib/obj/xhiroshi.o \
-	../lib/obj/xibs.o \
-	../lib/obj/xlibrary.o \
-	../lib/obj/xoptics.o \
-	../lib/obj/xpowell.o \
-	../lib/obj/xrestgas.o \
-	../lib/obj/xring.o \
-	../lib/obj/xrunge.o \
-	../lib/obj/xstoch.o \
-	../lib/obj/xtarget.o \
-	../lib/obj/betacool.o
 
