@@ -71,27 +71,27 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>.</OutDir>
-    <IntDir>.\Release\Win32\</IntDir>
+    <IntDir>.\Build\Release\Win32\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>.</OutDir>
-    <IntDir>.\Release\x64\</IntDir>
+    <IntDir>.\Build\Release\x64\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>.</OutDir>
-    <IntDir>.\Debug\Win32\</IntDir>
+    <IntDir>.\Build\Debug\Win32\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>.</OutDir>
-    <IntDir>.\Debug\x64\</IntDir>
+    <IntDir>.\Build\Debug\x64\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
-      <TypeLibraryName>.\Release\Win32\Betacool.tlb</TypeLibraryName>
+      <TypeLibraryName>.\Build\Release\Win32\Betacool.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
@@ -102,10 +102,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\Release\Win32\Betacool.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Release\Win32\</AssemblerListingLocation>
-      <ObjectFileName>.\Release\Win32\</ObjectFileName>
-      <ProgramDataBaseFileName>.\Release\Win32\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>.\Build\Release\Win32\Betacool.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Release\Win32\</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Release\Win32\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Release\Win32\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <OpenMPSupport>true</OpenMPSupport>
@@ -118,7 +118,7 @@
     <Link>
       <OutputFile>./Betacool_Win32.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ProgramDatabaseFile>.\Release\Win32\Betacool.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>.\Build\Release\Win32\Betacool.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
@@ -126,12 +126,12 @@
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\Release\Win32\Betacool.bsc</OutputFile>
+      <OutputFile>.\Build\Release\Win32\Betacool.bsc</OutputFile>
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <TypeLibraryName>.\Release\x64\Betacool.tlb</TypeLibraryName>
+      <TypeLibraryName>.\Build\Release\x64\Betacool.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
@@ -143,10 +143,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\Release\x64\Betacool.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Release\x64\</AssemblerListingLocation>
-      <ObjectFileName>.\Release\x64\</ObjectFileName>
-      <ProgramDataBaseFileName>.\Release\x64\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>.\Build\Release\x64\Betacool.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Release\x64\</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Release\x64\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Release\x64\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <OpenMPSupport>true</OpenMPSupport>
@@ -158,14 +158,14 @@
     <Link>
       <OutputFile>.\Betacool_x64.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ProgramDatabaseFile>.\Release\x64\Betacool.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>.\Build\Release\x64\Betacool.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\Release\x64\Betacool.bsc</OutputFile>
+      <OutputFile>.\Build\Release\x64\Betacool.bsc</OutputFile>
     </Bscmake>
     <ProjectReference>
       <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
@@ -173,7 +173,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Midl>
-      <TypeLibraryName>.\Debug\Win32\Betacool.tlb</TypeLibraryName>
+      <TypeLibraryName>.\Build\Debug\Win32\Betacool.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
@@ -183,10 +183,10 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\Debug\Win32\Betacool.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Debug\Win32\</AssemblerListingLocation>
-      <ObjectFileName>.\Debug\Win32\</ObjectFileName>
-      <ProgramDataBaseFileName>.\Debug\Win32\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>.\Build\Debug\Win32\Betacool.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Debug\Win32\</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Debug\Win32\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Debug\Win32\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -200,7 +200,7 @@
       <OutputFile>.\Betacool_debug_Win32.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\Debug\Win32\Betacool.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>.\Build\Debug\Win32\Betacool.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
@@ -209,12 +209,12 @@
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\Debug/Betacool.bsc</OutputFile>
+      <OutputFile>.\Build\Debug/Betacool.bsc</OutputFile>
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <TypeLibraryName>.\Debug\x64\Betacool.tlb</TypeLibraryName>
+      <TypeLibraryName>.\Build\Debug\x64\Betacool.tlb</TypeLibraryName>
       <HeaderFileName />
     </Midl>
     <ClCompile>
@@ -224,10 +224,10 @@
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile>.\Debug\x64\Betacool.pch</PrecompiledHeaderOutputFile>
-      <AssemblerListingLocation>.\Debug\x64\</AssemblerListingLocation>
-      <ObjectFileName>.\Debug\x64\</ObjectFileName>
-      <ProgramDataBaseFileName>.\Debug\x64\</ProgramDataBaseFileName>
+      <PrecompiledHeaderOutputFile>.\Build\Debug\x64\Betacool.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Build\Debug\x64\</AssemblerListingLocation>
+      <ObjectFileName>.\Build\Debug\x64\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Build\Debug\x64\</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -241,14 +241,14 @@
       <OutputFile>.\Betacool_debug_x64.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\Debug\x64\Betacool.pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>.\Build\Debug\x64\Betacool.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention />
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\Debug\x64\Betacool.bsc</OutputFile>
+      <OutputFile>.\Build\Debug\x64\Betacool.bsc</OutputFile>
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
