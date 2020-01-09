@@ -3,11 +3,11 @@
  *
  * Davide - Jan 2020
  */
+#include "stdafx.h"
 #include "warning.h"
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h> 
-
 #include <cstddef>
 
 using namespace std;
