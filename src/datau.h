@@ -9,6 +9,7 @@
 #include <math.h>
 #include "doubleu.h"
 #include "btemplat.h"
+#include "warning.h"
 
 extern double EmptyData;
 extern double PressEnter;
@@ -27,7 +28,7 @@ class chars
    chars(chars& c) { pchar = NULL; set(c.pchar);} // constructor with chars
   ~chars();                                       // destructor
    char& operator[](unsigned int index);          // indexing of string
-   char* get()    { if (pchar) return   pchar; return ""; } // pointer on string
+   char* get()    { if (pchar) return   pchar; return (char*)""; } // pointer on string
    void  set(char* c);                                      // set of string
    void  operator =  (char* c) { set(c); }                  // set of string
    void  operator =  (chars c) { *this = c.pchar; }         // set of string
@@ -71,7 +72,7 @@ class BLine : public LTemplate<BCell>
 {  friend class BData;
 	bool index(int);
    char* sr(int i)
-   { if (index(i)) return LList[i]->sr.get( ); return "";}
+   { if (index(i)) return LList[i]->sr.get( ); return (char*)"";}
    void  sr(int i, char* c)
    { if (index(i)) LList[i]->sr.set(c); }
 

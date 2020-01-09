@@ -42,7 +42,7 @@ class xRunge : public xData
    vectorU Eigen;                           // eigen vector
    vectorU NormE;                           // normalized vector
 
-//***************  for coupled motion ***********************
+// ***************  for coupled motion ***********************
    vectorU Squareq(vectorU);
    vectorU qubstep(complex<double> a);
    vectorU Qubeq  (vectorU);

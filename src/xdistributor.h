@@ -135,8 +135,8 @@ class xDistributor : public xBunch
 
    double Fitting[3][5];
    Tray<double> xi;
-   void xDistributor::Powel1(double *p, double *hys, double sig, double div);
-   void xDistributor::Powel2(double *p, double *hys, double sig, double div);
+   void Powel1(double *p, double *hys, double sig, double div);
+   void Powel2(double *p, double *hys, double sig, double div);
 
    Tine<double> LProfile;                       // Longitidinal profile
    Tine<double> VProfile;                       // Potential profile

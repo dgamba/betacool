@@ -15,11 +15,11 @@ CC       = g++
 #  -threads
 #  -pthread
 #  -fpermissive maybe not so nice.. but many things still to be improved in the code
-CFLAGS   = -g -Wall -fopenmp -O2 -fpermissive
+CCFLAGS   = -g -Wall -fopenmp -O2 -fpermissive -Wwrite-strings
 
 # the linker to use and its options
 LD       = ld
-LDFLAGS  = 
+LDFLAGS  += 
 
 # for creating a static library:
 DLD      = ar
@@ -31,7 +31,7 @@ LIBS     =
 
 # betacool is made of several small objects:
 OBJS += Betacool.o \
-        bolideU.o \
+        bolideu.o \
         bpData.o \
         bpIBS.o \
         bpTune.o \
@@ -41,6 +41,7 @@ OBJS += Betacool.o \
         pellets.o \
         StdAfx.o \
         vectoru.o \
+        warning.o \
         xBeam.o \
         xbucket.o \
         xDistributor.o \
@@ -64,9 +65,9 @@ OBJS += Betacool.o \
 
 all: $(TARGET)
 
-$(TARGET) : $(BUILDDIR)$(OBJS) 
+$(TARGET) : $(addprefix $(BUILDDIR), $(OBJS))
 	if [ ! -d $(BUILDDIR) ] ;     then mkdir $(BUILDDIR) ; fi;
-	$(LD)  -o $(TARGET)   $(LDFLAGS)  $(OBJS) $(LIBS) $(INC)
+	$(LD)  -o $(TARGET)   $(LDFLAGS) $< $(LIBS) $(INC)
 	# $(DLD) -o $(TARGET).a $(DLDFLAGS) $(OBJS) $(LIBS)
 
 clean:
@@ -76,5 +77,10 @@ clean:
 $(BUILDDIR)%.o : $(SRCDIR)%.cpp
 	@echo "Compiling $< into $@" 
 	if [ ! -d $(BUILDDIR) ] ;     then mkdir $(BUILDDIR) ; fi;
-	$(CC) $(CCFLAGS) $(INC) -c $< -o $@;
+	$(CC) $(CCFLAGS) $(LDFLAGS) $(INC) -c $< -o $@;
+
+# the linker to use and its options
+LD       = ld
+LDFLAGS  += 
+
 

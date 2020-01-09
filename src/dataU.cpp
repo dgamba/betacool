@@ -8,10 +8,6 @@ double EmptyData    = -1e301;
 double PressEnter   = -2e301;
 double OutRangeData = -3e301;
 double SpaceData    = -4e301;
-void Warning(char* str1,        double ld1 = EmptyData,
-				 char* str2 = NULL, double ld2 = EmptyData,
-				 char* str3 = NULL, double ld3 = EmptyData,
-             bool endline = true);
 
 long Round(double d)
 {  long l = (long) d;

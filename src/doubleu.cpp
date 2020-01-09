@@ -107,12 +107,6 @@ void Dini()
 }
 //---------------------------------------------------------------------------
 
-extern double EmptyData;
-void Warning(char* str1, double ld1 = EmptyData,
-             char* str2 = NULL, double ld2 = EmptyData,
-             char* str3 = NULL, double ld3 = EmptyData,
-             bool endline = true);
-
 const double accuracy = 1e-10;
 
 MicroMega a_18, f_15, p_12, n_9, u_6, m_3;

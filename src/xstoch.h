@@ -145,8 +145,8 @@ class xStochastic : public xEffect
    int n_min;        //minimum number of the subband
    int n_max;        //maximum number of the subband
    doubleU eta;      //the ring off-momentum factor
-   vectorU xStochastic::GetForces (xTime&, U_Energy&, vectorU);
-   doubleU xStochastic::GetDiffusion(xTime&, U_Energy&, xBeam&, vectorU);
+   vectorU GetForces (xTime&, U_Energy&, vectorU);
+   doubleU GetDiffusion(xTime&, U_Energy&, xBeam&, vectorU);
    doubleU Diff;
    //12.12.2007
    //            06.07

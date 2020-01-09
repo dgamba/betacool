@@ -16,14 +16,9 @@ using namespace std;
 //#include "stdafx.h"
 #include "datau.h"
 #include "matrixu.h"
+#include "warning.h"
 //---------------------------------------------------------------------------
-extern char WarningFile[];
-extern const int MaxWarning;
 extern double* BParam[5];
-void Warning(char* str1,        double ld1 = EmptyData,
-				 char* str2 = NULL, double ld2 = EmptyData,
-				 char* str3 = NULL, double ld3 = EmptyData,
-             bool  endline = true);
 
 class xData : public BTemplate<xData>
 {public:
@@ -92,7 +87,7 @@ class xSurf : public BTemplate<xSurf>
    static void SaveAll(int period = 0);
 };
 
-void ShowTime(char*,bool show = false);
+void ShowTime(const char*,bool show = false);
 
 class xLoader
 {public:
