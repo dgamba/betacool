@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include "bpData.h"
+#include <cstring>
 #include <time.h>
 
 using namespace std;

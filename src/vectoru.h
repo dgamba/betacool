@@ -13,7 +13,7 @@ class vectorU
   doubleU& operator[](int index)
   {
     if((index<0)||(Size6<=index))
-       printf("vectorU index = ",index," out of range 0 - ",Size6);
+       printf("vectorU index = %i out of range 0 - %i", index, Size6);
     return ARRAY[index];
   }
   public:

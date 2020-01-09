@@ -34,16 +34,8 @@ make
 `
 and this will create betacool_<arc> file executable on your architecture  
 
-### DEBUGGING
-- one can start with 
-`
-make Build/UNIX/bpTune.o
-`
-which at least compiles with some errors...
 
-
-## For compilation on MacOSX:
-
+## For compilation on MacOSX Catalina:
 1. Install MacPorts
 2. Be sure everything is up do date
 `
@@ -54,10 +46,7 @@ sudo port upgrade outdated
 `
 sudo port install gcc9
 sudo port install libomp
-sudo port install git #not really necessary...
-
 `
-
 4. Select the right compiler
 `
 sudo port select --list gcc         # to list available options
@@ -66,43 +55,11 @@ sudo port select --set gcc mp-gcc9  # to select the one just installed above
 :::Warning
 Note that you might need to open a new shell to make the change effective
 :::
-
-In a new conda environment, I installed:
+5. Simply execute
 `
-conda config --set channel_priority false
-conda config --add channels defaults; conda config --add channels conda-forge
-conda update -n base conda
-conda upgrade --all
-conda create --name cooltrack
-conda activate cooltrack
-conda install gcc
-conda install libgcc
-conda install libcxx
-conda install openmp
-
-
-conda install -c anaconda gcc
-conda install -c conda-forge openmp
-conda install -c conda-forge stdlib-list
-conda install clang_osx-64
-conda install clangxx_osx-64
-conda install gfortran_osx-64
-conda install libcxx
-conda install gmp
+make
 `
-
-I installed the stdlib as:
-`
-cd /Library/Developer/CommandLineTools/Packages/
-open macOS_SDK_headers_for_macOS_10.14.pkg 
-`
-
-Some problems found while compiling...
-had to 
-`
-`
-
-Then something similar to UNIX compilation then....
+and this will compile the source code under the Build folder, and create the Betacool_MacOSX executable in the main folder.
 
 
 ---
@@ -142,4 +99,7 @@ Note that in the inital repository there were the follwing directories:
 - didn't find the source code of the grafical interface. Will need to live with the binaries stored in BOLIDE folder for the time being.
 - 
 
-
+## Modifications to the source code
+- in a few files renamed the variable "gamma" to "gammaRel" to avoid re-definition of standard funciton in <math.h> which gives error compiling for MacOSX
+- introduced a new "warning.h" and "warning.cpp" files containing "Warning()" function implementation which was duplicated in other source files
+- adjusted case of a few *.cpp files to be consistent with relative *.h files  

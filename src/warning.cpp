@@ -16,9 +16,9 @@ int WarningCount = 0;
 char WarningFile[128] = "xbolide.war";
 const int MaxWarning = 100;
 
-void Warning(char* str1, double ld1,
-				 char* str2, double ld2,
-				 char* str3, double ld3, bool endline)
+void Warning(const char* str1, double ld1,
+				 const char* str2, double ld2,
+				 const char* str3, double ld3, bool endline)
 {
 	if (WarningCount > MaxWarning) return;
    WarningCount++;

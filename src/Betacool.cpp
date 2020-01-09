@@ -82,9 +82,9 @@ int main(int argc, char* argv[])
    strcat(WarningFile, ".war");
    xTimer::Converter();
 #ifdef _DEBUG
-	Warning("BETACOOL----------debug ver.7.0 (omp)----------",  xTimer::year,"/",xTimer::month,"/",xTimer::day);
+	Warning("BETACOOL----------debug ver.7.0.beta (omp)----------",  xTimer::year,"/",xTimer::month,"/",xTimer::day);
 #else
-	Warning("BETACOOL----------release ver.7.0 (omp)----------",xTimer::year,"/",xTimer::month,"/",xTimer::day);
+	Warning("BETACOOL----------release ver.7.0.beta (omp)----------",xTimer::year,"/",xTimer::month,"/",xTimer::day);
 #endif
 
    switch(argc)

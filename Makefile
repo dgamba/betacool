@@ -1,5 +1,5 @@
 # the target output file
-TARGET   = Betacool_UNIX
+TARGET   = Betacool_MacOSX
 
 # where to do the compilation
 BUILDDIR = Build/UNIX/
@@ -19,7 +19,7 @@ CCFLAGS   = -g -Wall -fopenmp -O2 -fpermissive -Wwrite-strings
 
 # the linker to use and its options
 LD       = ld
-LDFLAGS  += 
+LDFLAGS  = 
 
 # for creating a static library:
 DLD      = ar
@@ -35,40 +35,38 @@ OBJS += Betacool.o \
         bpData.o \
         bpIBS.o \
         bpTune.o \
-        dataU.o \
-        doubleU.o \
-        matrixU.o \
+        datau.o \
+        doubleu.o \
+        matrixu.o \
         pellets.o \
-        StdAfx.o \
+        stdafx.o \
         vectoru.o \
         warning.o \
-        xBeam.o \
+        xbeam.o \
         xbucket.o \
-        xDistributor.o \
-        xDraw.o \
-        xDynamic.o \
-        xEbeam.o \
-        xEcool.o \
-        xEffect.o \
-        xForce.o \
+        xdistributor.o \
+        xdraw.o \
+        xdynamic.o \
+        xebeam.o \
+        xecool.o \
+        xeffect.o \
+        xforce.o \
         xhiroshi.o \
-        xIBS.o \
-        xLibrary.o \
-        xOptics.o \
-        xPowell.o \
+        xibs.o \
+        xlibrary.o \
+        xoptics.o \
+        xpowell.o \
         xrestgas.o \
-        xRing.o \
-        xRunge.o \
+        xring.o \
+        xrunge.o \
         xstoch.o \
-        xTarget.o
+        xtarget.o
 
 
 all: $(TARGET)
 
 $(TARGET) : $(addprefix $(BUILDDIR), $(OBJS))
-	if [ ! -d $(BUILDDIR) ] ;     then mkdir $(BUILDDIR) ; fi;
-	$(LD)  -o $(TARGET)   $(LDFLAGS) $< $(LIBS) $(INC)
-	# $(DLD) -o $(TARGET).a $(DLDFLAGS) $(OBJS) $(LIBS)
+	$(CC) $(CCFLAGS) $(INC) $(BUILDDIR)*.o -o $@
 
 clean:
 	@echo "Removing directory $(BUILDDIR)" 
@@ -77,10 +75,6 @@ clean:
 $(BUILDDIR)%.o : $(SRCDIR)%.cpp
 	@echo "Compiling $< into $@" 
 	if [ ! -d $(BUILDDIR) ] ;     then mkdir $(BUILDDIR) ; fi;
-	$(CC) $(CCFLAGS) $(LDFLAGS) $(INC) -c $< -o $@;
-
-# the linker to use and its options
-LD       = ld
-LDFLAGS  += 
+	$(CC) $(CCFLAGS) $(INC) -c $< -o $@;
 
 

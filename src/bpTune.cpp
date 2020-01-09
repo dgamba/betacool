@@ -56,13 +56,13 @@ void bpTune::SetValue(double v) {
    }
 }
 
-void bpTune::AddCharge(double*particle, double gamma) {
+void bpTune::AddCharge(double*particle, double gammaRel) {
    for (int p = 0; p < 3; p++)
    if (fabs(particle[p*2]) > (xyz[p]-1) * abc[p] / 2.) {
       cout << "Particle outside of Potent: coordinate[" << p*2 << "] = " << particle[p*2] << "\n";
       return;
    }
-   double diagonal2 = abc[0]*abc[0] + abc[1]*abc[1] + abc[2]*abc[2]*gamma*gamma;
+   double diagonal2 = abc[0]*abc[0] + abc[1]*abc[1] + abc[2]*abc[2]*gammaRel*gammaRel;
    double x = abc[0] * (xyz[0]-1)/2 + particle[0];
    double y = abc[1] * (xyz[1]-1)/2 + particle[2];
    double z = abc[2] * (xyz[2]-1)/2 + particle[4];
@@ -86,7 +86,7 @@ void bpTune::AddCharge(double*particle, double gamma) {
       FieldY[i][j][k] += 1. / dist2;
       
       dist2 = pow(abc[2]*i-z,2);
-      if (dist2 < abc[2]*abc[2]*gamma*gamma) dist2 = abc[2]*abc[2]*gamma*gamma;
+      if (dist2 < abc[2]*abc[2]*gammaRel*gammaRel) dist2 = abc[2]*abc[2]*gammaRel*gammaRel;
       if (abc[2]*i-z < 0) dist2 *= -1;
       FieldZ[i][j][k] += 1. / dist2;
    }

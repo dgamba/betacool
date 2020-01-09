@@ -4,7 +4,8 @@
 #include "stdafx.h"
 #include "xpowell.h"
 #include <math.h>
-#include <malloc.h>
+//#include <malloc.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include "bolideu.h"
 //---------------------------------------------------------------------------

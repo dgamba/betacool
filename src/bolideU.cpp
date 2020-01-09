@@ -394,7 +394,7 @@ void xSurf::SaveAll(int period)
 #include <dos.h>
 #endif
 
-void ShowTime(char* ch, bool show)
+void ShowTime(const char* ch, bool show)
 {
    time_t t;
    struct tm *gmt;

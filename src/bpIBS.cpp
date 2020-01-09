@@ -11,8 +11,8 @@ double q = 79;
 double m0 = 197;																									
 double delta = 4500;																								
 double nb = pow(10, 9);																								
-double gamma = 1 + (delta / 931.5);																					
-double beta = sqrt(((pow(gamma, 2)) - 1) / pow(gamma, 2));															
+double gammaRel = 1 + (delta / 931.5);																					
+double beta = sqrt(((pow(gammaRel, 2)) - 1) / pow(gammaRel, 2));															
 double emittancex = pow(10, (-6));																					
 double emittancey = pow(10, (-6));																					
 double sigmab = 0.6;																								
@@ -20,7 +20,7 @@ double momentum = pow(10, (-3));
 double c0 = 3 * pow(10, 8);																							
 double r0 = 2.8179403267 * pow(10, (-15)) * q * q * 9.10938 * pow(10, -31) / (m0 * 1.66054 * pow(10, -27));			
 double e0 = m0 * 1.66054 * pow(10, -27) * 3 * 3 * pow(10, 8) * pow(10, 8) / (1.60218 * pow(10, -19));				
-double AIBS = (c0*nb*pow(r0, 2)) / (8.*M_PI*pow(beta, 3)*pow(gamma, 4)*emittancex*emittancey*sigmab*momentum);			
+double AIBS = (c0*nb*pow(r0, 2)) / (8.*M_PI*pow(beta, 3)*pow(gammaRel, 4)*emittancex*emittancey*sigmab*momentum);			
 int bem = 1;
 double maxy1 = 200;
 double maxy2 = 1000;
@@ -30,15 +30,15 @@ void bpIBSinit(bpBeam& beamParam, bpEmittance& emit){
 	m0 = beamParam.m0;																											//mass of ion
 	delta = beamParam.energy;																									//energy, MeV
 	nb = beamParam.nion;																											//number of particles
-	gamma = 1 + (delta / 931.5);																								//relativistic factor
-   beta = sqrt(((pow(gamma, 2)) - 1) / pow(gamma, 2));																//longditudial speed 
+	gammaRel = 1 + (delta / 931.5);																								//relativistic factor
+   beta = sqrt(((pow(gammaRel, 2)) - 1) / pow(gammaRel, 2));																//longditudial speed 
 	emittancex = emit.emittancex;																								//emittance-x
 	emittancey = emit.emittancey;																								//emittance-y
 	sigmab = emit.sigmab;																										//size of bunch
 	momentum = sqrt(emit.momentum2);																									//impulse scatter
 	r0 = 2.8179403267 * pow(10, (-15)) * q * q * 9.10938 * pow(10, -31) / (m0 * 1.66054 * pow(10, -27));						//radius
 	e0 = m0 * 1.66054 * pow(10, -27) * 3 * 3 * pow(10, 8) * pow(10, 8) / (1.60218 * pow(10, -19));								//charge
-	AIBS = (c0*nb*pow(r0, 2)) / (8.*M_PI*pow(beta, 3)*pow(gamma, 4)*emittancex*emittancey*sigmab*momentum);	
+	AIBS = (c0*nb*pow(r0, 2)) / (8.*M_PI*pow(beta, 3)*pow(gammaRel, 4)*emittancex*emittancey*sigmab*momentum);	
 	bem = beamParam.bunched;																									//bunched(1) or not(0)
    if (bem != 1) AIBS *= 2. * sqrt(M_PI);
 }
@@ -81,7 +81,7 @@ double coulombLog (bpLattice& Latt) {
          (Latt.betay * emittancey + pow(Latt.Dy * momentum, 2))) * sigmab;
 	}
 	double rho = nb / (pow(10,6) * v);
-	double tt = ((gamma * gamma) - 1) * e0 * emittancex / Latt.betax;
+	double tt = ((gammaRel * gammaRel) - 1) * e0 * emittancex / Latt.betax;
 	double lDebye = 7.434 * sqrt (tt / rho) / q;
 	double rmcl = 1.44 * q * q / (pow(10,9) * tt);
 	double rmqm = 1.973 / (pow(10,13) * (2 * sqrt (tt * e0)));
@@ -146,18 +146,18 @@ void bpIBSrates (bpRing& ring, bpRates& Growth, bpBeam& beam, bpEmittance& emitt
 		phiy = (Latt.betay*Latt.Dpy + Latt.alphay*Latt.Dy) / Latt.betay;
 		Hx = (pow(Latt.Dx, 2) + (pow(Latt.betax, 2) * pow(phix, 2))) / Latt.betax;
 		Hy = (pow(Latt.Dy, 2) + (pow(Latt.betay, 2) * pow(phiy, 2))) / Latt.betay;
-		deltax = (pow(gamma, 2) * Hx) / emittancex;
+		deltax = (pow(gammaRel, 2) * Hx) / emittancex;
 		deltay = Latt.betay / emittancey;
-		deltaz = pow(gamma, 2) / pow(momentum, 2);
-		a1 = Latt.betax / emittancex + Latt.betay / emittancey + pow(gamma, 2)*(Hx / emittancex + Hy / emittancey + pow(momentum, -2));
-		b1 = (Latt.betax*Latt.betay) / (emittancex*emittancey) + pow(gamma, 2)*((Latt.betax*Hx) / pow(emittancex, 2) + (Latt.betay*Hx) / (emittancex*emittancey) + (Latt.betay*Hy) / pow(emittancey, 2) + (Latt.betax*Hy) / (emittancex*emittancey) - (pow(Latt.betax, 2)*pow(phix, 2)) / pow(emittancex, 2) - (pow(Latt.betay, 2)*pow(phiy, 2)) / pow(emittancey, 2) + Latt.betax / (emittancex*pow(momentum, 2)) + Latt.betay / (emittancey*pow(momentum, 2)));
-		c1 = pow(gamma, 2)*((Latt.betax*Latt.betay*Hx) / (pow(emittancex, 2)*emittancey) + (Latt.betax*Latt.betay*Hy) / (emittancex*pow(emittancey, 2)) - (pow(Latt.betax, 2)*Latt.betay*pow(phix, 2)) / (pow(emittancex, 2)*emittancey) - (Latt.betax*pow(Latt.betay, 2)*pow(phiy, 2)) / (emittancex*pow(emittancey, 2)) + (Latt.betax*Latt.betay) / (emittancex*emittancey*pow(momentum, 2)));
-		ax = (-2 * Latt.betax) / emittancex - Latt.betay / emittancey + (2 * pow(Latt.betax, 2)) / (emittancex*pow(gamma, 2)*Hx) - (Latt.betax*Latt.betay) / (emittancey*pow(gamma, 2)*Hx) + (2 * pow(gamma, 2)*Hx) / emittancex + (2 * pow(gamma, 2)*Hy) / emittancey - (Latt.betax*Hy) / (emittancey*Hx) + (6 * pow(Latt.betax, 2)*pow(phix, 2)) / (emittancex*Hx) + (2 * pow(gamma, 2)) / pow(momentum, 2) - Latt.betax / (Hx*pow(momentum, 2));
-		bx = pow(Latt.betax, 2) / pow(emittancex, 2) - (4 * Latt.betax*Latt.betay) / (emittancex*emittancey) + (pow(Latt.betax, 2)*Latt.betay) / (emittancex*emittancey*pow(gamma, 2)*Hx) + (Latt.betax*pow(gamma, 2)*Hx) / pow(emittancex, 2) + (Latt.betay*pow(gamma, 2)*Hx) / (emittancex*emittancey) + (Latt.betay*pow(gamma, 2)*Hy) / pow(emittancey, 2) + (Latt.betax*pow(gamma, 2)*Hy) / (emittancex*emittancey) - (2 * Latt.betax*Latt.betay*Hy) / (pow(emittancey, 2)*Hx) + (pow(Latt.betax, 2)*Hy) / (emittancex*emittancey*Hx) - (pow(Latt.betax, 2)*pow(gamma, 2)*pow(phix, 2)) / pow(emittancex, 2) - (pow(Latt.betax, 3)*pow(phix, 2)) / (pow(emittancex, 2)*Hx) + (6 * pow(Latt.betax, 2)*Latt.betay*pow(phix, 2)) / (emittancex*emittancey*Hx) - (pow(Latt.betay, 2)*pow(gamma, 2)*pow(phiy, 2)) / pow(emittancey, 2) + (2 * Latt.betax*pow(Latt.betay, 2)*pow(phiy, 2)) / (pow(emittancey, 2)*Hx) + (Latt.betax*pow(gamma, 2)) / (emittancex*pow(momentum, 2)) + (Latt.betay*pow(gamma, 2)) / (emittancey*pow(momentum, 2)) + pow(Latt.betax, 2) / (emittancex*Hx*pow(momentum, 2)) - (2 * Latt.betax*Latt.betay) / (emittancey*Hx*pow(momentum, 2));
-		az = -(Latt.betax / emittancex) - Latt.betay / emittancey + (2 * pow(gamma, 2)*Hx) / emittancex + (2 * pow(gamma, 2)*Hy) / emittancey + (2 * pow(gamma, 2)) / pow(momentum, 2);
-		bz = (-2 * Latt.betax*Latt.betay) / (emittancex*emittancey) + (Latt.betax*pow(gamma, 2)*Hx) / pow(emittancex, 2) + (Latt.betay*pow(gamma, 2)*Hx) / (emittancex*emittancey) + (Latt.betay*pow(gamma, 2)*Hy) / pow(emittancey, 2) + (Latt.betax*pow(gamma, 2)*Hy) / (emittancex*emittancey) - (pow(Latt.betax, 2)*pow(gamma, 2)*pow(phix, 2)) / pow(emittancex, 2) - (pow(Latt.betay, 2)*pow(gamma, 2)*pow(phiy, 2)) / pow(emittancey, 2) + (Latt.betax*pow(gamma, 2)) / (emittancex*pow(momentum, 2)) + (Latt.betay*pow(gamma, 2)) / (emittancey*pow(momentum, 2));
-		ay = -(Latt.betax / emittancex) + (2 * Latt.betay) / emittancey - (pow(gamma, 2)*Hx) / emittancex - (Latt.betax*pow(gamma, 2)*Hy) / (Latt.betay*emittancex) - (2 * pow(gamma, 2)*Hy) / emittancey + (2 * pow(gamma, 4)*Hx*Hy) / (Latt.betay*emittancex) + (2 * pow(gamma, 4)*pow(Hy, 2)) / (Latt.betay*emittancey) + (6 * Latt.betay*pow(gamma, 2)*pow(phiy, 2)) / emittancey - pow(gamma, 2) / pow(momentum, 2) + (2 * pow(gamma, 4)*Hy) / (Latt.betay*pow(momentum, 2));
-		by = (Latt.betax*Latt.betay) / (emittancex*emittancey) - (2 * Latt.betax*pow(gamma, 2)*Hx) / pow(emittancex, 2) + (Latt.betay*pow(gamma, 2)*Hx) / (emittancex*emittancey) + (Latt.betay*pow(gamma, 2)*Hy) / pow(emittancey, 2) - (4 * Latt.betax*pow(gamma, 2)*Hy) / (emittancex*emittancey) + (Latt.betax*pow(gamma, 4)*Hx*Hy) / (Latt.betay*pow(emittancex, 2)) + (pow(gamma, 4)*Hx*Hy) / (emittancex*emittancey) + (pow(gamma, 4)*pow(Hy, 2)) / pow(emittancey, 2) + (Latt.betax*pow(gamma, 4)*pow(Hy, 2)) / (Latt.betay*emittancex*emittancey) + (2 * pow(Latt.betax, 2)*pow(gamma, 2)*pow(phix, 2)) / pow(emittancex, 2) - (pow(Latt.betax, 2)*pow(gamma, 4)*Hy*pow(phix, 2)) / (Latt.betay*pow(emittancex, 2)) - (pow(Latt.betay, 2)*pow(gamma, 2)*pow(phiy, 2)) / pow(emittancey, 2) + (6 * Latt.betax*Latt.betay*pow(gamma, 2)*pow(phiy, 2)) / (emittancex*emittancey) - (Latt.betay*pow(gamma, 4)*Hy*pow(phiy, 2)) / pow(emittancey, 2) - (2 * Latt.betax*pow(gamma, 2)) / (emittancex*pow(momentum, 2)) + (Latt.betay*pow(gamma, 2)) / (emittancey*pow(momentum, 2)) + (Latt.betax*pow(gamma, 4)*Hy) / (Latt.betay*emittancex*pow(momentum, 2)) + (pow(gamma, 4)*Hy) / (emittancey*pow(momentum, 2));
+		deltaz = pow(gammaRel, 2) / pow(momentum, 2);
+		a1 = Latt.betax / emittancex + Latt.betay / emittancey + pow(gammaRel, 2)*(Hx / emittancex + Hy / emittancey + pow(momentum, -2));
+		b1 = (Latt.betax*Latt.betay) / (emittancex*emittancey) + pow(gammaRel, 2)*((Latt.betax*Hx) / pow(emittancex, 2) + (Latt.betay*Hx) / (emittancex*emittancey) + (Latt.betay*Hy) / pow(emittancey, 2) + (Latt.betax*Hy) / (emittancex*emittancey) - (pow(Latt.betax, 2)*pow(phix, 2)) / pow(emittancex, 2) - (pow(Latt.betay, 2)*pow(phiy, 2)) / pow(emittancey, 2) + Latt.betax / (emittancex*pow(momentum, 2)) + Latt.betay / (emittancey*pow(momentum, 2)));
+		c1 = pow(gammaRel, 2)*((Latt.betax*Latt.betay*Hx) / (pow(emittancex, 2)*emittancey) + (Latt.betax*Latt.betay*Hy) / (emittancex*pow(emittancey, 2)) - (pow(Latt.betax, 2)*Latt.betay*pow(phix, 2)) / (pow(emittancex, 2)*emittancey) - (Latt.betax*pow(Latt.betay, 2)*pow(phiy, 2)) / (emittancex*pow(emittancey, 2)) + (Latt.betax*Latt.betay) / (emittancex*emittancey*pow(momentum, 2)));
+		ax = (-2 * Latt.betax) / emittancex - Latt.betay / emittancey + (2 * pow(Latt.betax, 2)) / (emittancex*pow(gammaRel, 2)*Hx) - (Latt.betax*Latt.betay) / (emittancey*pow(gammaRel, 2)*Hx) + (2 * pow(gammaRel, 2)*Hx) / emittancex + (2 * pow(gammaRel, 2)*Hy) / emittancey - (Latt.betax*Hy) / (emittancey*Hx) + (6 * pow(Latt.betax, 2)*pow(phix, 2)) / (emittancex*Hx) + (2 * pow(gammaRel, 2)) / pow(momentum, 2) - Latt.betax / (Hx*pow(momentum, 2));
+		bx = pow(Latt.betax, 2) / pow(emittancex, 2) - (4 * Latt.betax*Latt.betay) / (emittancex*emittancey) + (pow(Latt.betax, 2)*Latt.betay) / (emittancex*emittancey*pow(gammaRel, 2)*Hx) + (Latt.betax*pow(gammaRel, 2)*Hx) / pow(emittancex, 2) + (Latt.betay*pow(gammaRel, 2)*Hx) / (emittancex*emittancey) + (Latt.betay*pow(gammaRel, 2)*Hy) / pow(emittancey, 2) + (Latt.betax*pow(gammaRel, 2)*Hy) / (emittancex*emittancey) - (2 * Latt.betax*Latt.betay*Hy) / (pow(emittancey, 2)*Hx) + (pow(Latt.betax, 2)*Hy) / (emittancex*emittancey*Hx) - (pow(Latt.betax, 2)*pow(gammaRel, 2)*pow(phix, 2)) / pow(emittancex, 2) - (pow(Latt.betax, 3)*pow(phix, 2)) / (pow(emittancex, 2)*Hx) + (6 * pow(Latt.betax, 2)*Latt.betay*pow(phix, 2)) / (emittancex*emittancey*Hx) - (pow(Latt.betay, 2)*pow(gammaRel, 2)*pow(phiy, 2)) / pow(emittancey, 2) + (2 * Latt.betax*pow(Latt.betay, 2)*pow(phiy, 2)) / (pow(emittancey, 2)*Hx) + (Latt.betax*pow(gammaRel, 2)) / (emittancex*pow(momentum, 2)) + (Latt.betay*pow(gammaRel, 2)) / (emittancey*pow(momentum, 2)) + pow(Latt.betax, 2) / (emittancex*Hx*pow(momentum, 2)) - (2 * Latt.betax*Latt.betay) / (emittancey*Hx*pow(momentum, 2));
+		az = -(Latt.betax / emittancex) - Latt.betay / emittancey + (2 * pow(gammaRel, 2)*Hx) / emittancex + (2 * pow(gammaRel, 2)*Hy) / emittancey + (2 * pow(gammaRel, 2)) / pow(momentum, 2);
+		bz = (-2 * Latt.betax*Latt.betay) / (emittancex*emittancey) + (Latt.betax*pow(gammaRel, 2)*Hx) / pow(emittancex, 2) + (Latt.betay*pow(gammaRel, 2)*Hx) / (emittancex*emittancey) + (Latt.betay*pow(gammaRel, 2)*Hy) / pow(emittancey, 2) + (Latt.betax*pow(gammaRel, 2)*Hy) / (emittancex*emittancey) - (pow(Latt.betax, 2)*pow(gammaRel, 2)*pow(phix, 2)) / pow(emittancex, 2) - (pow(Latt.betay, 2)*pow(gammaRel, 2)*pow(phiy, 2)) / pow(emittancey, 2) + (Latt.betax*pow(gammaRel, 2)) / (emittancex*pow(momentum, 2)) + (Latt.betay*pow(gammaRel, 2)) / (emittancey*pow(momentum, 2));
+		ay = -(Latt.betax / emittancex) + (2 * Latt.betay) / emittancey - (pow(gammaRel, 2)*Hx) / emittancex - (Latt.betax*pow(gammaRel, 2)*Hy) / (Latt.betay*emittancex) - (2 * pow(gammaRel, 2)*Hy) / emittancey + (2 * pow(gammaRel, 4)*Hx*Hy) / (Latt.betay*emittancex) + (2 * pow(gammaRel, 4)*pow(Hy, 2)) / (Latt.betay*emittancey) + (6 * Latt.betay*pow(gammaRel, 2)*pow(phiy, 2)) / emittancey - pow(gammaRel, 2) / pow(momentum, 2) + (2 * pow(gammaRel, 4)*Hy) / (Latt.betay*pow(momentum, 2));
+		by = (Latt.betax*Latt.betay) / (emittancex*emittancey) - (2 * Latt.betax*pow(gammaRel, 2)*Hx) / pow(emittancex, 2) + (Latt.betay*pow(gammaRel, 2)*Hx) / (emittancex*emittancey) + (Latt.betay*pow(gammaRel, 2)*Hy) / pow(emittancey, 2) - (4 * Latt.betax*pow(gammaRel, 2)*Hy) / (emittancex*emittancey) + (Latt.betax*pow(gammaRel, 4)*Hx*Hy) / (Latt.betay*pow(emittancex, 2)) + (pow(gammaRel, 4)*Hx*Hy) / (emittancex*emittancey) + (pow(gammaRel, 4)*pow(Hy, 2)) / pow(emittancey, 2) + (Latt.betax*pow(gammaRel, 4)*pow(Hy, 2)) / (Latt.betay*emittancex*emittancey) + (2 * pow(Latt.betax, 2)*pow(gammaRel, 2)*pow(phix, 2)) / pow(emittancex, 2) - (pow(Latt.betax, 2)*pow(gammaRel, 4)*Hy*pow(phix, 2)) / (Latt.betay*pow(emittancex, 2)) - (pow(Latt.betay, 2)*pow(gammaRel, 2)*pow(phiy, 2)) / pow(emittancey, 2) + (6 * Latt.betax*Latt.betay*pow(gammaRel, 2)*pow(phiy, 2)) / (emittancex*emittancey) - (Latt.betay*pow(gammaRel, 4)*Hy*pow(phiy, 2)) / pow(emittancey, 2) - (2 * Latt.betax*pow(gammaRel, 2)) / (emittancex*pow(momentum, 2)) + (Latt.betay*pow(gammaRel, 2)) / (emittancey*pow(momentum, 2)) + (Latt.betax*pow(gammaRel, 4)*Hy) / (Latt.betay*emittancex*pow(momentum, 2)) + (pow(gammaRel, 4)*Hy) / (emittancey*pow(momentum, 2));
 		//part = Latt.ds / (ring[ring.size - 1].s);
       part = Latt.ds / ring.lattice.ds;
 		double lg = coulombLog(Latt);
