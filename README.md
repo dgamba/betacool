@@ -14,6 +14,7 @@ The present version is a copy of BETACOOL source code by A. Smirnov with correct
 - BOLIDE:            minimal set of files to start BOLIDE interface, including the original "bolide.exe" executable for Win32
 - Examples/BOLIDE:   a more extensive example of BOLIDE, with input/output files already generated for NICA (?) cooler
 - Examples/BETACOOL: a minimalistic example for computing the cooling force with betacool from command line only 
+- Examples/BETACOOL-ref: as Examples/BETACOOL, but including "reference" outputs generated with 2019 version of BETACOOL. 
 - Docs:              folder with all documentation from original authors
 - Dat:               folder with data files used to model previous coolers
 - Bat:               folder with original *.bat files from authors
@@ -46,6 +47,7 @@ sudo port upgrade outdated
 `
 sudo port install gcc9
 sudo port install libomp
+sudo port install dos2unix
 `
 4. Select the right compiler
 `
@@ -103,3 +105,10 @@ Note that in the inital repository there were the follwing directories:
 - in a few files renamed the variable "gamma" to "gammaRel" to avoid re-definition of standard funciton in <math.h> which gives error compiling for MacOSX
 - introduced a new "warning.h" and "warning.cpp" files containing "Warning()" function implementation which was duplicated in other source files
 - adjusted case of a few *.cpp files to be consistent with relative *.h files  
+
+### Check modifications
+For the time being I did simple test like the following one using the BETACOOL example output run with Betacool_MacOSX
+`
+dos2unix ../Examples/BETACOOL-ref/*
+for i in *.cur; do echo $i; diff $i ../Examples/BETACOOL-ref/$i; done
+`
