@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xlibrary.h"
-#include "xdynamic.h"
+#include "xLibrary.h"
+#include "xDynamic.h"
 
 //---------------------------------------------------------------------------
 xDrift::xDrift()

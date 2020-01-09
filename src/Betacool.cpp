@@ -36,7 +36,7 @@ USEUNIT("bolideu.cpp");
 #endif
 
 #define _CRT_SECURE_NO_WARNINGS
-#include "xdynamic.h"
+#include "xDynamic.h"
 //#pragma link "bolideu.obj"
 //---------------------------------------------------------------------------
 

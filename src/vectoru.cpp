@@ -2,7 +2,7 @@
 //#include <vcl.h>
 //#pragma hdrstop
 #include "stdafx.h"
-#include "vectoru.h"
+#include "vectorU.h"
 //---------------------------------------------------------------------------
 
 vectorU::vectorU()
@@ -52,22 +52,22 @@ void vectorU::operator =(const vectorU& v)
 #undef  SIGN_
 #define SIGN_i +=
 #define SIGN_  +
-#include "vectoru.h"
+#include "vectorU.h"
 #undef  SIGN_i
 #undef  SIGN_
 #define SIGN_i -=
 #define SIGN_  -
-#include "vectoru.h"
+#include "vectorU.h"
 #undef  SIGN_i
 #undef  SIGN_
 #define SIGN_i *=
 #define SIGN_  *
-#include "vectoru.h"
+#include "vectorU.h"
 #undef  SIGN_i
 #undef  SIGN_
 #define SIGN_i /=
 #define SIGN_  /
-#include "vectoru.h"  
+#include "vectorU.h"  
 
 //---------------------------------------------------------------------------
 

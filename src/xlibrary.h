@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #ifndef xLibraryH
 #define xLibraryH
-#include "xoptics.h"
+#include "xOptics.h"
 //---------------------------------------------------------------------------
 class xDrift : public xOpticsLibrary                         // optic element Drift
 {public:

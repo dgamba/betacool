@@ -2,8 +2,8 @@
 #ifndef vectorUH
 #define vectorUH
 
-#include "doubleu.h"
-#include "matrixu.h"
+#include "doubleU.h"
+#include "matrixU.h"
 //---------------------------------------------------------------------------
 class vectorU
 {

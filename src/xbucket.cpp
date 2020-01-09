@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xdynamic.h"
-#include "xbucket.h"
+#include "xDynamic.h"
+#include "xBucket.h"
 //---------------------------------------------------------------------------
 
 xBarrier::xBarrier()

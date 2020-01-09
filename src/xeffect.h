@@ -1,9 +1,9 @@
 //---------------------------------------------------------------------------
 #ifndef xEffectH
 #define xEffectH
-#include "bolideu.h"
-#include "xbeam.h"
-#include "xring.h"
+#include "bolideU.h"
+#include "xBeam.h"
+#include "xRing.h"
 //---------------------------------------------------------------------------
 
 class xEffect : public ATemplate<xEffect>, public xData

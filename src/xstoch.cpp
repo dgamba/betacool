@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xeffect.h"
-#include "xstoch.h"
+#include "xEffect.h"
+#include "xStoch.h"
 //---------------------------------------------------------------------------
 
 xStochastic::xStochastic()

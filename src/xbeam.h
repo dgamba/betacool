@@ -1,10 +1,10 @@
 //---------------------------------------------------------------------------
 #ifndef xBeamH       
 #define xBeamH
-#include "bolideu.h"
-#include "xring.h"
-#include "xoptics.h"
-#include "xdistributor.h"
+#include "bolideU.h"
+#include "xRing.h"
+#include "xOptics.h"
+#include "xDistributor.h"
 //---------------------------------------------------------------------------
 class xDraw;
 class xTarget;

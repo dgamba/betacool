@@ -16,9 +16,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "doubleu.h"
-#include "bolideu.h"
-#include "vectoru.h"
+#include "doubleU.h"
+#include "bolideU.h"
+#include "vectorU.h"
 
 extern complex<double> J;
 

@@ -1,6 +1,6 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xdistributor.h"
+#include "xDistributor.h"
 #define PERCENTSIGMA 1
 #include <iostream>
 #include <omp.h>
@@ -763,7 +763,7 @@ void xDistributor::Profile(double *hyst, int col, double emit, int div)
    }
 }
 //------------------------------------------------------
-#include "xpowell.h"
+#include "xPowell.h"
 double*hst;     // bi-gaussian distribution
 double sgm;     // sigma for Powell method
 double dvs;     // divisions Bunch.Number

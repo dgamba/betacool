@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xebeam.h"
-#include "xdraw.h"
+#include "xEbeam.h"
+#include "xDraw.h"
 //---------------------------------------------------------------------------
                              
 xFrParam::xFrParam()

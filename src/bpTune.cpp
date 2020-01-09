@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include <iostream>
-#include "bptune.h"
+#include "bpTune.h"
 #include "math.h"
 #include <omp.h>
 using namespace std;

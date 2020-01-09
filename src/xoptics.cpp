@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xoptics.h"
-#include "xlibrary.h"
+#include "xOptics.h"
+#include "xLibrary.h"
 //---------------------------------------------------------------------------
 doubleU xLattice::B_s(m_);
 

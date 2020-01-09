@@ -1,8 +1,8 @@
 //---------------------------------------------------------------------------
 #ifndef xrestgasH
 #define xrestgasH
-#include "xeffect.h"
-#include "xtarget.h"
+#include "xEffect.h"
+#include "xTarget.h"
 //---------------------------------------------------------------------------
 
 class xRestGas : public xEffect

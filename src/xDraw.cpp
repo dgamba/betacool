@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xdraw.h"
-#include "xlibrary.h"
+#include "xDraw.h"
+#include "xLibrary.h"
 #include <omp.h>
 #include <iostream>
 

@@ -2,14 +2,14 @@
 #ifndef xEcoolH
 #define xEcoolH
 //---------------------------------------------------------------------------
-#include "bolideu.h"
-#include "xbeam.h"
-#include "xring.h"
-#include "xeffect.h"
-#include "xoptics.h"
-#include "xebeam.h"
-#include "xforce.h"
-#include "xrunge.h"
+#include "bolideU.h"
+#include "xBeam.h"
+#include "xRing.h"
+#include "xEffect.h"
+#include "xOptics.h"
+#include "xEbeam.h"
+#include "xForce.h"
+#include "xRunge.h"
 
 //---------------------------------------------------------------------------
 

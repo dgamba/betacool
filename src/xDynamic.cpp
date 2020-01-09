@@ -1,8 +1,8 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xdynamic.h"
-#include "bptune.h"
-#include "bpdata.h"
+#include "xDynamic.h"
+#include "bpTune.h"
+#include "bpData.h"
 #include <iostream>
 #include <time.h>
 #include <omp.h>
@@ -1117,7 +1117,7 @@ void xDynamics::FFTest()
 }
 
 //-----------------------------------------------------
-#include "xpowell.h"
+#include "xPowell.h"
 
 void xDynamics::LuminosityCalculation()
 {

@@ -1,8 +1,8 @@
 //---------------------------------------------------------------------------
 #ifndef xIBSH
 #define xIBSH
-#include "xeffect.h"
-#include "bptune.h"
+#include "xEffect.h"
+#include "bpTune.h"
 //---------------------------------------------------------------------------
 class xIBS : public xEffect
 {

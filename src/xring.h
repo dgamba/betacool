@@ -1,9 +1,9 @@
 //---------------------------------------------------------------------------
 #ifndef xRingH
 #define xRingH
-#include "bolideu.h"
-#include "xlibrary.h"
-#include "xbucket.h"
+#include "bolideU.h"
+#include "xLibrary.h"
+#include "xBucket.h"
 //---------------------------------------------------------------------------
 class xBeam;
 

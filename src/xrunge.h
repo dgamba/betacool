@@ -1,8 +1,8 @@
 //---------------------------------------------------------------------------
 #ifndef xRungeH
 #define xRungeH
-#include "bolideu.h"
-#include "doubleu.h"
+#include "bolideU.h"
+#include "doubleU.h"
 
 //---------------------------------------------------------------------------
 class xRing;

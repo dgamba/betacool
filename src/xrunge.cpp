@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xrunge.h"
-#include "xring.h"
+#include "xRunge.h"
+#include "xRing.h"
 
 //---------------------------------------------------------------------------
 xTime::xTime(xRing& ring)

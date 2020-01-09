@@ -1,15 +1,15 @@
 //---------------------------------------------------------------------------
 #ifndef xDrawH
 #define xDrawH
-#include "bolideu.h"
-#include "xbeam.h"
-#include "xring.h"
-#include "xeffect.h"
-#include "xforce.h"
-#include "xdynamic.h"
-#include "xecool.h"    
+#include "bolideU.h"
+#include "xBeam.h"
+#include "xRing.h"
+#include "xEffect.h"
+#include "xForce.h"
+#include "xDynamic.h"
+#include "xEcool.h"    
 #include "pellets.h"
-#include "xibs.h"
+#include "xIBS.h"
 #include "bpData.h"
 
 #define ABCDD_

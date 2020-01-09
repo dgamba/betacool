@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"               
-#include "xbeam.h"
-#include "xdynamic.h"
+#include "xBeam.h"
+#include "xDynamic.h"
 #include <iostream>
 //using namespace std;
 //---------------------------------------------------------------------------

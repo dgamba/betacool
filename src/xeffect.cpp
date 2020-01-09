@@ -1,8 +1,8 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
 #define _CRT_SECURE_NO_WARNINGS
-#include "xeffect.h"
-#include "xdraw.h"
+#include "xEffect.h"
+#include "xDraw.h"
 
 //---------------------------------------------------------------------------
 // Effects

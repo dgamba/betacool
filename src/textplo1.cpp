@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <dos.h>
 #include <io.h>
-#include "datau.h"
+#include "dataU.h"
 //#pragma hdrstop
 using namespace std;
 //---------------------------------------------------------------------------

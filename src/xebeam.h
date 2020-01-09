@@ -1,10 +1,10 @@
 //---------------------------------------------------------------------------
 #ifndef xEbeamH
 #define xEbeamH
-#include "bolideu.h"
-#include "xring.h"
-#include "xbeam.h"
-#include "xoptics.h"
+#include "bolideU.h"
+#include "xRing.h"
+#include "xBeam.h"
+#include "xOptics.h"
 
 //---------------------------------------------------------------------------
 class xFrParam

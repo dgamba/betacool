@@ -14,8 +14,8 @@ using namespace std;
 #endif
 
 //#include "stdafx.h"
-#include "datau.h"
-#include "matrixu.h"
+#include "dataU.h"
+#include "matrixU.h"
 #include "warning.h"
 //---------------------------------------------------------------------------
 extern double* BParam[5];

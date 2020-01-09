@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xecool.h"
-#include "xdynamic.h"
+#include "xEcool.h"
+#include "xDynamic.h"
 //---------------------------------------------------------------------------
 xEcool::xEcool()
 {  

@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
 #define _CRT_SECURE_NO_WARNINGS
-#include "doubleu.h"
+#include "doubleU.h"
 #include <stdlib.h>
 
 int ExpKick = 0;

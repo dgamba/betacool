@@ -1,6 +1,6 @@
 //---------------------------------------------------------------------------
-#include "bolideu.h"
-#include "xbeam.h"
+#include "bolideU.h"
+#include "xBeam.h"
 #include <time.h>
 
 #ifndef xDistributorH

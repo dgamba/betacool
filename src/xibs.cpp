@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xibs.h"
-#include "xdraw.h"
+#include "xIBS.h"
+#include "xDraw.h"
 #include "bpIBS.h"
 #include "bpData.h"
 #include <omp.h>

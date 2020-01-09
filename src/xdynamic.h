@@ -2,18 +2,18 @@
 #ifndef xDynamicH
 #define xDynamicH
 //#include <condefs.h>
-#include "doubleu.h"
-#include "xibs.h"
-#include "xbeam.h"
-#include "xring.h"
-#include "xeffect.h"
-#include "xrunge.h"
-#include "xecool.h"
-#include "xtarget.h"
-#include "xrestgas.h"
-#include "xstoch.h"
-#include "xdraw.h"
-#include "xbucket.h"
+#include "doubleU.h"
+#include "xIBS.h"
+#include "xBeam.h"
+#include "xRing.h"
+#include "xEffect.h"
+#include "xRunge.h"
+#include "xEcool.h"
+#include "xTarget.h"
+#include "xRestgas.h"
+#include "xStoch.h"
+#include "xDraw.h"
+#include "xBucket.h"
 #include "pellets.h"
 
 //---------------------------------------------------------------------------

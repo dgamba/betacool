@@ -106,9 +106,12 @@ Note that in the inital repository there were the follwing directories:
 - introduced a new "warning.h" and "warning.cpp" files containing "Warning()" function implementation which was duplicated in other source files
 - adjusted case of a few *.cpp files to be consistent with relative *.h files  
 
-### Check modifications
+### Check consistency of results from BETACOOL
 For the time being I did simple test like the following one using the BETACOOL example output run with Betacool_MacOSX
 `
 dos2unix ../Examples/BETACOOL-ref/*
 for i in *.cur; do echo $i; diff $i ../Examples/BETACOOL-ref/$i; done
+
+### Change case of files
+for j in *.h; do b=$(echo $j | awk '{print tolower($0)}'); for i in *; do sed -i .bkp "s/"$b"/"$j"/g" $i; done; rm *.bkp; done;
 `

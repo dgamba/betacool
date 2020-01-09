@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <stdio.h>
-#include "bolideu.h"
+#include "bolideU.h"
 
 
 class pTime

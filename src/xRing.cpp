@@ -1,9 +1,9 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
 #define _CRT_SECURE_NO_WARNINGS
-#include "xdynamic.h"           
-#include "xring.h"
-#include "xbeam.h"
+#include "xDynamic.h"           
+#include "xRing.h"
+#include "xBeam.h"
 
 //---------------------------------------------------------------------------
 xRing::xRing(xBeam& beam)

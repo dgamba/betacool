@@ -31,36 +31,36 @@ LIBS     =
 
 # betacool is made of several small objects:
 OBJS += Betacool.o \
-        bolideu.o \
+        bolideU.o \
         bpData.o \
         bpIBS.o \
         bpTune.o \
-        datau.o \
-        doubleu.o \
-        matrixu.o \
+        dataU.o \
+        doubleU.o \
+        matrixU.o \
         pellets.o \
         stdafx.o \
-        vectoru.o \
+        vectorU.o \
         warning.o \
-        xbeam.o \
-        xbucket.o \
-        xdistributor.o \
-        xdraw.o \
-        xdynamic.o \
-        xebeam.o \
-        xecool.o \
-        xeffect.o \
-        xforce.o \
-        xhiroshi.o \
-        xibs.o \
-        xlibrary.o \
-        xoptics.o \
-        xpowell.o \
-        xrestgas.o \
-        xring.o \
-        xrunge.o \
-        xstoch.o \
-        xtarget.o
+        xBeam.o \
+        xBucket.o \
+        xDistributor.o \
+        xDraw.o \
+        xDynamic.o \
+        xEbeam.o \
+        xEcool.o \
+        xEffect.o \
+        xForce.o \
+        xHiroshi.o \
+        xIBS.o \
+        xLibrary.o \
+        xOptics.o \
+        xPowell.o \
+        xRestgas.o \
+        xRing.o \
+        xRunge.o \
+        xStoch.o \
+        xTarget.o
 
 
 all: $(TARGET)
@@ -71,6 +71,7 @@ $(TARGET) : $(addprefix $(BUILDDIR), $(OBJS))
 clean:
 	@echo "Removing directory $(BUILDDIR)" 
 	rm -rf $(BUILDDIR)
+	rm $(TARGET)
 
 $(BUILDDIR)%.o : $(SRCDIR)%.cpp
 	@echo "Compiling $< into $@" 

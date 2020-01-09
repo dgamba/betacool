@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include "doubleu.h"
+#include "doubleU.h"
 #include "btemplat.h"
 #include "warning.h"
 

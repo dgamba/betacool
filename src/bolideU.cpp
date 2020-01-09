@@ -1,9 +1,9 @@
 //---------------------------------------------------------------------------
 #include "stdafx.h"
 #define _CRT_SECURE_NO_WARNINGS
-#include "bolideu.h"
-#include "xeffect.h"
-#include "xdraw.h"
+#include "bolideU.h"
+#include "xEffect.h"
+#include "xDraw.h"
 #include <iostream>
 #include <stdio.h>
 //#include <io.h>

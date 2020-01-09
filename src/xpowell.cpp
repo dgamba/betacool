@@ -2,12 +2,12 @@
 // http://www.library.cornell.edu/nr/cbookcpdf.html
 //---------------------------------------------------------------------------
 #include "stdafx.h"
-#include "xpowell.h"
+#include "xPowell.h"
 #include <math.h>
 //#include <malloc.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "bolideu.h"
+#include "bolideU.h"
 //---------------------------------------------------------------------------
 double *vector(int nl, int nh)
 {
@@ -39,7 +39,7 @@ double brent(double ax, double bx, double cx, double (*f)(double), double tol, d
 /*
 Given a function f, and given a bracketing triplet of abscissas ax, bx, cx (such that bx is
 between ax and cx, and f(bx) is less than both f(ax) and f(cx)), this routine isolates
-the minimum to a fractional precision of about tol using Brent’s method. The abscissa of
+the minimum to a fractional precision of about tol using Brent's method. The abscissa of
 the minimum is returned as xmin, and the minimum function value is returned as brent, the
 returned function value.
 */
@@ -139,7 +139,7 @@ values at the three points, fa, fb, and fc.
       q=(*bx-*cx)*(*fb-*fa); // TINY is used to prevent any possible division by zero.
       u=(*bx)-((*bx-*cx)*q-(*bx-*ax)*r) / (2.0*SIGN(FMAX(fabs(q-r),TINY20),q-r));
       ulim=(*bx)+GLIMIT*(*cx-*bx);
-      // We won’t go farther than this. Test various possibilities:
+      // We won't go farther than this. Test various possibilities:
       if ((*bx-u)*(u-*cx) > 0.0) { // Parabolic u is between b and c: try it.
          fu=(*func)(u);
          if (fu < *fc) {           // Got a minimum between b and c.

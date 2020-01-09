@@ -1,9 +1,9 @@
 //---------------------------------------------------------------------------
 #ifndef xOpticsH
 #define xOpticsH
-#include "xrunge.h"
-#include "bolideu.h"
-#include "doubleu.h"
+#include "xRunge.h"
+#include "bolideU.h"
+#include "doubleU.h"
 //---------------------------------------------------------------------------
 
 class xLattice

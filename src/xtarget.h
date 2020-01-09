@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 #ifndef xTargetH
 #define xTargetH
-#include "xeffect.h"
+#include "xEffect.h"
 //---------------------------------------------------------------------------
 class xMaterial                                  // class for parameters of target material
 {
