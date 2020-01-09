@@ -111,7 +111,13 @@ For the time being I did simple test like the following one using the BETACOOL e
 `
 dos2unix ../Examples/BETACOOL-ref/*
 for i in *.cur; do echo $i; diff $i ../Examples/BETACOOL-ref/$i; done
-
+`
 ### Change case of files
+`
 for j in *.h; do b=$(echo $j | awk '{print tolower($0)}'); for i in *; do sed -i .bkp "s/"$b"/"$j"/g" $i; done; rm *.bkp; done;
+`
+
+### Make Git repository case sensitive
+`
+git config core.ignorecase false
 `
