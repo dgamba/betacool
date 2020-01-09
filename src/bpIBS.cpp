@@ -3,6 +3,7 @@
 #include <iostream>
 #include <time.h>
 #include "bpIBS.h"
+#include <stdlib.h>
 //#define M_PI (3.141592653589793)
 #define M_2PI (2.*M_PI)
 using namespace std;

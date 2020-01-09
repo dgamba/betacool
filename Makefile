@@ -1,5 +1,5 @@
 # the target output file
-TARGET   = Betacool_MacOSX
+TARGET   = Betacool_UNIX
 
 # where to do the compilation
 BUILDDIR = Build/UNIX/

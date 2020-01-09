@@ -3,6 +3,8 @@
 #include "bpData.h"
 #include <cstring>
 #include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 using namespace std;
 const double NULLdata = -1e-300;
