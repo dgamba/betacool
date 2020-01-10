@@ -1,8 +1,14 @@
 # Un-official version of BETACOOL code.
 
-The present version is a copy of BETACOOL source code by A. Smirnov with corrections by N. Mityanina, A. Sidorin.
+The present version is a copy of BETACOOL source code by A. Smirnov with corrections by N. Mityanina, A. Sidorin, with minor corrections to allow compiling it on UNIX.
+The files have been re-shuffled to have more clean(?) structure.
+Currently, it is able to compile in Windows with Microsoft Visual Studio 2013 starting from Betacool.vcxproj file.
+For UNIX-like systems (Linux and MacOSX) it compiles using the provided Makefile.
+For the time being no attempt to correct all warning during compilation has been made!
 
--- D. Gamba - Oct. 2019
+Note that here only the source code of BETACOOL is present. The source code of the Windows graphical interface "BOLIDE" is available only as a binary. 
+
+-- D. Gamba, A. Latina - Jan. 2020
 
 ---
 # What is what
@@ -16,60 +22,62 @@ The present version is a copy of BETACOOL source code by A. Smirnov with correct
 - Examples/BETACOOL: a minimalistic example for computing the cooling force with betacool from command line only 
 - Examples/BETACOOL-ref: as Examples/BETACOOL, but including "reference" outputs generated with 2019 version of BETACOOL. 
 - Docs:              folder with all documentation from original authors
-- Dat:               folder with data files used to model previous coolers
-- Bat:               folder with original *.bat files from authors
+- Dat:               folder with data files used to model previous coolers (not strictly needed)
+- Bat:               folder with original *.bat files from authors (not strictly needed)
 - Build:             normally and empty directory, it gets filled by temporary/log files when trying to compile BETACOOL for different architectures
 
 ---
 # How to compile
 
-## For compilation on Windows
+## on Windows
 Just load Betacool.vcxproj with Microsoft Visual Studio 2013 and "Build" it for your Windows architecture. 
 This will create a betacool_<arc>.exe file 
 
 
-## For compilation on UNIX
-TODO, but will try to make it as simple as:
-`
+## on UNIX
+The provided Makefile should be good enough for a compilation on Linux and MacOSX, provided that the gcc and standard libraries are available.
+To compile the code, simply execute:
+```
 make
-`
-and this will create betacool_<arc> file executable on your architecture  
+```
+and this will create Betacool_UNIX file executable on your architecture.
+The compiled objects, will be placed into the "Build/UNIX" folder. They can be deleted (together with the Betacool_UNIX executable!) with
+```
+make clean
+```
 
-
-## For compilation on MacOSX Catalina:
+### For compilation on MacOSX Catalina, I used the following procedure:
 1. Install MacPorts
 2. Be sure everything is up do date
-`
+```
 sudo port selfupdate
 sudo port upgrade outdated
-`
+```
 3. Add necessary packages
-`
+```
 sudo port install gcc9
 sudo port install libomp
 sudo port install dos2unix
-`
+```
 4. Select the right compiler
-`
+```
 sudo port select --list gcc         # to list available options
 sudo port select --set gcc mp-gcc9  # to select the one just installed above
-`
+```
 :::Warning
 Note that you might need to open a new shell to make the change effective
 :::
 5. Simply execute
-`
+```
 make
-`
-and this will compile the source code under the Build folder, and create the Betacool_MacOSX executable in the main folder.
-
+```
 
 ---
 # Logbook of things I did to obtain the present version
 
 In _betatrack_ branch I re-shuffled a bit the files around, and tried to build an adeguate makefile to build betacool (at least the core part)
 The first steps to ordering the file structure was inspired from "#backup.bat" file by A. Smirnov. 
-For reference, here the bash commands I used initially...:
+For reference, here the bash commands I used initially:
 
 ```
 > mkdir src
@@ -84,8 +92,7 @@ For reference, here the bash commands I used initially...:
 > mv BRing-* Dat/
 > mv survey Dat/
 ```
-
-of course I had then to deviate, and start removing old log files trying to keep the essential.
+I had then to deviate, and start removing old log files trying to keep the essential.
 
 Note that in the inital repository there were the follwing directories:
 - Betacool.tlog
@@ -99,25 +106,29 @@ Note that in the inital repository there were the follwing directories:
 - I used the "Build" directory also as "Intermediate Directory", which is then used to put logs of the compilation 
 - several files could be cleaned up.
 - didn't find the source code of the grafical interface. Will need to live with the binaries stored in BOLIDE folder for the time being.
-- 
 
-## Modifications to the source code
+## Other modifications to the source code
 - in a few files renamed the variable "gamma" to "gammaRel" to avoid re-definition of standard funciton in <math.h> which gives error compiling for MacOSX
 - introduced a new "warning.h" and "warning.cpp" files containing "Warning()" function implementation which was duplicated in other source files
-- adjusted case of a few *.cpp files to be consistent with relative *.h files  
+- adjusted the filename case of a few *.cpp files to be consistent with relative *.h files  
 
-### Check consistency of results from BETACOOL
-For the time being I did simple test like the following one using the BETACOOL example output run with Betacool_MacOSX
-`
-dos2unix ../Examples/BETACOOL-ref/*
-for i in *.cur; do echo $i; diff $i ../Examples/BETACOOL-ref/$i; done
-`
 ### Change case of files
-`
+```
 for j in *.h; do b=$(echo $j | awk '{print tolower($0)}'); for i in *; do sed -i .bkp "s/"$b"/"$j"/g" $i; done; rm *.bkp; done;
-`
+```
 
 ### Make Git repository case sensitive
-`
+```
 git config core.ignorecase false
-`
+```
+
+## Check consistency of results from BETACOOL
+For the time being I did a simple test like the following one using the BETACOOL example output run with Betacool_MacOSX
+```
+for i in *.cur; do echo $i; diff $i ../Examples/BETACOOL-ref/$i; done
+```
+
+### Convert DOS-like output files to UNIX-like standards
+```
+dos2unix ./Examples/BETACOOL-ref/*
+```
