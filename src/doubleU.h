@@ -24,12 +24,18 @@ extern Units_ eV_, K_, eV_c_, eV_c2_, J_, W_, kg_, g_;
 extern Units_ amu_, neutron_, proton_, electron_;
 extern Units_ N_, Pa_, atm_, Torr_;
 
-extern doubleU U_0,U_1,U_hbar,U_amu,U_mn,U_mp,U_me,U_k,U_c,U_e;
-extern doubleU U_Grav,U_grav,U_NA,U_pi,U_exp,U_eps0,U_mu0;
-extern doubleU U_fine,U_re,U_rp,U_r1,U_R,U_Ecoup,U_lambdaC,U_muBorn;
+extern doubleU U_0, U_1, U_hbar, U_amu, U_mn, U_mp, U_me, U_k, U_c, U_e;
+extern doubleU U_Grav, U_grav, U_NA, U_pi, U_exp, U_eps0, U_mu0;
+extern doubleU U_fine, U_re, U_rp, U_r1, U_R, U_Ecoup, U_lambdaC, U_muBorn;
 
 //---------------------------------------------------------------------------
-enum  BaseEnum{SECOND, QULOUN, METER, UNIT};
+enum BaseEnum
+{
+   SECOND,
+   QULOUN,
+   METER,
+   UNIT
+};
 
 class Units_
 {
@@ -39,37 +45,51 @@ public:
    double sQm[UNIT];
 #endif
    double k;
-   Units_ ();
-   Units_ (double);
-   Units_ (BaseEnum) {;}
+   Units_();
+   Units_(double);
+   Units_(BaseEnum) { ; }
    void operator()(BaseEnum);
    void operator()(Units_);
    bool operator==(Units_);
    bool operator!=(Units_);
    bool Zero();
-	Units_  operator*(Units_);
-	Units_  operator/(Units_);
-	Units_  operator*(double);
-	Units_  operator/(double);
-	Units_  operator^(double);
-	Units_  operator*(MicroMega);
+   Units_ operator*(Units_);
+   Units_ operator/(Units_);
+   Units_ operator*(double);
+   Units_ operator/(double);
+   Units_ operator^(double);
+   Units_ operator*(MicroMega);
 };
 
-enum MegaEnum{ATTO=-6, FEMTO,PICO, NANO, MICRO,MILI,
-				  KILO= 1, MEGA, GIGA, TERA, PETA, EXA};
+enum MegaEnum
+{
+   ATTO = -6,
+   FEMTO,
+   PICO,
+   NANO,
+   MICRO,
+   MILI,
+   KILO = 1,
+   MEGA,
+   GIGA,
+   TERA,
+   PETA,
+   EXA
+};
 class MicroMega
-{public:
-	double MegaValue;
+{
+public:
+   double MegaValue;
    //MicroMega(MegaEnum);
    void operator()(MegaEnum);
-	Units_ operator*(Units_);
+   Units_ operator*(Units_);
 };
 
 class doubleU
 {
- public:
+public:
    double v;
-	Units_ u;
+   Units_ u;
    doubleU();
    doubleU(double);
    doubleU(Units_);
@@ -77,10 +97,13 @@ class doubleU
    doubleU(double, double);
    doubleU(BaseEnum);
 #ifdef PoWeRs
-   bool CheckUnits(doubleU, char*);
-   bool CheckZero (char*);
+   bool CheckUnits(doubleU, char *);
+   bool CheckZero(char *);
 #endif
-   double operator()() { return v; }
+   double operator()()
+   {
+      return v;
+   }
    double operator()(Units_);
 
    void _(double);
@@ -89,7 +112,7 @@ class doubleU
    void _(Units_);
    void _(doubleU);
 
-	void operator=(const doubleU&);
+   void operator=(const doubleU &);
    void operator=(double d);
 
    void operator+=(doubleU);
@@ -98,25 +121,25 @@ class doubleU
    void operator/=(doubleU);
    void operator%=(doubleU);
 
-	doubleU  operator+(doubleU);
-	doubleU  operator-(doubleU);
-   doubleU  operator-();
-	doubleU  operator*(doubleU);
-	doubleU  operator/(doubleU);
-	doubleU  operator%(doubleU);
-   doubleU  Saturation(doubleU zvars, doubleU level);
+   doubleU operator+(doubleU);
+   doubleU operator-(doubleU);
+   doubleU operator-();
+   doubleU operator*(doubleU);
+   doubleU operator/(doubleU);
+   doubleU operator%(doubleU);
+   doubleU Saturation(doubleU zvars, doubleU level);
 
-	doubleU  operator+(double);
-	doubleU  operator-(double);
-	doubleU  operator*(double);
-	doubleU  operator/(double);
-	doubleU  operator^(double);
+   doubleU operator+(double);
+   doubleU operator-(double);
+   doubleU operator*(double);
+   doubleU operator/(double);
+   doubleU operator^(double);
 
    bool operator==(doubleU);
    bool operator!=(doubleU);
-   bool operator> (doubleU);
+   bool operator>(doubleU);
    bool operator>=(doubleU);
-   bool operator< (doubleU);
+   bool operator<(doubleU);
    bool operator<=(doubleU);
 };
 
@@ -127,7 +150,7 @@ doubleU operator-(double, doubleU);
 doubleU operator*(double, doubleU);
 doubleU operator/(double, doubleU);
 
-double U_Ln (doubleU);
+double U_Ln(doubleU);
 double U_Log(doubleU);
 double U_Exp(doubleU);
 double U_Pow(doubleU, double);
@@ -144,17 +167,26 @@ doubleU U_SqrtSum(doubleU, doubleU);
 doubleU U_Abs(doubleU);
 
 //---------------------------------------------------------------------------
-enum U_EnergyEnum{U_GAMMA, U_BETA, U_VELOCITY, U_ENERGY,
-					  	U_KINETIC, U_MOMENTUM, U_REGIDITY};
+enum U_EnergyEnum
+{
+   U_GAMMA,
+   U_BETA,
+   U_VELOCITY,
+   U_ENERGY,
+   U_KINETIC,
+   U_MOMENTUM,
+   U_REGIDITY
+};
 class U_Energy
-{public:
-	static bool PerNucleon;
-	doubleU Gamma, Beta, Velocity, Energy;
+{
+public:
+   static bool PerNucleon;
+   doubleU Gamma, Beta, Velocity, Energy;
    doubleU Kinetic, Momentum, Regidity, Massa;
    doubleU Charge, Z, A;
    doubleU Gamma2, Gamma3, Beta2, Beta3;
    U_Energy();
-	void operator=(const U_Energy&);
+   void operator=(const U_Energy &);
    bool Set(U_EnergyEnum);
    bool Set(U_EnergyEnum, doubleU);
    bool Set(U_EnergyEnum, double, Units_);

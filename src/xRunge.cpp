@@ -4,21 +4,21 @@
 #include "xRing.h"
 
 //---------------------------------------------------------------------------
-xTime::xTime(xRing& ring)
+xTime::xTime(xRing &ring)
 {
    pVelocity = &ring.Energy.Velocity;
-   pCirc     = &ring.Circ;
+   pCirc = &ring.Circ;
 
-	t ._(0, s_);
+   t._(0, s_);
    dt._(0, s_);
    so._(0, m_);
    sr._(0, m_);
    ds._(0, m_);
 }
 
-xTime::xTime(xTime& time)
+xTime::xTime(xTime &time)
 {
-	t ._(s_);
+   t._(s_);
    dt._(s_);
    so._(m_);
    sr._(m_);
@@ -35,13 +35,13 @@ int xTime::OnGet()
 
 void xTime::TimeStep(doubleU h)
 {
-  	dt = h;
+   dt = h;
    ds = dt * (*pVelocity);
 }
 
 void xTime::DistStep(doubleU h)
 {
-  	ds = h;
+   ds = h;
    dt = ds / (*pVelocity);
 }
 
@@ -55,11 +55,12 @@ void xTime::operator+=(double h)
 {
    *this *= h;
    t += dt;
-   so+= ds;
-   sr+= ds;
-   int k = (int)floor(((sr+(ds*1e-9))/ *pCirc)(U1_));
+   so += ds;
+   sr += ds;
+   int k = (int)floor(((sr + (ds * 1e-9)) / *pCirc)(U1_));
    if (k)
-   {  sr = 0;
+   {
+      sr = 0;
       Turns += k;
    }
    Steps++;
@@ -70,54 +71,54 @@ void xTime::operator++()
    *this += 1;
 }
 
-void xTime::operator=(xTime& t1)
+void xTime::operator=(xTime &t1)
 {
-	ds = t1.ds;
+   ds = t1.ds;
    so = t1.so;
    sr = t1.sr;
    dt = t1.dt;
-   t  = t1.t;
-	pVelocity = t1.pVelocity;
-   pCirc     = t1.pCirc;
-   Turns     = t1.Turns;
-   Steps     = t1.Steps;
+   t = t1.t;
+   pVelocity = t1.pVelocity;
+   pCirc = t1.pCirc;
+   Turns = t1.Turns;
+   Steps = t1.Steps;
 }
 //---------------------------------------------------------------------------
 
-vectorU Kutta4(xTime&t,doubleU&h,vectorU X,f_Methods f1)
+vectorU Kutta4(xTime &t, doubleU &h, vectorU X, f_Methods f1)
 {
    vectorU result;
    static vectorU k1, k2, k3, k4;
    xTime t2(t), t3(t);
    t2 += 0.5;
    t3 += 1;
-   k1 = f1(t,  X)  * h;
+   k1 = f1(t, X) * h;
    vectorU koef1;
-   koef1 = X + (k1/2.);
+   koef1 = X + (k1 / 2.);
    k2 = f1(t2, koef1) * h;
-   koef1 = X + (k2/2.);
+   koef1 = X + (k2 / 2.);
    k3 = f1(t2, koef1) * h;
    koef1 = X + (k3);
    k4 = f1(t3, koef1) * h;
-   result = X + ((k1 + (k2*2) + (k3*2) + k4) / 6);
+   result = X + ((k1 + (k2 * 2) + (k3 * 2) + k4) / 6);
    return result;
 }
 
-vectorU Euler(xTime&t,doubleU&h,vectorU X,f_Methods f1)
+vectorU Euler(xTime &t, doubleU &h, vectorU X, f_Methods f1)
 {
    vectorU result;
    result = f1(t, X) * h + X;
    return result;
 }
 
-vectorU Symple(xTime&t,doubleU&h,vectorU X,f_Methods f1)
+vectorU Symple(xTime &t, doubleU &h, vectorU X, f_Methods f1)
 {
-	vectorU X1, X2;
-   X1 = f1(t, X)  * h + X;
+   vectorU X1, X2;
+   X1 = f1(t, X) * h + X;
    X2 = f1(t, X1) * h + X;
    for (int i = 0; i < Size6 / 2; i++)
-   	X1[i*2] = X2[i*2];
-	return X1;
+      X1[i * 2] = X2[i * 2];
+   return X1;
 }
 /*
 //******************* from Betatron*************************

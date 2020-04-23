@@ -6,9 +6,10 @@ void vectorU::operator SIGN_i(double m)
 		ARRAY[i] SIGN_i m;
 }
 vectorU vectorU::operator SIGN_(double m)
-{  vectorU tmp;
-   tmp = *this;
-   tmp SIGN_i m;
+{
+	vectorU tmp;
+	tmp = *this;
+	tmp SIGN_i m;
 	return tmp;
 }
 //---------------------------------------------------------------------------
@@ -18,9 +19,10 @@ void vectorU::operator SIGN_i(doubleU m)
 		ARRAY[i] SIGN_i m;
 }
 vectorU vectorU::operator SIGN_(doubleU m)
-{  vectorU tmp;
-   tmp = *this;
-   tmp SIGN_i m;
+{
+	vectorU tmp;
+	tmp = *this;
+	tmp SIGN_i m;
 	return tmp;
 }
 //---------------------------------------------------------------------------
@@ -30,9 +32,9 @@ void vectorU::operator SIGN_i(vectorU m)
 		ARRAY[i] SIGN_i m.ARRAY[i];
 }
 vectorU vectorU::operator SIGN_(vectorU m)
-{  vectorU tmp;
-   tmp = *this;
-   tmp SIGN_i m;
+{
+	vectorU tmp;
+	tmp = *this;
+	tmp SIGN_i m;
 	return tmp;
 }
-

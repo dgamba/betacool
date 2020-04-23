@@ -22,93 +22,98 @@
 #define DEFINEbIndex CIndex
 #include "btempinc.h"
 
-#define Max(a,b) (a > b ? a : b)
-#define Min(a,b) (a < b ? a : b)
+#define Max(a, b) (a > b ? a : b)
+#define Min(a, b) (a < b ? a : b)
 //---------------------------------------------------------------------------
 //BOLIDE List Pointer Template
 
 template <class L>
 class LTemplate
 {
- //protected:
-	int LSize;
- public:
-	L** LList;
+   //protected:
+   int LSize;
+
+public:
+   L **LList;
    LTemplate(int size = 1);
    virtual ~LTemplate();
-	L& operator[](int index);
-	void operator= (LTemplate&);
+   L &operator[](int index);
+   void operator=(LTemplate &);
    inline int LGetSize() { return LSize; }
    void LSetSize(int size);
-   void LInsert (int index);
-   void LRemove (int index);
-   void LAdd() { LSetSize(LSize+1); }
+   void LInsert(int index);
+   void LRemove(int index);
+   void LAdd() { LSetSize(LSize + 1); }
    void LReset(L);
 };
 
 template <class L>
 LTemplate<L>::LTemplate(int size)
 {
-	LList = new L*[LSize=size];
+   LList = new L *[LSize = size];
    for (int i = 0; i < LSize; i++)
-  		LList[i] = new L;
+      LList[i] = new L;
 }
 
 template <class L>
 LTemplate<L>::~LTemplate()
-{	for (int i = 0; i < LSize; i++)
-		delete LList[i];
-	delete []LList;
+{
+   for (int i = 0; i < LSize; i++)
+      delete LList[i];
+   delete[] LList;
 }
 
 template <class L>
-L& LTemplate<L>::operator[](int index)
+L &LTemplate<L>::operator[](int index)
 {
-	if ((index >= 0) && (index < LSize))
-		return *LList[index];
+   if ((index >= 0) && (index < LSize))
+      return *LList[index];
 #if __BORLANDC__ == 1360
-	Warning("LTemplate has not [index] : ", index);
+   Warning("LTemplate has not [index] : ", index);
 #endif
-	return **LList;
+   return **LList;
 }
 
 template <class L>
-void LTemplate<L>:: operator= (LTemplate<L>& LT)
+void LTemplate<L>::operator=(LTemplate<L> &LT)
 {
-	LSetSize(LT.LGetSize());
+   LSetSize(LT.LGetSize());
    for (int i = 0; i < LGetSize(); i++)
-   	*LList[i] = LT[i];
+      *LList[i] = LT[i];
 }
 
 template <class L>
 void LTemplate<L>::LSetSize(int size)
 {
 #if __BORLANDC__ == 1360
-	if (size < 0)
-   { 	Warning("LTemplate size should be positive");
-   	return;
+   if (size < 0)
+   {
+      Warning("LTemplate size should be positive");
+      return;
    }
 #endif
    if (LSize != size)
-   {  L** NewList = new L*[size];
-      for (int i = 0; i < Max(LSize,size); i++)
-      {  if (i < Min(LSize,size))
-         	NewList[i] = LList[i];
+   {
+      L **NewList = new L *[size];
+      for (int i = 0; i < Max(LSize, size); i++)
+      {
+         if (i < Min(LSize, size))
+            NewList[i] = LList[i];
+         else if (LSize < size)
+            NewList[i] = new L;
          else
-         	if (LSize < size)
-         		NewList[i] = new L;
-            else
-               delete LList[i];
+            delete LList[i];
       }
-      delete []LList;
+      delete[] LList;
       LList = NewList;
       LSize = size;
-	}
+   }
 }
 
 template <class L>
 void LTemplate<L>::LInsert(int index)
-{  if (index < 0)
+{
+   if (index < 0)
    {
 #if __BORLANDC__ == 1360
       Warning("Can not Insert [index] : ", index);
@@ -116,17 +121,19 @@ void LTemplate<L>::LInsert(int index)
       return;
    }
    int j = 0;
-   L** NewList = new L*[LSize+1];
-   for (int i = 0; i < LSize+1; i++)
-   {  if (i == index)
-      {  NewList[j] = new L;
-      	j++;
+   L **NewList = new L *[LSize + 1];
+   for (int i = 0; i < LSize + 1; i++)
+   {
+      if (i == index)
+      {
+         NewList[j] = new L;
+         j++;
       }
       if (i < LSize)
          NewList[j] = LList[i];
       j++;
    }
-   delete []LList;
+   delete[] LList;
    LList = NewList;
    LSize++;
 }
@@ -138,24 +145,27 @@ void LTemplate<L>::LRemove(int index)
    if ((index < 0) || (LSize == 0))
    {
 #if __BORLANDC__ == 1360
-      Warning("Can not Remove [index] :", index,"for LSize :", LSize);
+      Warning("Can not Remove [index] :", index, "for LSize :", LSize);
 #endif
       return;
    }
 
    int j = 0;
-   L** NewList = new L*[LSize-1];
+   L **NewList = new L *[LSize - 1];
    for (int i = 0; i < LSize; i++)
    {
       if (i == index)
-      {  j--;
-      	delete LList[i];
-      }else
-      {	NewList[j] = LList[i];
+      {
+         j--;
+         delete LList[i];
+      }
+      else
+      {
+         NewList[j] = LList[i];
       }
       j++;
    }
-   delete []LList;
+   delete[] LList;
    LList = NewList;
    LSize--;
 }
@@ -163,8 +173,8 @@ void LTemplate<L>::LRemove(int index)
 template <class L>
 void LTemplate<L>::LReset(L l)
 {
-	for (int i = 0; i < LSize; i++)
-   	*LList[i] = l;
+   for (int i = 0; i < LSize; i++)
+      *LList[i] = l;
 }
 
 //---------------------------------------------------------------------------
@@ -172,13 +182,16 @@ void LTemplate<L>::LReset(L l)
 
 template <class W>
 class WTemplate
-{	static bool bW;
-	W* pW;
- protected:
+{
+   static bool bW;
+   W *pW;
+
+protected:
    WTemplate();
- public:
+
+public:
    ~WTemplate();
-   W& WRef();
+   W &WRef();
 };
 
 template <class W>
@@ -186,20 +199,28 @@ bool WTemplate<W>::bW = false;
 
 template <class W>
 WTemplate<W>::WTemplate()
-{  bW = !bW;
-	if (bW) pW = new W;
-	else    pW = NULL;
+{
+   bW = !bW;
+   if (bW)
+      pW = new W;
+   else
+      pW = NULL;
 }
 
 template <class W>
 WTemplate<W>::~WTemplate()
-{	if (pW) delete pW;
+{
+   if (pW)
+      delete pW;
 }
 
 template <class W>
-W& WTemplate<W>::WRef()
-{	if (pW) return *pW;
-   else	  return *((W*)this);
+W &WTemplate<W>::WRef()
+{
+   if (pW)
+      return *pW;
+   else
+      return *((W *)this);
 }
 
 //---------------------------------------------------------------------------
@@ -208,47 +229,56 @@ W& WTemplate<W>::WRef()
 template <class Z>
 class ZTemplate
 {
-	static int iZ;
-	static Z** pZ;
- protected:
+   static int iZ;
+   static Z **pZ;
+
+protected:
    bool bZ;
    ZTemplate();
- public:
-   static Z& newZ(bool forward = true);
+
+public:
+   static Z &newZ(bool forward = true);
    void deleteZ() { bZ = true; }
 };
 
 template <class Z>
-int  ZTemplate<Z>::iZ = 8;
+int ZTemplate<Z>::iZ = 8;
 template <class Z>
-Z**  ZTemplate<Z>::pZ = NULL;
+Z **ZTemplate<Z>::pZ = NULL;
 
 template <class Z>
 ZTemplate<Z>::ZTemplate()
 {
    bZ = true;
-	if(!pZ)
-   {  pZ = new Z*[iZ];
-   	for (int i = 0; i < iZ; i++)
-      	pZ[i] = new Z;
+   if (!pZ)
+   {
+      pZ = new Z *[iZ];
+      for (int i = 0; i < iZ; i++)
+         pZ[i] = new Z;
    }
 }
 
 template <class Z>
-Z& ZTemplate<Z>::newZ(bool forward)
+Z &ZTemplate<Z>::newZ(bool forward)
 {
-	if (forward)
+   if (forward)
    {
       for (int i = 0; i < iZ; i++)
-      {	if(pZ[i]->bZ)
-         {	pZ[i]->bZ = false;
+      {
+         if (pZ[i]->bZ)
+         {
+            pZ[i]->bZ = false;
             return *pZ[i];
          }
       }
-   }else
-   {  for (int i = iZ-1; i >= 0; i--)
-      {	if(pZ[i]->bZ)
-         {	pZ[i]->bZ = false;
+   }
+   else
+   {
+      for (int i = iZ - 1; i >= 0; i--)
+      {
+         if (pZ[i]->bZ)
+         {
+            pZ[i]->bZ = false;
             return *pZ[i];
          }
       }
@@ -259,4 +289,3 @@ Z& ZTemplate<Z>::newZ(bool forward)
 
 //---------------------------------------------------------------------------
 #endif
-

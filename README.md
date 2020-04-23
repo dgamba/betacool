@@ -6,7 +6,10 @@ Currently, it is able to compile in Windows with Microsoft Visual Studio 2013 st
 For UNIX-like systems (Linux and MacOSX) it compiles using the provided Makefile.
 For the time being no attempt to correct all warning during compilation has been made!
 
-Note that here only the source code of BETACOOL is present. The source code of the Windows graphical interface "BOLIDE" is available only as a binary. 
+Note that here only the source code of BETACOOL is available. 
+The source code of the Windows graphical interface "BOLIDE" is available only as a binary. 
+
+Some details on how to use it are in [Docs/HowTo.md](./Docs/HowTo.md)
 
 -- D. Gamba, A. Latina - Jan. 2020
 

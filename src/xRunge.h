@@ -9,28 +9,28 @@ class xRing;
 
 class xTime : public xData
 {
- public:
-	doubleU t, dt, so, sr, ds;                   // parameters of the xTime structure
-   doubleU* pVelocity;                          // pointer on Ring.velocity
-   doubleU* pCirc;                              // pointer on Ring.circumeference
-   double Turns;                                // number of turns
+public:
+   doubleU t, dt, so, sr, ds; // parameters of the xTime structure
+   doubleU *pVelocity;        // pointer on Ring.velocity
+   doubleU *pCirc;            // pointer on Ring.circumeference
+   double Turns;              // number of turns
    int Steps;
-   xTime(xRing&);
-   xTime(xTime&);
+   xTime(xRing &);
+   xTime(xTime &);
    int OnGet();
-   void TimeStep(doubleU);                      // makes step over time
-   void DistStep(doubleU);                      // makes step over ring
+   void TimeStep(doubleU); // makes step over time
+   void DistStep(doubleU); // makes step over ring
    void operator*=(double);
    void operator+=(double);
    void operator++();
-   void operator =(xTime&);
+   void operator=(xTime &);
 };
 
-typedef vectorU f_Methods (xTime& t, vectorU&X);
+typedef vectorU f_Methods(xTime &t, vectorU &X);
 
-vectorU Kutta4(xTime&t,doubleU&h,vectorU X,f_Methods f1);        // calculates integral with method of Runge-Kutta of 4t order
-vectorU Euler (xTime&t,doubleU&h,vectorU X,f_Methods f1);        // calculates integral with method of Euler with variable step
-vectorU Symple(xTime&t,doubleU&h,vectorU X,f_Methods f1);        // calculates integral with method of simplectic integral
+vectorU Kutta4(xTime &t, doubleU &h, vectorU X, f_Methods f1); // calculates integral with method of Runge-Kutta of 4t order
+vectorU Euler(xTime &t, doubleU &h, vectorU X, f_Methods f1);  // calculates integral with method of Euler with variable step
+vectorU Symple(xTime &t, doubleU &h, vectorU X, f_Methods f1); // calculates integral with method of simplectic integral
 /*
 class xRunge : public xData
 {
