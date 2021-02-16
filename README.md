@@ -36,6 +36,19 @@ Some details on how to use it are in [Docs/HowTo.md](./Docs/HowTo.md)
 Just load Betacool.vcxproj with Microsoft Visual Studio 2013 and "Build" it for your Windows architecture. 
 This will create a betacool_<arc>.exe file 
 
+### Alternative: use Mingw-w64:
+1. Install Msys2 from [msys2.org](https://www.msys2.org/)
+2. Install all needed updateds of Msys2 + install Mingw-w64 as described on the Msys2 website:
+```
+pacman -Syu;
+pacman -Su;
+pacman -S --needed base-devel mingw-w64-x86_64-toolchain;
+```
+3. got into this folder, and then simply execute:
+```
+make
+```
+
 
 ## on UNIX
 The provided Makefile should be good enough for a compilation on Linux and MacOSX, provided that the gcc and standard libraries are available.
