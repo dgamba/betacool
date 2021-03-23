@@ -1,5 +1,5 @@
 # the target output file
-TARGET   = Betacool_UNIX
+TARGET   = Betacool
 
 # where to do the compilation
 BUILDDIR = Build/UNIX/
@@ -7,30 +7,25 @@ BUILDDIR = Build/UNIX/
 SRCDIR   = src/
 
 # the compiler to use
-CC       = g++
+CXX      = g++
 
 # compiler flags:
-#  -g    adds debugging information to the executable file
+#  -g -O0   adds debugging information to the executable file, without optimisation
 #  -Wall turns on most, but not all, compiler warnings
 #  -threads
 #  -pthread
 #  -fpermissive maybe not so nice.. but many things still to be improved in the code
-CCFLAGS   = -g -Wall -fopenmp -O2 -fpermissive -Wwrite-strings
+CXXFLAGS  = -Wall -fopenmp -Ofast -fpermissive -Wwrite-strings
 
 # the linker to use and its options
-LD       = ld
-LDFLAGS  = 
-
-# for creating a static library:
-DLD      = ar
-DLDFLAGS = rcs
+LDFLAGS  = -static -fopenmp
 
 # if to include something more and/or add libraries for compilation
 INC     += -I.
 LIBS     =
 
 # betacool is made of several small objects:
-OBJS += Betacool.o \
+OBJS  = Betacool.o \
         bolideU.o \
         bpData.o \
         bpIBS.o \
@@ -66,16 +61,16 @@ OBJS += Betacool.o \
 all: $(TARGET)
 
 $(TARGET) : $(addprefix $(BUILDDIR), $(OBJS))
-	$(CC) $(CCFLAGS) $(INC) $(BUILDDIR)*.o -o $@
+	@echo "Linking $(TARGET)" 
+	@$(CXX) $(BUILDDIR)*.o $(LDFLAGS) -o $@
 
 clean:
-	@echo "Removing directory $(BUILDDIR)" 
-	rm -rf $(BUILDDIR)
-	rm $(TARGET)
+	@echo "Removing directory $(BUILDDIR) and $(TARGET)" 
+	rm -rf $(BUILDDIR) $(TARGET)
 
 $(BUILDDIR)%.o : $(SRCDIR)%.cpp
 	@echo "Compiling $< into $@" 
-	if [ ! -d $(BUILDDIR) ] ;     then mkdir $(BUILDDIR) ; fi;
-	$(CC) $(CCFLAGS) $(INC) -c $< -o $@;
+	@mkdir -p $(BUILDDIR)
+	@$(CXX) $(CXXFLAGS) $(INC) -c $< -o $@;
 
 

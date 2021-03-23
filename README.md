@@ -49,7 +49,6 @@ pacman -S --needed base-devel mingw-w64-x86_64-toolchain;
 make
 ```
 
-
 ## on UNIX
 The provided Makefile should be good enough for a compilation on Linux and MacOSX, provided that the gcc and standard libraries are available.
 To compile the code, simply execute:
