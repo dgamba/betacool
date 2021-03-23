@@ -17,8 +17,15 @@ CXX      = g++
 #  -fpermissive maybe not so nice.. but many things still to be improved in the code
 CXXFLAGS  = -Wall -fopenmp -Ofast -fpermissive -Wwrite-strings
 
-# the linker to use and its options
-LDFLAGS  = -static -fopenmp
+# linker options
+# Ideally we would like to compile a static binary, but on MacOSX is not so easy
+uname_s := $(shell uname -s)
+ifeq ($(uname_s), Darwin)
+  LDFLAGS = -fopenmp
+else
+  LDFLAGS = -static -fopenmp
+endif
+
 
 # if to include something more and/or add libraries for compilation
 INC     += -I.
@@ -62,7 +69,7 @@ all: $(TARGET)
 
 $(TARGET) : $(addprefix $(BUILDDIR), $(OBJS))
 	@echo "Linking $(TARGET)" 
-	@$(CXX) $(BUILDDIR)*.o $(LDFLAGS) -o $@
+	$(CXX) $(BUILDDIR)*.o $(LDFLAGS) -o $@
 
 clean:
 	@echo "Removing directory $(BUILDDIR) and $(TARGET)" 
@@ -71,6 +78,6 @@ clean:
 $(BUILDDIR)%.o : $(SRCDIR)%.cpp
 	@echo "Compiling $< into $@" 
 	@mkdir -p $(BUILDDIR)
-	@$(CXX) $(CXXFLAGS) $(INC) -c $< -o $@;
+	$(CXX) $(CXXFLAGS) $(INC) -c $< -o $@;
 
 
