@@ -9,7 +9,7 @@
 //#include <io.h>
 
 //---------------------------------------------------------------------------
-double InRangeData = 124e7;
+double StartTimestamp = 124e7;
 double Interval1 = M_PI / 2. * 1e7;
 double *BParam[5];
 char *betacool_bld = "betacool.bld";
@@ -463,7 +463,7 @@ void ShowTime(const char *ch, bool show)
    Warning(ch, gmt->tm_year + 1900, "/", gmt->tm_mon + 1, "/", gmt->tm_mday, false);
    Warning("-", gmt->tm_hour, ":", gmt->tm_min, ":", gmt->tm_sec, !show);
    if (show)
-      Warning(" : ", (t - InRangeData - Interval1) / Interval1);
+      Warning(" : ", (t - StartTimestamp - Interval1) / Interval1);
 }
 
 int xTimer::year = 2009;
@@ -492,10 +492,13 @@ bool xTimer::Timer(int interval)
       minutes = seconds / 60;
       hours = minutes / 60;
       time1 = time2;
-      time2 -= long(InRangeData + Interval1);
-      if ((time1 < InRangeData || time2 > 0) ||
+      time2 -= long(StartTimestamp + Interval1);
+      if ((time1 < StartTimestamp || time2 > 0) ||
           (stop && Loader.Check("bolide.stp")))
+      {
+         Warning("I hit some timer/stop condition...");
          finish = true;
+      }
       if (Loader.Check("bolide.pau", false))
       {
          Warning("BETACOOL is staying on PAUSE");
@@ -511,11 +514,22 @@ bool xTimer::Timer(int interval)
 
 void xTimer::Converter()
 {
-#if defined(__DATE__)
+// Davide - Mar 2022:
+//#if defined(__DATE__)
    chars dd;
    dd = "00";
    chars ss;
-   ss = __DATE__;
+   // --------
+   //Davide - Mar 2022: use present date at runtime instead of compilation time
+   time_t rawtime;
+   struct tm * timeinfo;
+   char buffer [80];
+   time (&rawtime);
+   timeinfo = localtime (&rawtime);
+   strftime (buffer,80,"%b %d %G",timeinfo);
+   ss = buffer;
+   //ss = __DATE__;
+   // Davide - Mar 2022: ------------------------
    ss.UpCase();
    dd[0] = ss[4];
    dd[1] = ss[5];
@@ -551,8 +565,9 @@ void xTimer::Converter()
    dd[2] = ss[9];
    dd[3] = ss[10];
    year = (int)BData::char2double(dd);
-#endif
-   InRangeData = (day + (month - 1) * 30.5 + (year - 1970) * 365) * 86400;
+// Davide - Mar 2022:
+//#endif
+   StartTimestamp = (day + (month - 1) * 30.5 + (year - 1970) * 365) * 86400;
 }
 
 bool xLoader::Check(char *filename, bool removefile)

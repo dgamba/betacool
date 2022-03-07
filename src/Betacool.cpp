@@ -82,9 +82,9 @@ int main(int argc, char *argv[])
   strcat(WarningFile, ".war");
   xTimer::Converter();
 #ifdef _DEBUG
-  Warning("BETACOOL----------debug ver.7.1.beta (omp)----------", xTimer::year, "/", xTimer::month, "/", xTimer::day);
+  Warning("BETACOOL----------debug ver.7.2.beta (omp)----------", xTimer::year, "/", xTimer::month, "/", xTimer::day);
 #else
-  Warning("BETACOOL----------release ver.7.1.beta (omp)----------", xTimer::year, "/", xTimer::month, "/", xTimer::day);
+  Warning("BETACOOL----------release ver.7.2.beta (omp)----------", xTimer::year, "/", xTimer::month, "/", xTimer::day);
 #endif
 
   switch (argc)
@@ -101,10 +101,15 @@ int main(int argc, char *argv[])
     return 3;
   }
   if (xData::Get(xData::File))
+  {
+    Warning("Some problem reading file: ", EmptyData, xData::File);
     return 1;
+  }
   if (xData::Set(xData::File))
+  {
+    Warning("Some problem writing to file: ", EmptyData, xData::File);
     return 2;
-
+  }
   for (int i = 2; i < argc; i++)
   {
     if (argv[i][0] == '/')
@@ -225,10 +230,14 @@ int main(int argc, char *argv[])
         break;
       }
     }
+    else
+    {
+      Warning("Expected execution command starting with '/' instead of ", EmptyData, argv[i]);
+    }
   }
 
   xData::Set(xData::File);
-  ShowTime("FINISH-");
+  ShowTime("FINISH: ");
 
   return 0;
 }

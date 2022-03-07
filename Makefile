@@ -15,7 +15,9 @@ CXX      = g++
 #  -threads
 #  -pthread
 #  -fpermissive maybe not so nice.. but many things still to be improved in the code
-CXXFLAGS  = -Wall -fopenmp -Ofast -fpermissive -Wwrite-strings
+#  -Wwrite-strings : warning on using strings attached to char*
+#  -Wunused-value : warning if some defined values are not used...
+CXXFLAGS  = -Wall -fopenmp -Ofast -fpermissive -Wno-write-strings -Wno-unused-value
 
 # linker options
 # Ideally we would like to compile a static binary, but on MacOSX is not so easy

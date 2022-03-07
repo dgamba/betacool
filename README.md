@@ -38,7 +38,7 @@ This will create a betacool_<arc>.exe file
 
 ### Alternative: use Mingw-w64:
 1. Install Msys2 from [msys2.org](https://www.msys2.org/)
-2. Install all needed updateds of Msys2 + install Mingw-w64 as described on the Msys2 website:
+2. Install all needed updates of Msys2 + install Mingw-w64 as described on the Msys2 website:
 ```
 pacman -Syu;
 pacman -Su;
@@ -120,12 +120,12 @@ Note that in the inital repository there were the follwing directories:
 - since I moved all sources to the src/ folder, I had to add manually the "src\" relative path in Betacool.vcxproj file
 - I used the "Build" directory also as "Intermediate Directory", which is then used to put logs of the compilation 
 - several files could be cleaned up.
-- didn't find the source code of the grafical interface. Will need to live with the binaries stored in BOLIDE folder for the time being.
+- didn't find the source code of the graphical interface. Will need to live with the binaries stored in BOLIDE folder for the time being.
 
 ## Other modifications to the source code
-- in a few files renamed the variable "gamma" to "gammaRel" to avoid re-definition of standard funciton in <math.h> which gives error compiling for MacOSX
+- in a few files renamed the variable "gamma" to "gammaRel" to avoid re-definition of standard function in <math.h> which gives error compiling for MacOSX
 - introduced a new "warning.h" and "warning.cpp" files containing "Warning()" function implementation which was duplicated in other source files
-- adjusted the filename case of a few *.cpp files to be consistent with relative *.h files  
+- adjusted the filename case of a few *.cpp files to be consistent with relative *.h files 
 
 ### Change case of files
 ```
