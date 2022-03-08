@@ -514,22 +514,14 @@ bool xTimer::Timer(int interval)
 
 void xTimer::Converter()
 {
-// Davide - Mar 2022:
-//#if defined(__DATE__)
+/* ***************************************************
+ * Davide - Mar 2022: just always use local time...  
+ * ***************************************************
+#if defined(__DATE__)
    chars dd;
    dd = "00";
    chars ss;
-   // --------
-   //Davide - Mar 2022: use present date at runtime instead of compilation time
-   time_t rawtime;
-   struct tm * timeinfo;
-   char buffer [80];
-   time (&rawtime);
-   timeinfo = localtime (&rawtime);
-   strftime (buffer,80,"%b %d %G",timeinfo);
-   ss = buffer;
-   //ss = __DATE__;
-   // Davide - Mar 2022: ------------------------
+   ss = __DATE__;
    ss.UpCase();
    dd[0] = ss[4];
    dd[1] = ss[5];
@@ -565,9 +557,17 @@ void xTimer::Converter()
    dd[2] = ss[9];
    dd[3] = ss[10];
    year = (int)BData::char2double(dd);
-// Davide - Mar 2022:
-//#endif
+#endif
    StartTimestamp = (day + (month - 1) * 30.5 + (year - 1970) * 365) * 86400;
+*/
+   time_t t;
+   struct tm *gmt;
+   t = time(NULL);
+   gmt = localtime(&t);
+   year = gmt->tm_year + 1900;
+   month = gmt->tm_mon + 1;
+   day = gmt->tm_mday;
+   StartTimestamp = t;
 }
 
 bool xLoader::Check(char *filename, bool removefile)
