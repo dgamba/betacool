@@ -1,0 +1,39 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-on-windows:
+    name: Build on Windows
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@main
+      
+    - name: Simply run make
+      shell: cmd
+      run: make
+      
+  build-on-max:
+    name: Build on MacOSX
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@main
+      
+    - name: Simply run make
+      run: make
+      
+  build-on-linux:
+    name: Build on Linux
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@main
+      
+    - name: Simply run make
+      run: make
