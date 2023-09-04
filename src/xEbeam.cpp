@@ -975,8 +975,8 @@ vectorU xEbeam::UniCilinder(xTime &t, vectorU &ion) // models electron beam like
       ion_new[5] -= UC_dp_P(rc, bcurrent, bradius);
       Vdr = UC_Vdrift(rc, bcurrent, bradius);
 
-      F.Ttemp += Vdr * Vdr * E_e / 2.;
-      F.V_tr_e = (F.Ttemp / U_me + (dVdr * rc * dVdr * rc)) ^ 0.5;
+      // F.Ttemp += Vdr * Vdr * E_e / 2.;
+      // F.V_tr_e = (F.Ttemp / U_me + (dVdr * rc * dVdr * rc)) ^ 0.5;
 
       if (rc() > 0.)
       {
