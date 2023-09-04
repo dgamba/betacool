@@ -980,8 +980,8 @@ vectorU xEbeam::UniCilinder(xTime &t, vectorU &ion) // models electron beam like
 
       if (rc() > 0.)
       {
-         ion_new[1] += Vdr * ion_new[2] / rc;
-         ion_new[3] += Vdr * ion_new[0] / rc;
+         ion_new[1] += Vdr * -ion_new[2] / rc;
+         ion_new[3] += Vdr *  ion_new[0] / rc;
       }
    }
 
