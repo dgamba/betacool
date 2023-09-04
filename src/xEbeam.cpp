@@ -836,10 +836,10 @@ doubleU xEbeam::UC_dp_P(doubleU r, doubleU Ie, doubleU Re) // calculates momentu
 doubleU xEbeam::UC_Vdrift(doubleU r, doubleU Ie, doubleU Re) // calculates drift angle (drift velocity over long. velocity) for Uniformely distr. cilinder
 {
    if (U_Abs(r) <= Re)
-      return (1. - (Neutralization * e_Energy.Gamma2)) *
+      return (1. - Neutralization) *
              2. * U_Abs(r) * Ie / (U_c * F.mfield * Re * Re * e_Energy.Gamma2 * e_Energy.Beta2);
    else
-      return (1. - (Neutralization * e_Energy.Gamma2)) *
+      return (1. - Neutralization) *
              2. * Ie / (U_c * F.mfield * U_Abs(r) * e_Energy.Gamma2 * e_Energy.Beta2);
 }
 //---------------------------------------------------------------------------
