@@ -836,10 +836,10 @@ doubleU xEbeam::UC_dp_P(doubleU r, doubleU Ie, doubleU Re) // calculates momentu
 doubleU xEbeam::UC_Vdrift(doubleU r, doubleU Ie, doubleU Re) // calculates drift angle (drift velocity over long. velocity) for Uniformely distr. cilinder
 {
    if (U_Abs(r) <= Re)
-      return (1. - (Neutralization * e_Energy.Gamma2)) *
+      return (1. - Neutralization) *
              2. * U_Abs(r) * Ie / (U_c * F.mfield * Re * Re * e_Energy.Gamma2 * e_Energy.Beta2);
    else
-      return (1. - (Neutralization * e_Energy.Gamma2)) *
+      return (1. - Neutralization) *
              2. * Ie / (U_c * F.mfield * U_Abs(r) * e_Energy.Gamma2 * e_Energy.Beta2);
 }
 //---------------------------------------------------------------------------
@@ -975,13 +975,13 @@ vectorU xEbeam::UniCilinder(xTime &t, vectorU &ion) // models electron beam like
       ion_new[5] -= UC_dp_P(rc, bcurrent, bradius);
       Vdr = UC_Vdrift(rc, bcurrent, bradius);
 
-      F.Ttemp += Vdr * Vdr * E_e / 2.;
+      // F.Ttemp += Vdr * Vdr * E_e / 2.;
       F.V_tr_e = (F.Ttemp / U_me + (dVdr * rc * dVdr * rc)) ^ 0.5;
 
       if (rc() > 0.)
       {
-         ion_new[1] += Vdr * ion_new[2] / rc;
-         ion_new[3] += Vdr * ion_new[0] / rc;
+         ion_new[1] -= Vdr * ion_new[2] / rc;
+         ion_new[3] -= Vdr * ion_new[0] / rc;
       }
    }
 
